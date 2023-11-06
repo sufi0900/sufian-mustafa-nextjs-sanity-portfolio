@@ -1,0 +1,73 @@
+body.dark-mode .About3 p,
+body.dark-mode .footerpara p,
+body.dark-mode .About3 ul li,
+body.dark-mode .About3 ul li a,
+body.dark-mode .ListItemTextSkill,
+body.dark-mode .ListItemText,
+body.dark-mode .projectcardtitle,
+body.dark-mode .ProjectTopTextDiv,
+body.dark-mode .listitemtextadmin,
+body.dark-mode .custom-input-color input,
+body.dark-mode .custom-quill-content .ql-editor,
+body.dark-mode .custom-input-color,
+body.dark-mode .progress-label-color,
+body.dark-mode .blogcardh1,
+body.dark-mode .custom-input-color p,
+body.dark-mode .custom-input-color h1,
+body.dark-mode .form__input {
+  color: white;
+}
+
+body.dark-mode .themecard:hover {
+  color: rgb(0, 255, 13);
+}
+body.dark-mode .drawerBackground .MuiDrawer-paper {
+  background-color: #0e2a47;
+  border: 1px solid rgba(255, 255, 255, 0.807);
+  border-radius: 16px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(194, 232, 249, 0.484) 0px 2px 16px 0px;
+}
+body.dark-mode .Home,
+body.dark-mode .item,
+body.dark-mode .itemcontact,
+body.dark-mode .navbar1 {
+  background: #0e2a47;
+  border: 2px solid rgba(255, 255, 255, 0.807);
+  border-radius: 16px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(194, 232, 249, 0.484) 0px 2px 16px 0px;
+}
+body.dark-mode .QuillDescription p {
+  color: white;
+}
+
+body.dark-mode footer {
+  color: white;
+}
+/* [data-theme='dark']  {
+  background: var(--background-dark);
+} */
+body.dark-mode .itemabout,
+body.dark-mode .contactform_container,
+body.dark-mode .new_footer_area {
+  background: #0e2a47;
+  border: 2px solid rgba(255, 255, 255, 0.807);
+  border-radius: 16px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(194, 232, 249, 0.484) 0px 2px 16px 0px;
+}
+body.dark-mode .ProjectCard,
+body.dark-mode .ProjectTopTextDiv {
+  background: #0e2a47;
+  border: 2px solid rgba(255, 255, 255, 0.807);
+  border-radius: 16px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(194, 232, 249, 0.484) 0px 2px 16px 0px;
+}
+body.dark-mode .SlideShowContent {
+  background: #0e2a47;
+}
+/* body.dark-mode .Animateiv7 p {
+  text-shadow: 0.5px 0.5px 0.5px black;
+} */
