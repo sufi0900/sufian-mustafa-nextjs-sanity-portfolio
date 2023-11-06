@@ -6,6 +6,8 @@ import { client } from "../lib/sanity";
 import Head from "next/head";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
+export const revalidate = false;
+export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Projects - Sufian Mustafa",
   description:

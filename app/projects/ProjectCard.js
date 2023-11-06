@@ -10,7 +10,8 @@ import { motion } from "framer-motion";
 
 import Grid from "@mui/material/Grid";
 import Link from "next/link";
-
+export const revalidate = false;
+export const dynamic = "force-dynamic";
 const project = {
   transition: "0.3s",
   borderRadius: "20px",

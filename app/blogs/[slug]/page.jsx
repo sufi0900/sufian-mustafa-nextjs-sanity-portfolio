@@ -13,7 +13,8 @@ import "animate.css/animate.min.css";
 import Divider from "@mui/material/Divider";
 import Head from "next/head";
 import Script from "next/script";
-
+export const revalidate = false;
+export const dynamic = "force-dynamic";
 async function getData(slug) {
   const query = `*[_type == "post" && slug.current == "${slug}"][0]`;
 

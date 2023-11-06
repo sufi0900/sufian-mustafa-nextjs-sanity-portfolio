@@ -15,7 +15,8 @@ import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import Link from "next/link";
 import { Card } from "@mui/material";
-
+export const revalidate = false;
+export const dynamic = "force-dynamic";
 export default function RecipeReviewCard({ postimg, title, slug }) {
   return (
     <>

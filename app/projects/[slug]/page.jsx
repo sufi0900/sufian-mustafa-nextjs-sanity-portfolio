@@ -6,7 +6,8 @@ import { urlFor } from "../../lib/sanityImageUrl";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import { PortableText } from "@portabletext/react";
-
+export const revalidate = false;
+export const dynamic = "force-dynamic";
 async function getData(slug) {
   const query = `*[_type == "project" && slug.current == "${slug}"][0]`;
 

@@ -1,11 +1,13 @@
 import React from "react";
-// import { client } from "@/app/lib/sanity";
+
 import { client } from "../lib/sanity";
 import BlogCard from "./BlogCard";
 import Grid from "@mui/material/Grid";
 import Head from "next/head";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
+export const revalidate = false;
+export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Blogs - Sufian Mustafa",
   description:
