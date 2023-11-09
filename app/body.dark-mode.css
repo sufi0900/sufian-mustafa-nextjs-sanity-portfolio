@@ -14,6 +14,11 @@ body.dark-mode .progress-label-color,
 body.dark-mode .blogcardh1,
 body.dark-mode .custom-input-color p,
 body.dark-mode .custom-input-color h1,
+body.dark-mode .bgwhite p,
+body.dark-mode .bgwhite h1,
+body.dark-mode .bgwhite h2,
+body.dark-mode .bgwhite h3,
+body.dark-mode .bgwhite h4,
 body.dark-mode .form__input {
   color: white;
 }
@@ -31,7 +36,8 @@ body.dark-mode .drawerBackground .MuiDrawer-paper {
 body.dark-mode .Home,
 body.dark-mode .item,
 body.dark-mode .itemcontact,
-body.dark-mode .navbar1 {
+body.dark-mode .navbar1,
+body.dark-mode .blog-card {
   background: #0e2a47;
   border: 2px solid rgba(255, 255, 255, 0.807);
   border-radius: 16px;
@@ -71,3 +77,10 @@ body.dark-mode .SlideShowContent {
 /* body.dark-mode .Animateiv7 p {
   text-shadow: 0.5px 0.5px 0.5px black;
 } */
+body.dark-mode .bgwhite {
+  background: black;
+}
+body.dark-mode :root {
+  background: white;
+  color: black;
+}

@@ -1,25 +1,23 @@
 export default {
-  name: 'skill',
+  name: 'blog',
   type: 'document',
-  title: 'Skill',
+  title: 'Blog',
   fields: [
     {
       name: 'title',
       type: 'string',
       title: 'Title',
     },
-
     {
-      name: 'skillimg',
+      name: 'blogimg',
       type: 'image',
-      title: 'skillimg',
+      title: 'blogimg',
     },
     {
-      name: 'percentage',
-      type: 'number',
-      title: 'percentage',
+      name: 'overview',
+      type: 'string',
+      title: 'Overview',
     },
-
     {
       name: 'slug',
       type: 'slug',
@@ -35,6 +33,9 @@ export default {
       of: [
         {
           type: 'block',
+        },
+        {
+          type: 'code',
         },
         {
           type: 'image',

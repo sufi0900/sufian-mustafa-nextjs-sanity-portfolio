@@ -1,8 +1,12 @@
-import React from "react";
+/* eslint-disable @next/next/no-img-element */
+"use client";
+import React, { useState } from "react";
 // import { client } from "@/app/lib/sanity";
 import { client } from "../../lib/sanity";
 // import { urlFor } from "@/app/lib/sanityImageUrl";
 import { urlFor } from "../../lib/sanityImageUrl";
+import { CodeBlock, dracula } from "react-code-blocks";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import Grid from "@mui/material/Grid";
 import { PortableText } from "@portabletext/react";
@@ -32,12 +36,12 @@ export async function generateMetadata({ params }) {
   // Define the metadata object
 }
 export default async function BlogCardDetail({ params }) {
+  const [isCopied, setIsCopied] = useState(false);
   const data = await getData(params.slug);
   const PortableTextComponent = {
     types: {
       image: ({ value }) => (
         // eslint-disable-next-line @next/next/no-img-element
-
         <div>
           <img
             src={urlFor(value).url()}
@@ -46,6 +50,19 @@ export default async function BlogCardDetail({ params }) {
             width={800}
             height={800}
           />
+        </div>
+      ),
+      code: ({ value }) => (
+        <div>
+          <CodeBlock
+            text={value.code}
+            language="jsx" // specify the code language here
+            showLineNumbers // if you want to display line numbers
+            theme={dracula} // use any code highlighting theme
+          />
+          <CopyToClipboard text={value.code} onCopy={() => setIsCopied(true)}>
+            <button>{isCopied ? "Copied!" : "Copy to Clipboard"}</button>
+          </CopyToClipboard>
         </div>
       ),
     },
@@ -151,16 +168,11 @@ export default async function BlogCardDetail({ params }) {
 
               <div className="QuillDescription">
                 <div className="QuillDescription" style={{ width: "100%" }}>
-                  <p
-                    data-aos="zoom-in"
-                    data-aos-delay="200"
-                    data-aos-duration="500"
-                  >
-                    <PortableText
-                      value={data.content}
-                      components={PortableTextComponent}
-                    />
-                  </p>
+                  <PortableText
+                    value={data.content}
+                    components={PortableTextComponent}
+                  />
+
                   <img src={urlFor(data.postimg).url()} alt="Img" />
                 </div>
               </div>

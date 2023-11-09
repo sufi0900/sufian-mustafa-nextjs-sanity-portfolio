@@ -35,6 +35,9 @@ export default {
           type: 'block',
         },
         {
+          type: 'code',
+        },
+        {
           type: 'image',
           fields: [
             {

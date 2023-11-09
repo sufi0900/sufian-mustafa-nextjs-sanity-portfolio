@@ -78,12 +78,7 @@ const Home = () => {
                   height={100}
                   loading="lazy"
                 />
-                {/* <img
-                  src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1693672583/624-6241203_css-icon-png-cascading-style-sheets_jeglsu.webp"
-                  style={{ width: "100%", height: "auto" }}
-                  alt="css"
-                  loading="lazy"
-                /> */}
+
                 <SteamHomePage />
               </div>
             </div>

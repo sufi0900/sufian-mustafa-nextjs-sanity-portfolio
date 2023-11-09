@@ -1,5 +1,5 @@
 import post from './post'
 import project from './project'
-import skill from './skill'
+import blog from './blogs'
 
-export const schemaTypes = [post, skill, project]
+export const schemaTypes = [post, blog, project]

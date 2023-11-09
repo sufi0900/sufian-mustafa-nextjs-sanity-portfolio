@@ -1,0 +1,117 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
+"use client";
+import React from "react";
+import { client } from "../lib/sanity";
+import { urlFor } from "../lib/sanityImageUrl";
+
+import {
+  Grid,
+  Card,
+  Avatar,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+} from "@mui/material";
+import Link from "next/link";
+export const revalidate = false;
+export const dynamic = "force-dynamic";
+
+async function getData() {
+  const query = `*[_type == "blog"]`;
+  const data = await client.fetch(query);
+  return data;
+}
+export default async function AllPosts() {
+  const data = await getData();
+  function truncateText(text, maxLength) {
+    const words = text.split(" ");
+    const truncatedWords = words.slice(0, maxLength);
+    return truncatedWords.join(" ");
+  }
+  return (
+    <Grid
+      container
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        minHeight: "100vh",
+      }}
+      className="bgwhite"
+    >
+      <Grid
+        className="bgwhite"
+        spacing={1}
+        padding={4}
+        item
+        style={{ marginTop: "70px", maxWidth: "800px", overflow: "hidden" }}
+      >
+        <ListItem className="SkillList">
+          <ListItemAvatar>
+            <Avatar
+              style={{
+                width: "60px", // Adjust the width as needed
+                height: "60px",
+              }}
+              alt="logo lg"
+              src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.preserve_transparency.progressive.sprite/v1693672396/logo_1_lk0neo.webp"
+              sx={{ display: { xs: "flex", md: "flex" }, mr: 1 }}
+              className="cursorp Tab8 animate__animated animate__backInLeft"
+            />
+          </ListItemAvatar>
+          <ListItemText
+            primary={"Sufian Mustafa"}
+            secondary={""}
+            title="sufian"
+            className="ListItemTextSkill"
+            data-aos="zoom-in"
+          />
+        </ListItem>
+        <p style={{ textAlign: "center" }}>sufi text here...</p>
+        {data.map((blog) => (
+          <Card
+            key={blog._id}
+            className="blog-card alt SkillList bgwhite blogsufi"
+          >
+            <div className="meta bgwhite">
+              <div
+                className="photo"
+                style={{
+                  backgroundImage: `url(${urlFor(blog.blogimg).url()})`,
+                }}
+              />
+              <ul className="details">
+                <li className="author">
+                  <a href="#">Sufian Mustafa</a>
+                </li>
+                <li className="date">July. 15, 2015</li>
+                <li className="tags">
+                  <ul>
+                    <li>
+                      <a href="#">Learn</a>
+                    </li>
+                    <li>
+                      <a href="#">Code</a>
+                    </li>
+                    <li>
+                      <a href="#">JavaScript</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div className="description bgwhite">
+              <h1>{blog.title}</h1>
+              <p>{truncateText(blog.overview, 6)}</p>
+
+              <p className="read-more">
+                <Link href={`/posts/${blog.slug.current}`}>Read More</Link>
+              </p>
+            </div>
+          </Card>
+        ))}
+      </Grid>
+    </Grid>
+  );
+}
