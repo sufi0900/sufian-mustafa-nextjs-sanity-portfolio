@@ -5,8 +5,7 @@ import React from "react";
 import { client } from "../../lib/sanity";
 // import { urlFor } from "@/app/lib/sanityImageUrl";
 import { urlFor } from "../../lib/sanityImageUrl";
-import { CodeBlock, dracula } from "react-code-blocks";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+
 import Grid from "@mui/material/Grid";
 import { PortableText } from "@portabletext/react";
 import "aos/dist/aos.css";
@@ -50,12 +49,12 @@ export default async function BlogCardDetail({ params }) {
       ),
       code: ({ value }) => (
         <div>
-          <CodeBlock
+          {/* <CodeBlock
             text={value.code}
             language="jsx" // specify the code language here
             showLineNumbers // if you want to display line numbers
             theme={dracula} // use any code highlighting theme
-          />
+          /> */}
         </div>
       ),
     },
