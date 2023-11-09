@@ -23,15 +23,15 @@ async function getData(slug) {
   return data;
 }
 
-export async function generateMetadata({ params }) {
-  const data = await getData(params.slug);
-  return {
-    title: `${data.title}`,
-    description: data.description,
-    author: "Sufian Mustafa",
-  };
-  // Define the metadata object
-}
+// export async function generateMetadata({ params }) {
+//   const data = await getData(params.slug);
+//   return {
+//     title: `${data.title}`,
+//     description: data.description,
+//     author: "Sufian Mustafa",
+//   };
+
+// }
 
 export default async function BlogCardDetail({ params }) {
   const data = await getData(params.slug);
