@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-"use client";
+
 import React from "react";
 import { CodeBlock, dracula } from "react-code-blocks";
 import { ListItem, ListItemAvatar, ListItemText } from "@mui/material";
@@ -22,15 +22,14 @@ async function getData(slug) {
   return data;
 }
 
-// export async function generateMetadata({ params }) {
-//   const data = await getData(params.slug);
-//   return {
-//     title: `${data.title}`,
-//     description: data.description,
-//     author: "Sufian Mustafa",
-//   };
-
-// }
+export async function generateMetadata({ params }) {
+  const data = await getData(params.slug);
+  return {
+    title: `${data.title}`,
+    description: data.description,
+    author: "Sufian Mustafa",
+  };
+}
 
 export default async function BlogCardDetail({ params }) {
   const data = await getData(params.slug);
