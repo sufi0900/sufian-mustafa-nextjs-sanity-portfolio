@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
-import React, { useState } from "react";
+
+import React from "react";
 // import { client } from "@/app/lib/sanity";
 import { client } from "../../lib/sanity";
 // import { urlFor } from "@/app/lib/sanityImageUrl";
@@ -36,7 +36,6 @@ export async function generateMetadata({ params }) {
   // Define the metadata object
 }
 export default async function BlogCardDetail({ params }) {
-  const [isCopied, setIsCopied] = useState(false);
   const data = await getData(params.slug);
   const PortableTextComponent = {
     types: {
