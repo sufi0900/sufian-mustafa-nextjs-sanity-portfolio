@@ -7,12 +7,9 @@ import { client } from "../../lib/sanity";
 import { urlFor } from "../../lib/sanityImageUrl";
 import { CodeBlock, dracula } from "react-code-blocks";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-
 import Grid from "@mui/material/Grid";
 import { PortableText } from "@portabletext/react";
-
 import "aos/dist/aos.css";
-
 import "animate.css/animate.min.css";
 import Divider from "@mui/material/Divider";
 import Head from "next/head";
@@ -59,9 +56,6 @@ export default async function BlogCardDetail({ params }) {
             showLineNumbers // if you want to display line numbers
             theme={dracula} // use any code highlighting theme
           />
-          <CopyToClipboard text={value.code} onCopy={() => setIsCopied(true)}>
-            <button>{isCopied ? "Copied!" : "Copy to Clipboard"}</button>
-          </CopyToClipboard>
         </div>
       ),
     },
