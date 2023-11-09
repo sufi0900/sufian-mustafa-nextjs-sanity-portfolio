@@ -10,7 +10,6 @@ import { urlFor } from "../../lib/sanityImageUrl";
 import Grid from "@mui/material/Grid";
 import { Avatar } from "@mui/material";
 
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import Head from "next/head";
 import Script from "next/script";
 export const revalidate = false;
@@ -129,7 +128,7 @@ export default async function BlogCardDetail({ params }) {
           <br />
           <div>
             <img
-              src={urlFor(data.postimg).url()}
+              src={urlFor(data.blogimg).url()}
               style={{ width: "100%", height: "auto" }}
             />
           </div>
