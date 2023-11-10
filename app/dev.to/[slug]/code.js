@@ -69,7 +69,7 @@ export default function BlogCardDetail({ data, params }) {
       >
         <div className="bgwhite">
           <h1 style={{ textAlign: "justify" }}>{data.title}</h1>
-          <Link href="/posts" style={{ textDecoration: "none" }}>
+          <Link href="/dev.to" style={{ textDecoration: "none" }}>
             <ListItem className="SkillList">
               <ListItemAvatar>
                 <Avatar
