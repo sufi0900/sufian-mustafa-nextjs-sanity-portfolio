@@ -116,7 +116,7 @@ export default async function AllPosts() {
               <p>{truncateText(blog.overview, 6)}</p>
 
               <p className="read-more">
-                <Link href={`/posts/${blog.slug.current}`}>Read More</Link>
+                <Link href={`/dev.to/${blog.slug.current}`}>Read More</Link>
               </p>
             </div>
           </Card>

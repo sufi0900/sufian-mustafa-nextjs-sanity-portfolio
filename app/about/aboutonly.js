@@ -574,12 +574,6 @@ const About = () => {
                     marginBottom: "20px",
                   }}
                 >
-                  <Link href="/posts" style={{ textDecoration: "none" }}>
-                    <h2 style={{ padding: "10px" }} className="button-85">
-                      HelpFul Posts
-                      <PostAdd style={button} className="cursorp" />
-                    </h2>{" "}
-                  </Link>
                   <Link href="/contact" style={{ textDecoration: "none" }}>
                     <h2 style={{ padding: "10px" }} className="button-85">
                       Contact Me

@@ -92,7 +92,7 @@ const page = () => {
         dangerouslySetInnerHTML={sufianmustafawebdeveloperaboutme()}
         key="AboutMe-jsonld"
       />
-      {/* asd */}
+
       <div style={{ marginTop: "55px" }}>
         <Aboutcode />
       </div>
