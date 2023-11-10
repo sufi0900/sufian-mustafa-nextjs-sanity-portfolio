@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-
+"use client";
 import React from "react";
 
 import { CodeBlock, dracula } from "react-code-blocks";
@@ -14,7 +14,7 @@ import Divider from "@mui/material/Divider";
 export const revalidate = false;
 export const dynamic = "force-dynamic";
 
-export default function BlogCardDetail({ data }) {
+export default function BlogCardDetail({ param, data }) {
   const PortableTextComponent = {
     types: {
       image: ({ value }) => (
