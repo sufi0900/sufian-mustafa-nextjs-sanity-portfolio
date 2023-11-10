@@ -28,6 +28,7 @@ import Script from "next/script";
 import { NextSeo } from "next-seo";
 import SlideM from "./slideshowmbl";
 import dynamic from "next/dynamic";
+import { PostAdd } from "@mui/icons-material";
 // import ComponentA from "./responsiveshow";
 // import ComponentB from "./slideshowlg";
 const ComponentA = dynamic(() => import("./responsiveshow"));
@@ -412,6 +413,14 @@ const About = () => {
                     </li>
                     <li
                       data-aos="zoom-out-down"
+                      data-aos-delay="360"
+                      data-aos-duration="500"
+                    >
+                      <FileDownloadDoneOutlinedIcon style={Bluetick} />
+                      Tailwind CSS
+                    </li>
+                    <li
+                      data-aos="zoom-out-down"
                       data-aos-delay="390"
                       data-aos-duration="500"
                     >
@@ -485,7 +494,6 @@ const About = () => {
                     <img
                       src={Images.image1.src}
                       alt={Images.image1.alt}
-                      // placeholder={<Spin />}
                       loading="lazy"
                     />
                   </a>
@@ -566,14 +574,19 @@ const About = () => {
                     marginBottom: "20px",
                   }}
                 >
-                  {" "}
+                  <Link href="/posts" style={{ textDecoration: "none" }}>
+                    <h2 style={{ padding: "10px" }} className="button-85">
+                      HelpFul Posts
+                      <PostAdd style={button} className="cursorp" />
+                    </h2>{" "}
+                  </Link>
                   <Link href="/contact" style={{ textDecoration: "none" }}>
                     <h2 style={{ padding: "10px" }} className="button-85">
                       Contact Me
                       <ContactMail style={button} className="cursorp" />
                     </h2>{" "}
                   </Link>
-                  &nbsp;
+                  &nbsp; &nbsp;
                 </div>
                 <br />
                 <div

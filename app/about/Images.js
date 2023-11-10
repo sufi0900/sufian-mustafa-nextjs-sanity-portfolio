@@ -1,7 +1,7 @@
 const Images = {
   image1: {
     src: "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive.progressive:semi.sprite/v1693673198/0948d54e-68a2-451c-ba15-ac683b0c0780_kclx5w.webp",
-    alt: "BigImg",
+    alt: "Sufian Mustafa",
   },
   screenlg: {
     src: "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.preserve_transparency.progressive/v1693672395/screen2_ug4rqd.webp",

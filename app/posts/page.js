@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
@@ -65,10 +66,19 @@ export default async function AllPosts() {
             secondary={""}
             title="sufian"
             className="ListItemTextSkill"
-            data-aos="zoom-in"
           />
         </ListItem>
-        <p style={{ textAlign: "center" }}>sufi text here...</p>
+        <p style={{ textAlign: "center" }}>
+          Hi I am Sufian Mustafa a passionate Web developer who is continually
+          exploring and mastering new frontend technologies. I share my learning
+          journey through insightful posts to assist fellow developers. Always
+          eager to stay up-to-date in web development, I love learning new
+          things and sharing what I know to help fellow developers. Contributing
+          to the developer community is something I find really fulfilling! Feel
+          free to reach out and follow along as I continue to explore the latest
+          in web development. Your engagement is valued, and I look forward to
+          connecting with you!
+        </p>
         {data.map((blog) => (
           <Card
             key={blog._id}

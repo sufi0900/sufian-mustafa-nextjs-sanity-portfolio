@@ -64,35 +64,35 @@ export default function StandardImageList() {
 const itemData = [
   {
     img: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672393/1e72070f-981e-4dcc-8b99-feaac53ec7e5_jybw8q.webp",
-    title: "Sufi",
+    title: "Sufian Mustafa",
   },
   {
     img: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672395/sufi5_nrizsx.webp",
-    title: "Sufi",
+    title: "Sufian Mustafa",
   },
   {
     img: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672394/sufi6_depmpo.webp",
-    title: "sufi",
+    title: "Sufian Mustafa",
   },
   {
     img: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672407/sufi3_curvlx.webp",
-    title: "Camera",
+    title: "Sufian Mustafa",
   },
   {
     img: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693673965/AirBrush_20170128130335_t6dhwx.webp",
-    title: "Camera",
+    title: "Sufian Mustafa",
   },
   {
     img: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693673974/AirBrush_20170128125226_rf8hal.webp",
-    title: "Camera",
+    title: "Sufian Mustafa",
   },
 
   {
     img: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672395/AirBrush_20170128121935_mwokjt.webp",
-    title: "Hats",
+    title: "Sufian Mustafa",
   },
   {
     img: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672394/697ced9a-3edd-47e1-8cce-8f0ae2ec53ea_psear3.webp",
-    title: "Honey",
+    title: "Sufian Mustafa",
   },
 ];
