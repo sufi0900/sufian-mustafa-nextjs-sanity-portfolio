@@ -116,6 +116,7 @@ const About = () => {
     <div>
       <br />
       <Head>
+        <br />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>About Me - Sufian Mustafa</title>
