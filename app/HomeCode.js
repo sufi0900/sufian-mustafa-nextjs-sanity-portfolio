@@ -27,8 +27,8 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import SlideM from "./about/slideshowmbl";
-// import SvgHomePage from "./SvgHomePage";
-const SvgHomePage = dynamic(() => import("./SvgHomePage"));
+import SvgHomePage from "./SvgHomePage";
+// const SvgHomePage = dynamic(() => import("./SvgHomePage"));
 const Slideshowlg = dynamic(() => import("./about/slideshowlg"));
 const ResponsiveShow = dynamic(() => import("./about/responsiveshow"));
 const Home = () => {
@@ -47,7 +47,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div suppressHydrationWarning>
       <Grid
         container
         padding={2}
@@ -175,11 +175,17 @@ const Home = () => {
                     <div className="animate__animated animate__bounce Animateiv0">
                       Hi there 👋 <br />
                     </div>
-                    <div className="animate__animated animate__backInLeft Animateiv1">
-                      <span>
-                        {" "}
-                        <p>I am,</p>SuFiaN MusTaFa
-                      </span>
+                    <div
+                      className="animate__animated animate__backInLeft Animateiv1"
+                      style={{ display: "inline" }}
+                    >
+                      {" "}
+                      <p>
+                        I am,{" "}
+                        <span style={{ display: "inline", fontSize: "34px" }}>
+                          SuFiaN MusTaFa
+                        </span>
+                      </p>{" "}
                     </div>
                     <div className="animate__animated animate__backInLeft Animateiv2">
                       Web Developer
@@ -222,29 +228,27 @@ const Home = () => {
                       </span>{" "}
                     </p>
                     <div className="animate__animated animate__backInLeft Animateiv6">
-                      <div>
-                        <p>
-                          <ReactRotatingText
-                            items={[
-                              "HTML",
-                              "CSS",
-                              "React",
-                              " React Bootstrap",
+                      <p>
+                        <ReactRotatingText
+                          items={[
+                            "HTML",
+                            "CSS",
+                            "React",
+                            " React Bootstrap",
 
-                              " React MaterialUI  ",
-                              " NextJS ",
-                              " Sanity IO",
-                              " AOS (animate on scroll) ",
-                              " FramerMotion",
-                              " Animate.css",
+                            " React MaterialUI  ",
+                            " NextJS ",
+                            " Sanity IO",
+                            " AOS (animate on scroll) ",
+                            " FramerMotion",
+                            " Animate.css",
 
-                              " NodeJS",
-                              " MogoDB",
-                              " ExpressJS",
-                            ]}
-                          />
-                        </p>
-                      </div>
+                            " NodeJS",
+                            " MogoDB",
+                            " ExpressJS",
+                          ]}
+                        />
+                      </p>
                     </div>
                   </div>
 
@@ -407,7 +411,7 @@ const Home = () => {
           <ComponentC />
         </>
       )}
-    </>
+    </div>
   );
 };
 

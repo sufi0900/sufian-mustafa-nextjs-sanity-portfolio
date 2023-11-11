@@ -69,6 +69,7 @@ export default async function AllPosts() {
           />
         </ListItem>
         <p style={{ textAlign: "center" }}>
+          Bio <br />
           Hi I am Sufian Mustafa a passionate Web developer who is continually
           exploring and mastering new frontend technologies. I share my learning
           journey through insightful posts to assist fellow developers. Always
@@ -112,11 +113,11 @@ export default async function AllPosts() {
               </ul>
             </div>
             <div className="description bgwhite">
-              <h1>{blog.title}</h1>
+              <h1> {truncateText(blog.title, 2)}</h1>
               <p>{truncateText(blog.overview, 6)}</p>
 
               <p className="read-more">
-                <Link href={`/dev.to/${blog.slug.current}`}>Read More</Link>
+                <Link href={`/sufiblogs/${blog.slug.current}`}>Read More</Link>
               </p>
             </div>
           </Card>

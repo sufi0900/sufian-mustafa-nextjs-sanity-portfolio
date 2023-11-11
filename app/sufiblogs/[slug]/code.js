@@ -5,7 +5,7 @@ import React from "react";
 import { CodeBlock, dracula } from "react-code-blocks";
 
 import { ListItem, ListItemAvatar, ListItemText } from "@mui/material";
-import { client } from "../../lib/sanity";
+
 import { PortableText } from "@portabletext/react";
 import { urlFor } from "../../lib/sanityImageUrl";
 import Grid from "@mui/material/Grid";
@@ -15,7 +15,7 @@ import Link from "next/link";
 export const revalidate = false;
 export const dynamic = "force-dynamic";
 
-export default function BlogCardDetail({ data, params }) {
+export default function BlogCardDetail({ data }) {
   const PortableTextComponent = {
     types: {
       image: ({ value }) => (
@@ -69,7 +69,7 @@ export default function BlogCardDetail({ data, params }) {
       >
         <div className="bgwhite">
           <h1 style={{ textAlign: "justify" }}>{data.title}</h1>
-          <Link href="/dev.to" style={{ textDecoration: "none" }}>
+          <Link href="/sufiblogs" style={{ textDecoration: "none" }}>
             <ListItem className="SkillList">
               <ListItemAvatar>
                 <Avatar

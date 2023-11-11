@@ -14,7 +14,7 @@ import Divider from "@mui/material/Divider";
 export const revalidate = false;
 export const dynamic = "force-dynamic";
 
-export default function BlogCardDetail({ param, data }) {
+export default function BlogCardDetail({ data }) {
   const PortableTextComponent = {
     types: {
       image: ({ value }) => (
