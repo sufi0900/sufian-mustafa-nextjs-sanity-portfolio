@@ -7,8 +7,10 @@ import Head from "next/head";
 export const metadata = {
   title: "Sufian Mustafa - Web Developer",
   description:
-    "Explore Sufian Mustafa's proficiency in various technologies and tools. Discover his expertise in web development, including ReactJS, Node.js, HTML5, CSS3, and more.",
+    "Explore Sufian Mustafa's proficiency in various technologies and tools. Discover his expertise in web development, including ReactJS, NextJs, Node.js, HTML5, CSS3. My nick name is sufi sufian website",
   author: "Sufian Mustafa",
+  keywords:
+    "sufian website, sufi website, sufi web developer, sufian web developer, sufi, sufian",
   icons: {
     icon: "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1693675157/sufi_gt9fke.webp",
   },
@@ -53,6 +55,11 @@ const page = () => {
           href="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1693675157/sufi_gt9fke.webp"
           sizes="any"
         />
+        <meta
+          name="keywords"
+          content="sufian, sufian website, sufi website, sufi web developer,web developer, web development services, developer website, website developer, site developer, it web developer, web site designers, web developer websites, a web developer, i am web developer, web programmers, the web developer, web developer skills, about web developer, backend development, create website, build website, i am looking for a web developer, website making, web developer near me, react developers, html website, online blog, developer for website, looking for web developer, web development projects, react web development, web technologies, responsive website, web making, web coding, react website, web development services near me, my web,"
+        />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Sufian Mustafa - Web Developer Portfolio</title>
         <meta
@@ -113,7 +120,108 @@ const page = () => {
         dangerouslySetInnerHTML={sufianmustafa()}
         key="root-jsonld"
       />
+      {/* <div>
+web developer,
+web development services,
+developer website,
+website developer,
+site developer,
+it web developer,
+web site designers,
+web developer websites,
+a web developer,
+i am web developer,
+web programmers,
 
+the web developer,
+web developer skills,
+about web developer,
+backend development,
+create website,
+build website,
+i am looking for a web developer,
+website making,
+web developer near me,
+react developers,
+html website,
+online blog,
+developer for website,
+looking for web developer,
+web development projects,
+react web development,
+web technologies,
+responsive website,
+web making,
+web coding,
+react website,
+web development services near me,
+my web,
+to create website
+web developer resume
+web developer pakistan
+about a web developer
+website making website
+web developer web
+react web developer
+web developer experience
+responsive web
+developers website
+backend web development
+backend developers
+javascript for web development
+coding and web development
+web blog
+responsive web developer
+it and web development
+coding web
+website dev
+me website
+web developer required skills
+coding web development
+css online
+computer science web development
+react web
+coding and web development courses
+web developer what is it
+web developer coding
+online webpage
+online coder
+web tech
+web resume
+web development technologies
+to be a web developer
+webpage for business
+backend web developer
+as a web developer
+web developer in
+web developer work
+about for web developer
+skills website
+web developer it
+web development blogs
+ano ang web developer
+web developer is
+web developer what is
+web developer i
+css web development
+web html
+backend website development
+web application development near me
+web developer javascript
+create we
+experience of web developer
+web websites
+computer science web developer
+web developer computer science
+web technologist
+contact web developer
+computer web developer
+web development work
+i am web
+web dev near me
+web in web
+html web developer
+</div> */}
       <Home />
     </div>
   );
