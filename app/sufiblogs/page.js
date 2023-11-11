@@ -113,8 +113,8 @@ export default async function AllPosts() {
               </ul>
             </div>
             <div className="description bgwhite">
-              <h1> {truncateText(blog.title, 2)}</h1>
-              <p>{truncateText(blog.overview, 6)}</p>
+              <h1> {truncateText(blog.title, 5)}</h1>
+              <p>{truncateText(blog.overview, 10)}</p>
 
               <p className="read-more">
                 <Link href={`/sufiblogs/${blog.slug.current}`}>Read More</Link>

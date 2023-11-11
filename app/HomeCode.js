@@ -175,16 +175,11 @@ const Home = () => {
                     <div className="animate__animated animate__bounce Animateiv0">
                       Hi there 👋 <br />
                     </div>
-                    <div
-                      className="animate__animated animate__backInLeft Animateiv1"
-                      style={{ display: "inline" }}
-                    >
+                    <div className="animate__animated animate__backInLeft Animateiv1">
                       {" "}
                       <p>
                         I am,{" "}
-                        <span style={{ display: "inline", fontSize: "34px" }}>
-                          SuFiaN MusTaFa
-                        </span>
+                        <span style={{ fontSize: "34px" }}>SuFiaN MusTaFa</span>
                       </p>{" "}
                     </div>
                     <div className="animate__animated animate__backInLeft Animateiv2">
