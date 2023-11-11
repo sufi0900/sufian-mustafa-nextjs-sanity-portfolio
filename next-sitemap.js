@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://sufianmustafa.com",
+  siteUrl: "https://sufianmustafa.com/",
   generateRobotsTxt: true,
   // ... other options
 };
