@@ -1,7 +1,5 @@
 
-    <div>
-      This XML file does not appear to have any style information associated
-      with it. The document tree is shown below.
+
       <urlset
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -199,5 +197,5 @@
           <priority>0.64</priority>
         </url>
       </urlset>
-    </div>
+
   
