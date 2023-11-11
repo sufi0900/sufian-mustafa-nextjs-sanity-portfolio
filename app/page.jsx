@@ -71,6 +71,10 @@ const page = () => {
           property="og:description"
           content="Explore the work of Sufian Mustafa, a web developer with a passion for creating stunning web applications."
         />
+        <meta
+          name="google-site-verification"
+          content="k0JxDLTBR6jAV0eTVc6UxwWSEuoyBpz1c4k0zI7mKL4"
+        />
         <meta property="og:url" content="https://sufianmustafa.com/" />
         <meta property="og:type" content="website" />
         <meta
