@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
           content="k0JxDLTBR6jAV0eTVc6UxwWSEuoyBpz1c4k0zI7mKL4"
         />
       </Head>
-
       <body>
         <ThemeProvider theme={theme}>
           <CssBaseline />
