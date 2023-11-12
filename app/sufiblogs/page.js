@@ -92,7 +92,7 @@ export default async function AllPosts() {
                   backgroundImage: `url(${urlFor(blog.blogimg).url()})`,
                 }}
               />
-              <ul className="details">
+              {/* <ul className="details">
                 <li className="author">
                   <a href="#">Sufian Mustafa</a>
                 </li>
@@ -110,7 +110,7 @@ export default async function AllPosts() {
                     </li>
                   </ul>
                 </li>
-              </ul>
+              </ul> */}
             </div>
             <div className="description bgwhite">
               <h1> {truncateText(blog.title, 5)}</h1>

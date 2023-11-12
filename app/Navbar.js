@@ -11,6 +11,7 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 // import ThemeBtn from "./ThemeButton";
+
 import { Tabs, Tab, useMediaQuery, useTheme } from "@mui/material";
 import { useRouter } from "next/navigation";
 import InfoIcon from "@mui/icons-material/Info";
@@ -136,24 +137,6 @@ function ResponsiveAppBar(props) {
                 >
                   <MenuIcon />
                 </IconButton>
-                <Menu
-                  id="menu-appbar-nav"
-                  anchorEl={anchorElNav}
-                  anchorOrigin={{
-                    vertical: "bottom",
-                    horizontal: "left",
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "left",
-                  }}
-                  open={Boolean(anchorElNav)}
-                  onClose={handleCloseNavMenu}
-                  sx={{
-                    display: { xs: "block", md: "none" },
-                  }}
-                ></Menu>
               </Box>
 
               <Typography
@@ -219,19 +202,21 @@ function ResponsiveAppBar(props) {
                       <Tab
                         value="two"
                         label={
-                          <Link
-                            href="/about"
-                            style={{
-                              textDecoration: "none",
-                              color: "white",
-                            }}
-                          >
-                            <span>
-                              {" "}
-                              <InfoIcon /> About
-                            </span>
-                          </Link>
+                          // <Link
+                          //   href="/about"
+                          //   style={{
+                          //     textDecoration: "none",
+                          //     color: "white",
+                          //   }}
+                          // >
+                          <span>
+                            {" "}
+                            <InfoIcon /> About
+                          </span>
+
+                          // </Link>
                         }
+                        onClick={() => router.push("/about")}
                         className="Tab2 animate__animated animate__zoomIn"
                       >
                         {" "}
@@ -241,18 +226,18 @@ function ResponsiveAppBar(props) {
                         value="three"
                         label={
                           <span>
-                            <Link
+                            {/* <Link
                               href="/skills"
                               style={{
                                 textDecoration: "none",
                                 color: "white",
                               }}
-                            >
-                              {" "}
-                              <ManageAccountsIcon /> Skills
-                            </Link>
+                            > */}{" "}
+                            <ManageAccountsIcon /> Skills
+                            {/* </Link> */}
                           </span>
                         }
+                        onClick={() => router.push("/skills")}
                         className="Tab3 animate__animated animate__zoomIn"
                       />
 
@@ -260,17 +245,18 @@ function ResponsiveAppBar(props) {
                         value="three"
                         label={
                           <span>
-                            <Link
+                            {/* <Link
                               href="/projects"
                               style={{
                                 textDecoration: "none",
                                 color: "white",
                               }}
-                            >
-                              <TimelineIcon /> Projects
-                            </Link>
+                            > */}
+                            <TimelineIcon /> Projects
+                            {/* </Link> */}
                           </span>
                         }
+                        onClick={() => router.push("/projects")}
                         className="Tab3 animate__animated animate__zoomIn"
                       />
 
