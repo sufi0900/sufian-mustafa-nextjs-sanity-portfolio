@@ -82,10 +82,7 @@ function ResponsiveAppBar(props) {
   console.log(theme);
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   console.log(isMatch);
-  <link
-    rel="stylesheet"
-    href="https://res.cloudinary.com/dtvtphhsc/raw/upload/v1698003638/body_wn3ivd.css" // Replace with the actual path to your dark mode stylesheet
-  ></link>;
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -264,35 +261,21 @@ function ResponsiveAppBar(props) {
                         value="three"
                         label={
                           <span>
-                            <Link
-                              href="/blogs"
-                              style={{
-                                textDecoration: "none",
-                                color: "white",
-                              }}
-                            >
-                              {" "}
-                              <AddReactionIcon /> Blogs
-                            </Link>
+                            {" "}
+                            <AddReactionIcon /> Blogs
                           </span>
                         }
+                        onClick={() => router.push("/blogs")}
                         className="Tab5 animate__animated animate__zoomIn"
                       />
                       <Tab
                         value="three"
                         label={
                           <span>
-                            <Link
-                              href="/contact"
-                              style={{
-                                textDecoration: "none",
-                                color: "white",
-                              }}
-                            >
-                              <ContactMailIcon /> Contact
-                            </Link>
+                            <ContactMailIcon /> Contact
                           </span>
                         }
+                        onClick={() => router.push("/contact")}
                         className="Tab6 animate__animated animate__zoomIn"
                       />
 

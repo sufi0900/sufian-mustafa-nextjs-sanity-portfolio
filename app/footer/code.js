@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import { Grid, Container } from "@mui/material";
@@ -16,7 +17,7 @@ import {
   Timeline,
   WhatsApp,
 } from "@mui/icons-material";
-
+import LogoDevIcon from "@mui/icons-material/LogoDev";
 import { Button } from "react-bootstrap";
 import Link from "next/link";
 
@@ -165,6 +166,14 @@ const Footer = () => {
                     >
                       <WhatsApp />
                     </a>
+                    <a
+                      href="https://dev.to/sufian"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: "blue", padding: "2px" }}
+                    >
+                      <LogoDevIcon />
+                    </a>
                   </li>
                 </ul>
               </Grid>
@@ -248,12 +257,12 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link href="/skills">
-                        Skill <ManageAccounts />{" "}
+                        My Skills <ManageAccounts />{" "}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blogs">
-                        Blogs <AddReaction />{" "}
+                      <Link href="/sufiblogs">
+                        HelpFul Blogs <AddReaction />{" "}
                       </Link>
                     </li>
                     <li>

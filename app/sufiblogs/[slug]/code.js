@@ -5,17 +5,18 @@ import React from "react";
 import { CodeBlock, dracula } from "react-code-blocks";
 
 import { ListItem, ListItemAvatar, ListItemText } from "@mui/material";
-
+import { useRouter } from "next/navigation";
 import { PortableText } from "@portabletext/react";
 import { urlFor } from "../../lib/sanityImageUrl";
 import Grid from "@mui/material/Grid";
 import { Avatar } from "@mui/material";
-import Link from "next/link";
 
 export const revalidate = false;
 export const dynamic = "force-dynamic";
 
 export default function BlogCardDetail({ data }) {
+  const router = useRouter();
+
   const PortableTextComponent = {
     types: {
       image: ({ value }) => (
@@ -69,29 +70,32 @@ export default function BlogCardDetail({ data }) {
       >
         <div className="bgwhite">
           <h1 style={{ textAlign: "justify" }}>{data.title}</h1>
-          <Link href="/sufiblogs" style={{ textDecoration: "none" }}>
-            <ListItem className="SkillList">
-              <ListItemAvatar>
-                <Avatar
-                  style={{
-                    width: "60px", // Adjust the width as needed
-                    height: "60px",
-                  }}
-                  alt="logo lg"
-                  src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.preserve_transparency.progressive.sprite/v1693672396/logo_1_lk0neo.webp"
-                  sx={{ display: { xs: "flex", md: "flex" }, mr: 1 }}
-                  className="cursorp Tab8 animate__animated animate__backInLeft"
-                />
-              </ListItemAvatar>
-              <ListItemText
-                primary={"Sufian Mustafa"}
-                secondary={"9 min read.1 day ago"}
-                title="sufian"
-                style={{ width: "30%" }}
-                className="ListItemTextSkill"
+
+          <ListItem
+            className="SkillList"
+            onClick={() => router.push("/sufiblogs")}
+          >
+            <ListItemAvatar>
+              <Avatar
+                style={{
+                  width: "60px", // Adjust the width as needed
+                  height: "60px",
+                }}
+                alt="logo lg"
+                src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.preserve_transparency.progressive.sprite/v1693672396/logo_1_lk0neo.webp"
+                sx={{ display: { xs: "flex", md: "flex" }, mr: 1 }}
+                className="cursorp Tab8 animate__animated animate__backInLeft"
               />
-            </ListItem>
-          </Link>
+            </ListItemAvatar>
+            <ListItemText
+              primary={"Sufian Mustafa"}
+              secondary={"9 min read.1 day ago"}
+              title="sufian"
+              style={{ width: "30%" }}
+              className="ListItemTextSkill"
+            />
+          </ListItem>
+
           <br />
           <div>
             {" "}

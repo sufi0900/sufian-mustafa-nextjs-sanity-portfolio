@@ -2,11 +2,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-"use client";
+
 import React from "react";
 import { client } from "../lib/sanity";
 import { urlFor } from "../lib/sanityImageUrl";
-
+import Head from "next/head";
+import Script from "next/script";
+import { NextSeo } from "next-seo";
 import {
   Grid,
   Card,
@@ -19,18 +21,52 @@ import Link from "next/link";
 export const revalidate = false;
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Blogs - Sufian Mustafa",
+  description:
+    "Explore a collection of short and insightful web development tutorials by Sufian Mustafa. Level up your coding skills from beginner to advanced. Learn how to create, implement, and more with our easy-to-follow guides with practical tips and tricks.",
+  author: "Sufian Mustafa",
+};
 async function getData() {
   const query = `*[_type == "blog"]`;
   const data = await client.fetch(query);
   return data;
 }
 export default async function AllPosts() {
+  function webdeveloperblogs() {
+    return {
+      __html: `  {
+        "@context": "http://schema.org",
+        "@type": "Blog",
+        "name": "Sufian Mustafa's Blog",
+        "description": "Sufian Mustafa's developer tutorials cover a wide range of topics, from beginner to advanced. Get the most out of your web development skills with our short, informative tutorials. Learn how to create, implement, and more with our easy-to-follow guides",
+        "url": "https://sufianmustafa.com/sufiblogs",
+        "author": {
+          "@type": "Person",
+          "name": "Sufian Mustafa"
+        },
+        "datePublished": "2023-09-01T00:00:00Z",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://sufianmustafa.com/sufiblogs"
+        }
+      }
+  `,
+    };
+  }
   const data = await getData();
   function truncateText(text, maxLength) {
     const words = text.split(" ");
     const truncatedWords = words.slice(0, maxLength);
-    return truncatedWords.join(" ");
+    const truncatedText = truncatedWords.join(" ");
+
+    if (words.length > maxLength) {
+      return truncatedText + " ...";
+    } else {
+      return truncatedText;
+    }
   }
+
   return (
     <Grid
       container
@@ -41,6 +77,56 @@ export default async function AllPosts() {
       }}
       className="bgwhite"
     >
+      <Head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Web Developer - Blogs </title>
+        <meta
+          name="description"
+          content="Welcome to the portfolio of SuFiaN MusTaFa, a passionate web developer based in Pakistan. Explore my projects and skills in web development. I have a wide range of experience in web development, with a
+      focus on front-end technologies such as HTML, CSS, and
+      JavaScript with a particular focus on ReactJS NextJS"
+        />
+        <meta name="author" content="Sufian Mustafa" />
+        <meta property="og:title" content="Blogs - Sufian Mustafa" />
+        <meta
+          property="og:description"
+          content="Explore Sufian Mustafa's blog for insightful articles and updates on web development, technology, and more.."
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dtvtphhsc/image/upload/v1694356123/Sufian-Mustafa-Web-Developer_en5jxl.png"
+        />
+        <meta property="og:url" content="https://sufianmustafa.com/sufiblogs" />
+        <link rel="canonical" href="https://sufianmustafa.com/sufiblogs" />
+        <NextSeo
+          title="Blogs - Sufian Mustafa"
+          description="Explore Sufian Mustafa's blog for insightful articles and updates on web development, technology, and more."
+          author="Sufian Mustafa"
+          canonical="https://sufianmustafa.com/sufiblogs"
+          openGraph={{
+            title: "Blogs - Sufian Mustafa",
+            description:
+              "Explore Sufian Mustafa's blog for insightful articles and updates on web development, technology, and more.",
+            type: "Blog",
+            url: "https://sufianmustafa.com/sufiblogs",
+            images: [
+              {
+                url: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1697725757/Screenshot_249_edsr2z.png",
+                width: 800,
+                height: 800,
+                alt: "web developer Image",
+              },
+            ],
+          }}
+        />
+      </Head>
+      <Script
+        id="MyBlogs-webpage-ld-json"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={webdeveloperblogs()}
+        key="MyBlogs-jsonld"
+      />
       <Grid
         className="bgwhite"
         spacing={1}
@@ -68,8 +154,11 @@ export default async function AllPosts() {
             className="ListItemTextSkill"
           />
         </ListItem>
-        <p style={{ textAlign: "center" }}>
+        <h1 style={{ textAlign: "center" }}>
+          {" "}
           Bio <br />
+        </h1>
+        <p style={{ textAlign: "center" }}>
           Hi I am Sufian Mustafa a passionate Web developer who is continually
           exploring and mastering new frontend technologies. I share my learning
           journey through insightful posts to assist fellow developers. Always
@@ -113,8 +202,8 @@ export default async function AllPosts() {
               </ul> */}
             </div>
             <div className="description bgwhite">
-              <h1> {truncateText(blog.title, 5)}</h1>
-              <p>{truncateText(blog.overview, 10)}</p>
+              <h1> {truncateText(blog.title, 6)}</h1>
+              <p>{truncateText(blog.overview, 11)}</p>
 
               <p className="read-more">
                 <Link href={`/sufiblogs/${blog.slug.current}`}>Read More</Link>

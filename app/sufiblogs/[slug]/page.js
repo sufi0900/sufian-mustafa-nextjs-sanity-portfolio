@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
 
 export default async function MainComponent({ params }) {
   const data = await getData(params.slug);
-  const canonicalUrl = `https://sufianmustafa.com/post/${params.slug}`;
+  const canonicalUrl = `https://sufianmustafa.com/sufiblog/${params.slug}`;
 
   // Set title, description, and other SEO metadata
   const title = `${data.title}`;
