@@ -30,19 +30,14 @@ const page = () => {
           className="blogpagecard"
           onClick={() => router.push("/blogs/insights")}
         >
-          <CardContent
-            sx={{
-              display: "flex",
-            }}
-            className="genblogs"
-          >
+          <CardContent>
             <h1>
-              Insights & Discussions <OpenInNew />
-              <p variant="subtitle1" color="text.secondary" component="div">
-                Explore insightful discussions & topics on latest web
-                development trends and technologies.
-              </p>
+              Insights & Discussions <OpenInNew />{" "}
             </h1>
+            <p variant="subtitle1" color="text.secondary" component="div">
+              Explore insightful discussions & topics on latest web development
+              trends and technologies.
+            </p>
           </CardContent>
         </Card>
         <br />
@@ -51,18 +46,13 @@ const page = () => {
           className="blogpagecard"
           onClick={() => router.push("/blogs/how-to")}
         >
-          <CardContent
-            sx={{
-              display: "flex",
-            }}
-            className="genblogs"
-          >
+          <CardContent>
             <h1>
-              Practical Guides & Tutorials <OpenInNew />
-              <p variant="subtitle1" color="text.secondary" component="div">
-                Comprehensive tutorials on a variety of coding and design topics
-              </p>
+              Practical Guides & Tutorials <OpenInNew />{" "}
             </h1>
+            <p variant="subtitle1" color="text.secondary" component="div">
+              Comprehensive tutorials on a variety of coding and design topics
+            </p>
 
             {/* <CardMedia
               component="img"
