@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
   const data = await getData(params.slug);
   return {
     title: `${data.title} - Sufian Mustafa Blog`,
-    description: data.description,
+    description: `${data.overview}`,
     author: "Sufian Mustafa",
   };
   // Define the metadata object
@@ -32,11 +32,11 @@ export async function generateMetadata({ params }) {
 export default async function MainComponent({ params }) {
   const data = await getData(params.slug);
 
-  const canonicalUrl = `https://sufianmustafa.com/blog/${params.slug}`;
+  const canonicalUrl = `https://sufianmustafa.com/blogs/insights/${params.slug}`;
 
   // Set title, description, and other SEO metadata
   const title = `${data.title} - Sufian Mustafa Blog`;
-  const description = data.description;
+  const description = `${data.overview}`;
   return (
     <div>
       <Head>

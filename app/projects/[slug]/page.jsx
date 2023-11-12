@@ -6,6 +6,8 @@ import { urlFor } from "../../lib/sanityImageUrl";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import { PortableText } from "@portabletext/react";
+import Head from "next/head";
+import Script from "next/script";
 export const revalidate = false;
 export const dynamic = "force-dynamic";
 async function getData(slug) {
@@ -19,7 +21,7 @@ export async function generateMetadata({ params }) {
   const data = await getData(params.slug);
   return {
     title: `${data.title} - Projects-Sufian Mustafa`,
-    description: data.description,
+    description: `${data.toptext1}`,
     author: "Sufian Mustafa",
   };
   // Define the metadata object
@@ -43,9 +45,24 @@ export default async function ProjectCardDetail({ params }) {
       ),
     },
   };
-
+  const canonicalUrl = `https://sufianmustafa.com/projects/${params.slug}`;
+  // Set title, description, and other SEO metadata
+  const title = `${data.title} - Sufian Mustafa Projects`;
+  const description = `${data.toptext1}`;
   return (
     <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonicalUrl} />
+      </Head>
+      <Script
+        title={title}
+        description={description}
+        canonical={canonicalUrl}
+      />
       <div style={{ minHeight: "100vh" }}>
         <>
           <br />

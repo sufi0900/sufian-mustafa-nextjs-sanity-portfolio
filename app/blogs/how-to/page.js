@@ -147,7 +147,7 @@ export default async function AllPosts() {
               alt="logo lg"
               src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.preserve_transparency.progressive.sprite/v1693672396/logo_1_lk0neo.webp"
               sx={{ display: { xs: "flex", md: "flex" }, mr: 1 }}
-              className="cursorp Tab8 animate__animated animate__backInLeft"
+              className="cursorp  animate__animated animate__backInLeft"
             />
           </ListItemAvatar>
           <ListItemText
