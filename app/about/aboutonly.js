@@ -3,7 +3,7 @@
 import React from "react";
 
 import ListA from "./ListABoutMe";
-import { useMediaQuery, useTheme } from "@mui/material";
+import { useTheme } from "@mui/material";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -26,13 +26,10 @@ import Link from "next/link";
 import Head from "next/head";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
-import SlideM from "./slideshowmbl";
-import dynamic from "next/dynamic";
-import { PostAdd } from "@mui/icons-material";
+
 // import ComponentA from "./responsiveshow";
 // import ComponentB from "./slideshowlg";
-const ComponentA = dynamic(() => import("./responsiveshow"));
-const ComponentB = dynamic(() => import("./slideshowlg"));
+
 const About = () => {
   const [showAdvantages, setShowAdvantages] = useState(false);
 
@@ -85,8 +82,7 @@ const About = () => {
   `,
     };
   }
-  const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
+
   const button = {
     fontSize: "38px",
     color: "rgba(15, 15, 251, 0.878)",

@@ -7,7 +7,7 @@ import Head from "next/head";
 export const metadata = {
   title: "Sufian Mustafa - Web Developer",
   description:
-    "Explore Sufian Mustafa's proficiency in various technologies and tools. Discover his expertise in web development, including ReactJS, NextJs, Node.js, HTML5, CSS3. My nick name is sufi sufian website",
+    "Welcome to the portfolio of SuFiaN MusTaFa, a passionate web developer based in Pakistan. Explore my portfolio showcasing expertise in ReactJs, Nextjs, HTML5, CSS, and more. Download my resume and get in touch for your web development needs",
   author: "Sufian Mustafa",
   keywords:
     "sufian website, sufi website, sufi web developer, sufian web developer, sufi, sufian",
