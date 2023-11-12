@@ -7,7 +7,7 @@ import { CodeBlock, dracula } from "react-code-blocks";
 import { ListItem, ListItemAvatar, ListItemText } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { PortableText } from "@portabletext/react";
-import { urlFor } from "../../lib/sanityImageUrl";
+import { urlFor } from "../../../lib/sanityImageUrl";
 import Grid from "@mui/material/Grid";
 import { Avatar } from "@mui/material";
 
@@ -73,7 +73,7 @@ export default function BlogCardDetail({ data }) {
 
           <ListItem
             className="SkillList"
-            onClick={() => router.push("/sufiblogs")}
+            onClick={() => router.push("/blogs/how-to")}
           >
             <ListItemAvatar>
               <Avatar
@@ -84,7 +84,7 @@ export default function BlogCardDetail({ data }) {
                 alt="logo lg"
                 src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.preserve_transparency.progressive.sprite/v1693672396/logo_1_lk0neo.webp"
                 sx={{ display: { xs: "flex", md: "flex" }, mr: 1 }}
-                className="cursorp Tab8 animate__animated animate__backInLeft"
+                className="cursorp  animate__animated animate__backInLeft"
               />
             </ListItemAvatar>
             <ListItemText

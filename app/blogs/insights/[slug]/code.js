@@ -3,7 +3,7 @@
 import React from "react";
 
 import { CodeBlock, dracula } from "react-code-blocks";
-import { urlFor } from "../../lib/sanityImageUrl";
+import { urlFor } from "../../../lib/sanityImageUrl";
 
 import Grid from "@mui/material/Grid";
 import { PortableText } from "@portabletext/react";

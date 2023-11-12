@@ -40,7 +40,7 @@ export default async function AllPosts() {
         "@type": "Blog",
         "name": "Sufian Mustafa's Blog",
         "description": "Sufian Mustafa's developer tutorials cover a wide range of topics, from beginner to advanced. Get the most out of your web development skills with our short, informative tutorials. Learn how to create, implement, and more with our easy-to-follow guides",
-        "url": "https://sufianmustafa.com/sufiblogs",
+        "url": "https://sufianmustafa.com/blogs/how-to",
         "author": {
           "@type": "Person",
           "name": "Sufian Mustafa"
@@ -48,7 +48,7 @@ export default async function AllPosts() {
         "datePublished": "2023-09-01T00:00:00Z",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://sufianmustafa.com/sufiblogs"
+          "@id": "https://sufianmustafa.com/blogs/how-to"
         }
       }
   `,
@@ -97,19 +97,22 @@ export default async function AllPosts() {
           property="og:image"
           content="https://res.cloudinary.com/dtvtphhsc/image/upload/v1694356123/Sufian-Mustafa-Web-Developer_en5jxl.png"
         />
-        <meta property="og:url" content="https://sufianmustafa.com/sufiblogs" />
-        <link rel="canonical" href="https://sufianmustafa.com/sufiblogs" />
+        <meta
+          property="og:url"
+          content="https://sufianmustafa.com/blogs/how-to"
+        />
+        <link rel="canonical" href="https://sufianmustafa.com/blogs/how-to" />
         <NextSeo
           title="Blogs - Sufian Mustafa"
           description="Explore Sufian Mustafa's blog for insightful articles and updates on web development, technology, and more."
           author="Sufian Mustafa"
-          canonical="https://sufianmustafa.com/sufiblogs"
+          canonical="https://sufianmustafa.com/blogs/how-to"
           openGraph={{
             title: "Blogs - Sufian Mustafa",
             description:
               "Explore Sufian Mustafa's blog for insightful articles and updates on web development, technology, and more.",
             type: "Blog",
-            url: "https://sufianmustafa.com/sufiblogs",
+            url: "https://sufianmustafa.com/blogs/how-to",
             images: [
               {
                 url: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1697725757/Screenshot_249_edsr2z.png",
@@ -206,7 +209,9 @@ export default async function AllPosts() {
               <p>{truncateText(blog.overview, 11)}</p>
 
               <p className="read-more">
-                <Link href={`/sufiblogs/${blog.slug.current}`}>Read More</Link>
+                <Link href={`/blogs/how-to/${blog.slug.current}`}>
+                  Read More
+                </Link>
               </p>
             </div>
           </Card>

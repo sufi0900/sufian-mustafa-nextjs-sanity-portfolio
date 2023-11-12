@@ -1063,12 +1063,22 @@ p {
   transition: all 0.3s;
   width: 285px;
 }
+.blogpagecard {
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+}
+
 .BlogCard:hover,
 .ProjectCard:hover,
-.gototop:hover {
+.gototop:hover,
+.blogpagecard:hover {
   background: rgba(243, 40, 202, 0.809);
-
   transition: 0.3s;
+  cursor: url("https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.preserve_transparency.sprite/v1693672396/CursorPointer_phuwb8.webp")
+      4 4,
+    auto;
+  transform: scale(1.05) rotateX(7deg) rotateY(7deg);
 }
 .ProjectCard:hover {
   transform: scale(1.05) rotateX(7deg) rotateY(7deg);
@@ -1238,7 +1248,6 @@ form textarea {
   letter-spacing: 1px;
   padding: 2.1rem 2.9rem;
   margin: 2.8rem 0 4rem 4rem;
-  /* cursor: url("https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.preserve_transparency.sprite/v1693672396/CursorPointer_phuwb8.webp") 4 4, auto; */
   border-radius: 0.8rem;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -1974,11 +1983,19 @@ button:hover {
     0px 2px 16px 0px rgba(14, 30, 37, 0.32);
   border: 1px solid rgba(254, 56, 214, 0.833);
 }
+.genblogs {
+  display: flex;
+}
 @media only screen and (min-width: 100px) and (max-width: 479px) {
   .motionPath {
     display: none;
   }
-
+  .blogpagecard {
+    display: block;
+  }
+  .genblogs {
+    display: block;
+  }
   .imagefile2 img {
     z-index: 1;
   }
@@ -2087,6 +2104,12 @@ button:hover {
   .imagefile2 img {
     z-index: 1;
   }
+  .blogpagecard {
+    display: inline-block;
+  }
+  .genblogs {
+    display: block;
+  }
   .projectone {
     display: block;
   }
@@ -2138,7 +2161,7 @@ button:hover {
   z-index: 3;
 }
 
-.bgwhite img {
+.bg-white img {
   width: 100%;
   height: auto;
 }
@@ -2149,6 +2172,10 @@ button:hover {
 .bgwhite p,
 .bgwhite h1,
 .bgwhite h2 {
+  color: black;
+}
+.blogpagecard p,
+.blogpagecard h1 {
   color: black;
 }
 .blog-card {

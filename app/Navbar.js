@@ -28,8 +28,14 @@ import {
   ListItemText,
   Menu,
 } from "@mui/material";
-// import DarkModeCustom from "./DarkModeCustom";
-import { DarkMode, Home } from "@mui/icons-material";
+
+import {
+  DarkMode,
+  Home,
+  InfoRounded,
+  LogoDev,
+  QuestionAnswer,
+} from "@mui/icons-material";
 import Slide from "@mui/material/Slide"; // Import the Slide component from Material-UI
 import useScrollTrigger from "@mui/material/useScrollTrigger"; // Import the useScrollTrigger hook
 import DarkModeToggle from "./DarkModeToggle";
@@ -54,6 +60,7 @@ function HideOnScroll(props) {
 
 function ResponsiveAppBar(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const router = useRouter();
   // Function to open the avatar menu
@@ -73,7 +80,12 @@ function ResponsiveAppBar(props) {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -106,12 +118,7 @@ function ResponsiveAppBar(props) {
                 }}
                 className="cursorp"
               >
-                <Avatar
-                  // alt="logo lg"
-                  // src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.preserve_transparency.progressive.sprite/v1693672396/logo_1_lk0neo.webp"
-                  sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-                  className="cursorp Tab8 animate__animated animate__backInLeft"
-                >
+                <Avatar className="cursorp Tab8 animate__animated animate__backInLeft">
                   <Image
                     src={logo}
                     style={{ width: "100%", height: "auto" }}
@@ -153,11 +160,7 @@ function ResponsiveAppBar(props) {
                 }}
               >
                 {" "}
-                <Avatar
-                  // alt="logo"
-                  // src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.preserve_transparency.progressive.sprite/v1693672396/logo_1_lk0neo.webp"
-                  sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
-                >
+                <Avatar sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}>
                   <Image
                     src={logo}
                     style={{ width: "100%", height: "auto" }}
@@ -199,13 +202,6 @@ function ResponsiveAppBar(props) {
                       <Tab
                         value="two"
                         label={
-                          // <Link
-                          //   href="/about"
-                          //   style={{
-                          //     textDecoration: "none",
-                          //     color: "white",
-                          //   }}
-                          // >
                           <span>
                             {" "}
                             <InfoIcon /> About
@@ -293,11 +289,8 @@ function ResponsiveAppBar(props) {
 
               <Box sx={{ flexGrow: 0 }}>
                 <Tooltip>
-                  <IconButton sx={{ p: 0 }}>
+                  <IconButton sx={{ p: 0 }} onClick={handleOpenUserMenu}>
                     <Avatar
-                      // alt="sufi_sm_lg"
-                      // src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1693675157/sufi_gt9fke.webp"
-                      // style={{ width: 43, height: 43 }}
                       className="Tab7 animate__animated animate__backInRight"
                       onClick={incrementCount}
                     >
@@ -312,7 +305,107 @@ function ResponsiveAppBar(props) {
                     </Avatar>
                   </IconButton>
                 </Tooltip>
+                <Menu
+                  sx={{ mt: "45px" }}
+                  id="menu-appbar"
+                  anchorEl={anchorElUser}
+                  anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  open={Boolean(anchorElUser)}
+                  onClose={handleCloseUserMenu}
+                >
+                  {" "}
+                  <List className="DrawerList">
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <InfoIcon />
+                      </ListItemIcon>
+                      <Link
+                        href="/blogs/insights"
+                        style={{ textDecoration: "none", color: "black" }}
+                      >
+                        <ListItemText
+                          onClick={handleCloseNavMenu}
+                          primary={"General Blogs"}
+                        />{" "}
+                      </Link>
+                    </ListItemButton>
 
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <LogoDev />
+                      </ListItemIcon>
+                      <Link
+                        href="/blogs/how-to"
+                        style={{ textDecoration: "none", color: "black" }}
+                      >
+                        <ListItemText
+                          onClick={handleCloseNavMenu}
+                          primary={"How to Implement"}
+                        />
+                      </Link>
+                    </ListItemButton>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <QuestionAnswer />
+                      </ListItemIcon>
+                      <Link
+                        href="/faq"
+                        style={{ textDecoration: "none", color: "black" }}
+                      >
+                        <ListItemText
+                          onClick={handleCloseNavMenu}
+                          primary={"FAQ"}
+                        />
+                      </Link>
+                    </ListItemButton>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <InfoRounded />
+                      </ListItemIcon>
+                      <Link
+                        href="/aboutmysite"
+                        style={{ textDecoration: "none", color: "black" }}
+                      >
+                        <ListItemText
+                          onClick={handleCloseNavMenu}
+                          primary={"About My Site"}
+                        />
+                      </Link>
+                    </ListItemButton>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <ContactMailIcon />
+                      </ListItemIcon>
+                      <Link
+                        href="/contact"
+                        style={{ textDecoration: "none", color: "black" }}
+                      >
+                        <ListItemText
+                          onClick={handleCloseNavMenu}
+                          primary={"Contact"}
+                        />
+                      </Link>
+                    </ListItemButton>
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <DarkMode />
+                      </ListItemIcon>
+                      <ListItemText
+                        onClick={handleCloseNavMenu}
+                        primary={<DarkModeToggle />}
+                        style={{ color: "white" }}
+                      />
+                    </ListItemButton>
+                  </List>
+                </Menu>
                 <Menu
                   id="menu-appbar-avatar"
                   anchorEl={anchorElNav}
@@ -331,10 +424,6 @@ function ResponsiveAppBar(props) {
                     display: { xs: "block", md: "none" },
                   }}
                 >
-                  {/* <Drawer
-                    open={isDrawerOpen}
-                    onClose={() => setIsDrawerOpen(false)}
-                  > */}
                   <List className="DrawerList">
                     <ListItemButton>
                       <ListItemIcon>

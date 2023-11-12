@@ -99,7 +99,7 @@ export default function RecipeReviewCard({ postimg, title, slug }) {
             />
 
             <Link
-              href={`/blogs/${slug.current}`}
+              href={`/blogs/insights/${slug.current}`}
               className="themecard custom-input-color"
             >
               <p
