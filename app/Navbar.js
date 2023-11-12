@@ -11,7 +11,7 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 // import ThemeBtn from "./ThemeButton";
-
+import ArticleIcon from "@mui/icons-material/Article";
 import { Tabs, Tab, useMediaQuery, useTheme } from "@mui/material";
 import { useRouter } from "next/navigation";
 import InfoIcon from "@mui/icons-material/Info";
@@ -325,7 +325,7 @@ function ResponsiveAppBar(props) {
                   <List className="DrawerList">
                     <ListItemButton>
                       <ListItemIcon>
-                        <InfoIcon />
+                        <ArticleIcon />
                       </ListItemIcon>
                       <Link
                         href="/blogs/insights"

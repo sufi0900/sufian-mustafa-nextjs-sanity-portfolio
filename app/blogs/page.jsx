@@ -9,7 +9,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { useRouter } from "next/navigation";
 
-import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 
 import { OpenInNew } from "@mui/icons-material";
@@ -38,19 +37,16 @@ const page = () => {
             className="genblogs"
           >
             <h1>
-              General Blogs | Insights & Discussions <OpenInNew />
-              <Typography
-                variant="subtitle1"
-                color="text.secondary"
-                component="div"
-              >
-                <OpenInNew />
+              Insights & Discussions <OpenInNew />
+              <p variant="subtitle1" color="text.secondary" component="div">
                 Explore insightful discussions & topics on latest web
                 development trends and technologies.
-              </Typography>
+              </p>
             </h1>
           </CardContent>
         </Card>
+        <br />
+        <br />
         <Card
           className="blogpagecard"
           onClick={() => router.push("/blogs/how-to")}
@@ -62,14 +58,10 @@ const page = () => {
             className="genblogs"
           >
             <h1>
-              Practical Guides & Tutorials | How to Implement <OpenInNew />
-              <Typography
-                variant="subtitle1"
-                color="text.secondary"
-                component="div"
-              >
+              Practical Guides & Tutorials <OpenInNew />
+              <p variant="subtitle1" color="text.secondary" component="div">
                 Comprehensive tutorials on a variety of coding and design topics
-              </Typography>
+              </p>
             </h1>
 
             {/* <CardMedia
