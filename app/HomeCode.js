@@ -232,6 +232,7 @@ const Home = () => {
                             " React Bootstrap",
 
                             " React MaterialUI  ",
+                            "Tailwind CSS",
                             " NextJS ",
                             " Sanity IO",
                             " AOS (animate on scroll) ",
