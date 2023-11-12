@@ -4,8 +4,8 @@
 /* eslint-disable @next/next/no-img-element */
 
 import React from "react";
-import { client } from "../lib/sanity";
-import { urlFor } from "../lib/sanityImageUrl";
+import { client } from "../../lib/sanity";
+import { urlFor } from "../../lib/sanityImageUrl";
 import Head from "next/head";
 import Script from "next/script";
 import { NextSeo } from "next-seo";

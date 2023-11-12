@@ -1,5 +1,5 @@
 import React from "react";
-import { client } from "../lib/sanity";
+import { client } from "../../lib/sanity";
 import BlogCard from "./BlogCard";
 import Grid from "@mui/material/Grid";
 import Head from "next/head";

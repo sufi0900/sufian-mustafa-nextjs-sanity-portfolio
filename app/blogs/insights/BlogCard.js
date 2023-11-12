@@ -5,7 +5,7 @@ import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import { red } from "@mui/material/colors";
 // import { urlFor } from "@/app/lib/sanityImageUrl";
-import { urlFor } from "../lib/sanityImageUrl";
+import { urlFor } from "../../lib/sanityImageUrl";
 
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
