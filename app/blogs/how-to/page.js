@@ -151,17 +151,26 @@ export default async function AllPosts() {
             />
           </ListItemAvatar>
           <ListItemText
+            data-aos="zoom-in"
             primary={"Sufian Mustafa"}
             secondary={""}
             title="sufian"
             className="ListItemTextSkill"
           />
         </ListItem>
-        <h1 style={{ textAlign: "center" }}>
+        <h1
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          style={{ textAlign: "center" }}
+        >
           {" "}
           Bio <br />
         </h1>
-        <p style={{ textAlign: "center" }}>
+        <p
+          data-aos="zoom-in"
+          data-aos-delay="150"
+          style={{ textAlign: "center" }}
+        >
           Hi I am Sufian Mustafa a passionate Web developer who is continually
           exploring and mastering new frontend technologies. I share my learning
           journey through insightful posts to assist fellow developers. Always
@@ -173,18 +182,20 @@ export default async function AllPosts() {
           connecting with you!
         </p>
         {data.map((blog) => (
-          <Card
+          <Link
+            style={{ textDecoration: "none" }}
+            href={`/blogs/how-to/${blog.slug.current}`}
             key={blog._id}
-            className="blog-card alt SkillList bgwhite blogsufi"
           >
-            <div className="meta bgwhite">
-              <div
-                className="photo"
-                style={{
-                  backgroundImage: `url(${urlFor(blog.blogimg).url()})`,
-                }}
-              />
-              {/* <ul className="details">
+            <Card className="blog-card alt SkillList bgwhite blogsufi">
+              <div className="meta bgwhite">
+                <div
+                  className="photo"
+                  style={{
+                    backgroundImage: `url(${urlFor(blog.blogimg).url()})`,
+                  }}
+                />
+                {/* <ul className="details">
                 <li className="author">
                   <a href="#">Sufian Mustafa</a>
                 </li>
@@ -203,18 +214,24 @@ export default async function AllPosts() {
                   </ul>
                 </li>
               </ul> */}
-            </div>
-            <div className="description bgwhite">
-              <h1> {truncateText(blog.title, 6)}</h1>
-              <p>{truncateText(blog.overview, 11)}</p>
+              </div>
+              <div className="description bgwhite">
+                <h1 data-aos="zoom-in" data-aos-delay="150">
+                  {" "}
+                  {truncateText(blog.title, 6)}
+                </h1>
+                <p data-aos="zoom-in" data-aos-delay="170">
+                  {truncateText(blog.overview, 12)}
+                </p>
 
-              <p className="read-more">
-                <Link href={`/blogs/how-to/${blog.slug.current}`}>
-                  Read More
-                </Link>
-              </p>
-            </div>
-          </Card>
+                <p data-aos="zoom-in" className="read-more">
+                  <Link href={`/blogs/how-to/${blog.slug.current}`}>
+                    Read More
+                  </Link>
+                </p>
+              </div>
+            </Card>
+          </Link>
         ))}
       </Grid>
     </Grid>

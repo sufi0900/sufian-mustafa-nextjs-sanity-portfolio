@@ -41,15 +41,17 @@ export default function RecipeReviewCard({ postimg, title, slug }) {
           style={{ textDecoration: "none" }}
         >
           <Card
-            data-aos="zoom-in"
-            data-aos-delay="100"
-            data-aos-duration="350"
             className="BlogCard ProjectCard"
             style={{ margin: "auto", padding: "auto" }}
           >
             <CardHeader
               avatar={
-                <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                <Avatar
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                  sx={{ bgcolor: red[500] }}
+                  aria-label="recipe"
+                >
                   S
                 </Avatar>
               }
@@ -63,7 +65,6 @@ export default function RecipeReviewCard({ postimg, title, slug }) {
                   <h1
                     data-aos="zoom-in"
                     data-aos-delay="150"
-                    data-aos-duration="300"
                     style={{ fontSize: "22px", margin: 0 }}
                   >
                     Sufian Mustafa
@@ -77,7 +78,6 @@ export default function RecipeReviewCard({ postimg, title, slug }) {
               <h1
                 data-aos="zoom-in"
                 data-aos-delay="200"
-                data-aos-duration="300"
                 style={{ left: "0%", fontSize: "22px" }}
               >
                 {" "}

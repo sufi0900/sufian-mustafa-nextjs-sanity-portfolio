@@ -10,12 +10,12 @@ import Grid from "@mui/material/Grid";
 import MouseOutlinedIcon from "@mui/icons-material/MouseOutlined";
 import SteamHomePage from "./SteamHomePage";
 
-import ComponentA from "./about/aboutonly";
+import ComponentA from "../about/aboutonly";
 
-import ComponentS from "./skills/skillcode";
-import ComponentB from "./Homepageblogs/page";
-import ComponentP from "./HomepageProjects/page";
-import ComponentC from "./contact/code";
+import ComponentS from "../skills/skillcode";
+import ComponentB from "../Homepageblogs/page";
+import ComponentP from "../HomepageProjects/page";
+import ComponentC from "../contact/code";
 
 import css from "./css3.webp";
 import react from "./react.webp";
@@ -26,11 +26,11 @@ import next from "./next.webp";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import SlideM from "./about/slideshowmbl";
+import SlideM from "../about/slideshowmbl";
 import SvgHomePage from "./SvgHomePage";
 // const SvgHomePage = dynamic(() => import("./SvgHomePage"));
-const Slideshowlg = dynamic(() => import("./about/slideshowlg"));
-const ResponsiveShow = dynamic(() => import("./about/responsiveshow"));
+const Slideshowlg = dynamic(() => import("../about/slideshowlg"));
+const ResponsiveShow = dynamic(() => import("../about/responsiveshow"));
 const Home = () => {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));

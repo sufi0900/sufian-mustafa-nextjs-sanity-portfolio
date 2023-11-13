@@ -1,7 +1,7 @@
 export default {
-  name: 'blog',
+  name: 'post',
   type: 'document',
-  title: 'Blog',
+  title: 'Insight Blog',
   fields: [
     {
       name: 'title',
@@ -9,9 +9,9 @@ export default {
       title: 'Title',
     },
     {
-      name: 'blogimg',
+      name: 'postimg',
       type: 'image',
-      title: 'blogimg',
+      title: 'postimg',
     },
     {
       name: 'overview',
@@ -27,6 +27,11 @@ export default {
       },
     },
     {
+      name: 'date',
+      type: 'date',
+      title: 'Date',
+    },
+    {
       name: 'content',
       type: 'array',
       title: 'Content',
@@ -34,9 +39,7 @@ export default {
         {
           type: 'block',
         },
-        {
-          type: 'code',
-        },
+
         {
           type: 'image',
           fields: [
@@ -46,6 +49,9 @@ export default {
               title: 'Alternative Text',
             },
           ],
+        },
+        {
+          type: 'code',
         },
       ],
     },

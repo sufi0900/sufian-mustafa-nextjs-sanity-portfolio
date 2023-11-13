@@ -2,7 +2,7 @@
 "use client";
 import React from "react";
 
-import { CodeBlock, dracula } from "react-code-blocks";
+import { CopyBlock, dracula } from "react-code-blocks";
 import { urlFor } from "../../../lib/sanityImageUrl";
 
 import Grid from "@mui/material/Grid";
@@ -30,15 +30,19 @@ export default function BlogCardDetail({ data }) {
         </div>
       ),
       code: ({ value }) => (
-        <div>
-          <CodeBlock
-            text={value.code}
-            language="jsx" // specify the code language here
-            showLineNumbers // if you want to display line numbers
-            theme={dracula} // use any code highlighting theme
-          />
+        <>
+          <Grid style={{ cursor: "auto", overflow: "auto" }}>
+            <br />
+            <CopyBlock
+              text={value.code}
+              theme={dracula}
+              language="jsx" // specify the code language here
+              showLineNumbers // if you want to display line numbers
+              // use any code highlighting theme
+            />
+          </Grid>
           <br />
-        </div>
+        </>
       ),
     },
   };
@@ -88,6 +92,8 @@ export default function BlogCardDetail({ data }) {
                     borderRadius: "4px",
                   }}
                 >
+                  {new Date(data._createdAt).toISOString().split("T")[0]}
+
                   {/* {tour.date} */}
                 </div>
 

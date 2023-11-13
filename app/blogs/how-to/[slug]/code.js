@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { CodeBlock, dracula } from "react-code-blocks";
+import { CopyBlock, dracula } from "react-code-blocks";
 
 import { ListItem, ListItemAvatar, ListItemText } from "@mui/material";
 import { useRouter } from "next/navigation";
@@ -32,16 +32,19 @@ export default function BlogCardDetail({ data }) {
         </div>
       ),
       code: ({ value }) => (
-        <div>
-          <CodeBlock
-            text={value.code}
-            theme={dracula}
-            language="jsx" // specify the code language here
-            showLineNumbers // if you want to display line numbers
-            // use any code highlighting theme
-          />
+        <>
+          <Grid style={{ cursor: "auto", overflow: "auto" }}>
+            <br />
+            <CopyBlock
+              text={value.code}
+              theme={dracula}
+              language="jsx" // specify the code language here
+              showLineNumbers // if you want to display line numbers
+              // use any code highlighting theme
+            />
+          </Grid>
           <br />
-        </div>
+        </>
       ),
     },
   };
@@ -69,7 +72,9 @@ export default function BlogCardDetail({ data }) {
         style={{ marginTop: "70px", maxWidth: "800px", overflow: "hidden" }}
       >
         <div className="bgwhite">
-          <h1 style={{ textAlign: "justify" }}>{data.title}</h1>
+          <h1 data-aos="zoom-in" style={{ textAlign: "justify" }}>
+            {data.title}
+          </h1>
 
           <ListItem
             className="SkillList"
@@ -89,10 +94,12 @@ export default function BlogCardDetail({ data }) {
             </ListItemAvatar>
             <ListItemText
               primary={"Sufian Mustafa"}
-              secondary={"9 min read.1 day ago"}
+              secondary={new Date(data._createdAt).toISOString().split("T")[0]}
               title="sufian"
               style={{ width: "30%" }}
               className="ListItemTextSkill"
+              data-aos="zoom-in"
+              data-aos-delay="100"
             />
           </ListItem>
 

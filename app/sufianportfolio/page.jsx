@@ -6,12 +6,12 @@ import { NextSeo } from "next-seo";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Sufian - Web Developer",
+  title: "Sufian - Portfolio",
   description:
     "Welcome to the portfolio of SuFiaN MusTaFa, a passionate web developer based in Pakistan. Explore my portfolio showcasing expertise in ReactJs, Nextjs, HTML5, CSS, and more. Download my resume and get in touch for your web development needs. My nick name is sufi. sufian website",
   author: "Sufian Mustafa",
   keywords:
-    "sufian website, sufi website, sufi web developer, sufian web developer, sufi, sufian",
+    "Sufian  Portfolio,sufian website, sufi website, sufi web developer, sufian web developer, sufi, sufian",
   icons: {
     icon: "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1693675157/sufi_gt9fke.webp",
   },
@@ -34,7 +34,7 @@ const page = () => {
         Science at AWKUM University. I have a wide range of experience in web development, with a
         focus on front-end technologies such as HTML, CSS, and
         JavaScript with a particular focus on ReactJS & NextJS",
-        "url": "https://sufianmustafa.com/sufian",
+        "url": "https://sufianmustafa.com/sufianportfolio",
         "sameAs": [
           "https://dev.to/sufian"
         ],
@@ -58,11 +58,11 @@ const page = () => {
         />
         <meta
           name="keywords"
-          content="sufian, sufian website, sufi website, sufi web developer,web developer, web development services, developer website, website developer, site developer, it web developer, web site designers, web developer websites, a web developer, i am web developer, web programmers, the web developer, web developer skills, about web developer, backend development, create website, build website, i am looking for a web developer, website making, web developer near me, react developers, html website, online blog, developer for website, looking for web developer, web development projects, react web development, web technologies, responsive website, web making, web coding, react website, web development services near me, my web,"
+          content="Sufian  Portfolio, sufian website, sufi website, sufi web developer,web developer, web development services, developer website, website developer, site developer, it web developer, web site designers, web developer websites, a web developer, i am web developer, web programmers, the web developer, web developer skills, about web developer, backend development, create website, build website, i am looking for a web developer, website making, web developer near me, react developers, html website, online blog, developer for website, looking for web developer, web development projects, react web development, web technologies, responsive website, web making, web coding, react website, web development services near me, my web,"
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Sufian - Web Developer </title>
+        <title>Sufian - Portfolio </title>
         <meta
           name="description"
           content="Welcome to the portfolio of SuFiaN MusTaFa, a passionate web developer based in Pakistan. Explore my projects and skills in web development. I have a wide range of experience in web development, with a
@@ -71,7 +71,7 @@ const page = () => {
         />
 
         <meta name="author" content="Sufian Mustafa" />
-        <meta property="og:title" content="Sufian Mustafa - website" />
+        <meta property="og:title" content="Sufian - Portfolio" />
         <meta
           property="og:description"
           content="Explore the work of Sufian Mustafa, a web developer with a passion for creating stunning web applications."
@@ -80,7 +80,10 @@ const page = () => {
           name="google-site-verification"
           content="k0JxDLTBR6jAV0eTVc6UxwWSEuoyBpz1c4k0zI7mKL4"
         />
-        <meta property="og:url" content="https://sufianmustafa.com/sufian/" />
+        <meta
+          property="og:url"
+          content="https://sufianmustafa.com/sufianportfolio/"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
@@ -88,19 +91,25 @@ const page = () => {
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://sufianmustafa.com/sufian" />
+        <meta
+          property="og:url"
+          content="https://sufianmustafa.com/sufianportfolio"
+        />
 
-        <link rel="canonical" href="https://sufianmustafa.com/sufian/" />
+        <link
+          rel="canonical"
+          href="https://sufianmustafa.com/sufianportfolio/"
+        />
         <NextSeo
-          title="Sufian Mustafa - Web Developer"
+          title="Sufian - Portfolio"
           description="Explore Sufian Mustafa's proficiency in various technologies and tools. Discover his expertise in web development, including ReactJS, Node.js, HTML5, CSS3, and more."
           author="Sufian Mustafa"
           openGraph={{
-            title: "Sufian Mustafa - Web Developer",
+            title: "Sufian - Portfolio",
             description:
               "Explore Sufian Mustafa's proficiency in various technologies and tools. Discover his expertise in web development, including ReactJS, Node.js, HTML5, CSS3, and more.",
             type: "webpage",
-            url: "https://sufianmustafa.com/sufian",
+            url: "https://sufianmustafa.com/sufianportfolio",
             images: [
               {
                 url: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694356123/Sufian-Mustafa-Web-Developer_en5jxl.png",

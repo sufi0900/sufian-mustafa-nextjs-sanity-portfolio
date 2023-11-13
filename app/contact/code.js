@@ -10,13 +10,12 @@ import emailjs from "@emailjs/browser";
 import Footer from "../footer/code";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import { motion } from "framer-motion";
 import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 
-import { Jquerry } from "../Jquerry";
+import { Jquerry } from "../HomeComponent/Jquerry";
 
 const ContactMe = () => {
   function sufianmustafawebdevelopercontact() {
