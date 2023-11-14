@@ -91,7 +91,7 @@ const page = () => {
             "position": 8,
             "item": {
                "@type": "WebPage",
-              "name": ""NODEJS ExpressJS",
+              "name": "NODEJS ExpressJS",
               "url": "https://sufianmustafa.com/skills/NODEJS-ExpressJS"
             }
           },

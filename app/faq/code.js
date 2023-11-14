@@ -105,7 +105,7 @@ const FAQ = () => {
   }
 
   return (
-    <div>
+    <div style={{ minHeight: "100vh" }}>
       <Helmet>
         <meta charSet="utf-8" />
         <title>FAQ - Sufian Mustafa</title>
@@ -184,6 +184,9 @@ const FAQ = () => {
             </div>
           </Grid>
         ))}
+        <br />
+        <br />
+        <br />
       </Grid>
     </div>
   );
