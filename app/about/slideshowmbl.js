@@ -60,27 +60,6 @@ function CarouselFadeExample() {
 
   return (
     <>
-      <>
-        <style type="text/css">
-          {`   
-
-// .carousel-control-next{  
-//   width: 0%;
-//   position:relative;
-
-//   },
-// .carousel-control-prev{  
-//   width: 10px;
-//   position:relative;
- 
- 
-//  }
-
-
-
-`}
-        </style>
-      </>
       <div
         style={{
           width: "99%",

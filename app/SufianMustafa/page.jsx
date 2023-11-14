@@ -1,16 +1,17 @@
 import React from "react";
-import Home from "./HomeComponent/HomeCode";
+import Home from "../HomeComponent/HomeComp";
 import Script from "next/script";
+
 import { NextSeo } from "next-seo";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Sufian Mustafa - Web Developer",
+  title: "Sufian Mustafa",
   description:
-    "Welcome to the portfolio of SuFiaN MusTaFa, a passionate web developer based in Pakistan. Explore my portfolio showcasing expertise in ReactJs, Nextjs, HTML5, CSS, and more. Download my resume and get in touch for your web development needs",
+    "Welcome to the portfolio of SuFiaN MusTaFa, a passionate web developer based in Pakistan. Explore my portfolio showcasing expertise in ReactJs, Nextjs, HTML5, CSS, and more. Download my resume and get in touch for your web development needs. My nick name is sufi. sufian website",
   author: "Sufian Mustafa",
   keywords:
-    "sufian website, sufi website, sufi web developer, sufian web developer, sufi, sufian",
+    "Sufian Mustafa, Sufian Mustafa, Sufian Mustafa sufi website, sufi web developer, sufian web developer, sufi, sufian",
   icons: {
     icon: "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1693675157/sufi_gt9fke.webp",
   },
@@ -22,32 +23,32 @@ export const metadata = {
 const page = () => {
   function sufianmustafa() {
     return {
-      __html: `   {
+      __html: `    {
         "@context": "http://schema.org",
-        "@type": "WebSite",
-        "url": "https://sufianmustafa.com/",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://sufianmustafa.com/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Sufian Mustafa",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672396/logo_1_lk0neo.webp",
-            "width": 600,
-            "height": 60
-          }
-        }
+        "@type": "Website",
+        "name": "Sufian Mustafa",
+        "jobTitle": "Web Developer",
+        "description": "I am Sufian Mustafa, a web developer with a passion for creating things that live on the internet.    I am Sufian Mustafa, a web developer with a passion for
+        creating things that live on the internet. My interest in web
+        development began during my Master's degree in Computer
+        Science at AWKUM University. I have a wide range of experience in web development, with a
+        focus on front-end technologies such as HTML, CSS, and
+        JavaScript with a particular focus on ReactJS & NextJS",
+        "url": "https://sufianmustafa.com/SufianMustafa",
+        "sameAs": [
+          "https://dev.to/sufian/"
+        ],
+        "image": [
+        "https://res.cloudinary.com/dtvtphhsc/image/upload/v1692819142/Images/sufi3_dnokbh.jpg",
+        "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693673965/AirBrush_20170128130335_t6dhwx.webp",
+        "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672394/sufi6_depmpo.webp"
+      ]
       }
   `,
     };
   }
-
   return (
-    <div>
+    <>
       <Head>
         <meta charset="utf-8" />
         <link
@@ -61,28 +62,28 @@ const page = () => {
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Sufian Mustafa - Web Developer Portfolio</title>
+        <title>Sufian Mustafa </title>
         <meta
           name="description"
-          content="Welcome to the portfolio of SuFiaN MusTaFa, a passionate web developer based in Pakistan. Explore my projects and skills in web development. I have a wide range of experience in web development, with a
+          content="Hi i am SuFiaN MusTaFa, a passionate web developer based in Pakistan. Explore my projects and skills in web development. I have a wide range of experience in web development, with a
       focus on front-end technologies such as HTML, CSS, and
       JavaScript with a particular focus on ReactJS NextJS"
         />
 
         <meta name="author" content="Sufian Mustafa" />
-        <meta
-          property="og:title"
-          content="Sufian Mustafa - Web Developer Portfolio"
-        />
+        <meta property="og:title" content="Sufian Mustafa" />
         <meta
           property="og:description"
-          content="Explore the work of Sufian Mustafa, a web developer with a passion for creating stunning web applications."
+          content="Sufian Mustafa, Explore the work of Sufian Mustafa, a web developer with a passion for creating stunning web applications."
         />
         <meta
           name="google-site-verification"
           content="k0JxDLTBR6jAV0eTVc6UxwWSEuoyBpz1c4k0zI7mKL4"
         />
-        <meta property="og:url" content="https://sufianmustafa.com/" />
+        <meta
+          property="og:url"
+          content="https://sufianmustafa.com/SufianMustafa/"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
@@ -90,19 +91,22 @@ const page = () => {
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://sufianmustafa.com/" />
+        <meta
+          property="og:url"
+          content="https://sufianmustafa.com/SufianMustafa"
+        />
 
-        <link rel="canonical" href="https://sufianmustafa.com/" />
+        <link rel="canonical" href="https://sufianmustafa.com/SufianMustafa/" />
         <NextSeo
-          title="Sufian Mustafa - Web Developer"
+          title="Sufian Mustafa"
           description="Explore Sufian Mustafa's proficiency in various technologies and tools. Discover his expertise in web development, including ReactJS, Node.js, HTML5, CSS3, and more."
           author="Sufian Mustafa"
           openGraph={{
-            title: "Sufian Mustafa - Web Developer",
+            title: "Sufian Mustafa",
             description:
               "Explore Sufian Mustafa's proficiency in various technologies and tools. Discover his expertise in web development, including ReactJS, Node.js, HTML5, CSS3, and more.",
             type: "webpage",
-            url: "https://sufianmustafa.com/",
+            url: "https://sufianmustafa.com/SufianMustafa",
             images: [
               {
                 url: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694356123/Sufian-Mustafa-Web-Developer_en5jxl.png",
@@ -120,9 +124,8 @@ const page = () => {
         dangerouslySetInnerHTML={sufianmustafa()}
         key="root-jsonld"
       />
-
       <Home />
-    </div>
+    </>
   );
 };
 

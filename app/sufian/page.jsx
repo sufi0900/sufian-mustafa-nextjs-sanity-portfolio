@@ -36,7 +36,7 @@ const page = () => {
         JavaScript with a particular focus on ReactJS & NextJS",
         "url": "https://sufianmustafa.com/sufian",
         "sameAs": [
-          "https://dev.to/sufian"
+          "https://dev.to/sufian/"
         ],
         "image": [
         "https://res.cloudinary.com/dtvtphhsc/image/upload/v1692819142/Images/sufi3_dnokbh.jpg",

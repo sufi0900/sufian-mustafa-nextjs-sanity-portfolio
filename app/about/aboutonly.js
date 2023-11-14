@@ -27,9 +27,6 @@ import Head from "next/head";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
 
-// import ComponentA from "./responsiveshow";
-// import ComponentB from "./slideshowlg";
-
 const About = () => {
   const [showAdvantages, setShowAdvantages] = useState(false);
 
@@ -88,16 +85,6 @@ const About = () => {
     color: "rgba(15, 15, 251, 0.878)",
     position: "relative",
   };
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"
-  ></link>;
-  <link
-    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-    rel="stylesheet"
-  ></link>;
 
   const Bluetick = {
     color: "rgb(255, 0, 242)",
@@ -113,7 +100,7 @@ const About = () => {
       <Head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>About Me - Sufian Mustafa</title>
+        <title>About Me - Sufian Mustafa - web developer</title>
         <meta
           name="description"
           content="Welcome to the portfolio of SuFiaN MusTaFa, a passionate web developer based in Pakistan. Explore my projects and skills in web development. I have a wide range of experience in web development, with a

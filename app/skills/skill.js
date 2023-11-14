@@ -1,6 +1,6 @@
 const skills = [
   {
-    _id: "HTML",
+    _id: "HTML5",
     description:
       "My initiation into web development began during my early days at AWKUM University when I attended my first HTML class. It all started with the basics of HTML, where I learned to create simple web pages. I was immediately captivated by the magic of HTML, how a mere few lines of code could orchestrate the creation of elegantly structured web pages. In the midst of my web development journey, I discovered that the heart and soul of HTML, to me, lies in the <div> tag. It's a deceptively simple element, yet mastering its intricacies is, in my view, one of the most challenging aspects of HTML. If you can truly grasp the essence of the <div> tag and harness its capabilities, you can confidently say that you've truly learned HTML. However, achieving this level of proficiency required dedicated practice and perseverance. As time passed, my passion for web development grew exponentially. I delved deeper into HTML, continually pushing the boundaries of my knowledge and skills. This insatiable curiosity led me to explore a wealth of online resources, where I absorbed invaluable insights and techniques from experienced developers. Today, I'm proud to claim a profound mastery of HTML. I've honed my skills to a level where I can effortlessly craft elegant and efficient web solutions. HTML, particularly the <div> tag, has become more than just a language; it's the very cornerstone of my expertise in web development. It empowers me to breathe life into digital concepts with precision and creativity. The journey to understanding the <div> tag was an arduous one, but it's a testament to the dedication and passion I bring to the world of web development",
     imageFile:
@@ -10,10 +10,10 @@ const skills = [
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694276698/Screenshot_204_tsqbuo.png",
     ],
     percentage: 90,
-    title: "HTML",
+    title: "HTML5",
   },
   {
-    _id: "CSS",
+    _id: "CSS3",
     description:
       "CSS holds a special place in my heart—it's my second love in the realm of web development. My fascination with CSS stems from my passion for styling and design. I find immense joy in crafting visually appealing and unique user interfaces, making every website I work on not just functional but also aesthetically pleasing. One noteworthy milestone in my journey is my first website, awkum.com. Here, I dedicated a significant portion of my time to exploring the intricacies of CSS. I'm particularly drawn to custom styling, and I take pride in the fact that I've never relied on pre-built libraries like Bootstrap. Instead, I've invested my efforts in crafting bespoke CSS solutions, especially in making websites responsive through custom media queries. The process of creating responsive designs through custom CSS has been an invaluable learning experience. It's taught me how to adapt and optimize layouts for various screen sizes, ensuring an exceptional user experience across devices. Even as I've ventured into technologies like React, Material-UI, and React Bootstrap, my passion for CSS remains strong. I've extended my skills to customize the styles of these frameworks using custom CSS, giving me the flexibility to tailor user interfaces precisely to my vision. In essence, CSS isn't just a styling language for me; it's a canvas through which I can transform web pages into engaging and captivating experiences.",
     imageFile:
@@ -24,7 +24,7 @@ const skills = [
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694277026/Screenshot_208_ayuqoq.png",
     ],
     percentage: 80,
-    title: "CSS",
+    title: "CSS3",
   },
   {
     _id: "JavaScript",
@@ -41,7 +41,7 @@ const skills = [
     title: "JavaScript",
   },
   {
-    _id: "React",
+    _id: "React.JS",
     description:
       "React has been a game-changer in my web development journey. It was the first library I embraced, and I've come to deeply admire its user-friendly nature and its ability to expedite website creation. My dedication to mastering React knows no bounds, and I've made significant strides in honing my skills with this library. In fact, the very website you're currently exploring, awkum.com, was crafted using React, serving as a testament to my proficiency in this technology. One of the remarkable aspects of React is its capacity for seamless library integration. With just a few simple commands, I can install and utilize libraries like React MUI and React Bootstrap, harnessing their capabilities without the need to start from scratch. This approach has not only streamlined my workflow but has also elevated the overall development process. To put things into perspective, awkum.com, which I built using React and related libraries, took nearly three months to complete. However, the efficiency and power of React have become so ingrained in my skill set that I can confidently say that without React, I could recreate a similar website in a matter of a single day. In summary, React has been a transformative force in my web development journey, enabling me to create sophisticated and interactive web applications with unparalleled efficiency and speed",
     imageFile:
@@ -51,7 +51,7 @@ const skills = [
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694279317/Screenshot_214_juv2v0.png",
     ],
     percentage: 70,
-    title: "React",
+    title: "React.JS",
   },
   {
     _id: "React-MUI",
@@ -79,6 +79,19 @@ const skills = [
     ],
     percentage: 80,
     title: "React Bootstrap",
+  },
+  {
+    _id: "Tailwind-CSS",
+    description:
+      "Tailwind CSS has become an integral part of my web development toolkit, revolutionizing the way I approach styling and design. This utility-first CSS framework has proven to be a game-changer, offering unparalleled speed, flexibility, and scalability in creating modern, responsive user interfaces. One of the standout features of Tailwind CSS is its utility-first approach, which provides a vast set of pre-built utility classes. These classes cover everything from spacing and typography to flexbox and grid layouts. This approach eliminates the need for writing custom CSS, allowing me to prototype and implement designs with remarkable efficiency. The result is a streamlined development process that significantly accelerates project timelines. One of the key benefits of using Tailwind CSS is its low learning curve. The framework's utility classes are intuitive and easy to grasp, making it accessible for developers of all levels. This simplicity does not compromise on customization, as Tailwind CSS also allows for easy extension and configuration to tailor the framework to specific project requirements. The mobile-first approach embedded in Tailwind CSS aligns seamlessly with the contemporary need for responsive web design. The framework empowers me to create websites that look stunning on various devices without the need for extensive media query management. Furthermore, Tailwind CSS promotes a consistent and maintainable codebase. The modular nature of the utility classes facilitates code reuse, making it straightforward to maintain and update styles across a project. As a result, I can ensure a cohesive and polished design throughout the entire application. Another aspect that sets Tailwind CSS apart is its theming capabilities. The framework allows for the easy creation of custom themes, enabling me to match the design language of a project perfectly. This flexibility has been particularly beneficial in achieving a harmonious visual identity for my websites, showcasing both the versatility of Tailwind CSS and my design sensibilities. In summary, Tailwind CSS has become my go-to choice for CSS frameworks, offering speed, simplicity, and a wealth of utility classes. Its mobile-first approach, low learning curve, and theming capabilities make it an indispensable tool for creating visually appealing and highly responsive web interfaces.",
+    imageFile:
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699974365/screenshot_361_cs3mfh.jpg",
+    images: [
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699974365/screenshot_361_cs3mfh.jpg",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699450367/TailwindCSS_zz2xtz.png",
+    ],
+    percentage: 60,
+    title: "Tailwind CSS",
   },
   {
     _id: "NODEJS-ExpressJS",

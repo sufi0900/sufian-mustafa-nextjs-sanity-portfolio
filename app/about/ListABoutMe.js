@@ -21,11 +21,130 @@ import Grid from "@mui/material/Grid";
 import AbcIcon from "@mui/icons-material/Abc";
 import { Cake, LanguageOutlined, Mail } from "@mui/icons-material";
 import { ListItemButton } from "@mui/material";
+import { NextSeo } from "next-seo";
+import Head from "next/head";
+import Script from "next/script";
 
 export default function InteractiveList() {
   const [secondary, setSecondary] = useState(false);
+
+  function sufianmustafawebdeveloperaboutmelist() {
+    return {
+      __html: `
+        {
+          "@context": "http://schema.org",
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "PropertyValue",
+                "name": "Full Name",
+                "value": "SuFian Mustafa"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "PropertyValue",
+                "name": "Age",
+                "value": "27"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "PropertyValue",
+                "name": "NickName",
+                "value": "Sufi"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "PropertyValue",
+                "name": "Date of Birth",
+                "value": "6 Sep, 1997"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "PropertyValue",
+                "name": "Date of Birth",
+                "value": "6 Sep, 1997"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "PropertyValue",
+                "name": "Date of Birth",
+                "value": "6 Sep, 1997"
+              }
+            },
+          }
+        }
+      `,
+    };
+  }
+
   return (
     <Box sx={{ flexGrow: 1, overflow: "auto" }}>
+      <Head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>More About Me - Sufian Mustafa</title>
+        <meta
+          name="description"
+          content="Learn more about Sufian Mustafa, a web developer with a passion for web development and various interests."
+        />
+        <meta name="author" content="Sufian Mustafa" />
+        <meta property="og:title" content="About Me - Sufian Mustafa" />
+        <meta
+          property="og:description"
+          content="Explore details about Sufian Mustafa, a web developer with a passion for web development and various interests."
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dtvtphhsc/image/upload/v1699977636/About-Me-Sufian-Mustafa_y0kren.png"
+        />
+        <meta property="og:url" content="https://sufianmustafa.com/about" />
+        <link rel="canonical" href="https://sufianmustafa.com/about" />
+        <NextSeo
+          title="About Me - Sufian Mustafa"
+          description="Learn more about Sufian Mustafa, a web developer with a passion for web development and various interests."
+          author="Sufian Mustafa"
+          canonical="https://sufianmustafa.com/about"
+          openGraph={{
+            title: "About Me - Sufian Mustafa",
+            description:
+              "Explore details about Sufian Mustafa, a web developer with a passion for web development and various interests.",
+            type: "webpage",
+            url: "https://sufianmustafa.com/about",
+            images: [
+              {
+                url: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699977636/About-Me-Sufian-Mustafa_y0kren.png",
+                width: 800,
+                height: 800,
+                alt: "About Me - Sufian Mustafa",
+              },
+            ],
+          }}
+        />
+      </Head>
+      <Script
+        id="MySkills-webpage-ld-json"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={sufianmustafawebdeveloperaboutmelist()}
+        key="MySkills-jsonld"
+      />
       <br />
       <div className="custom-input-color About3">
         <h2>

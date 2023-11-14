@@ -26,7 +26,7 @@ const page = () => {
             "item": {
                "@type": "WebPage",
               "name": "HTML5",
-              "url": "https://sufianmustafa.com/Skill/0"
+              "url": "https://sufianmustafa.com/skills/HTML5"
 
             }
           },
@@ -36,7 +36,7 @@ const page = () => {
             "item": {
                "@type": "WebPage",
               "name": "CSS3",
-              "url": "https://sufianmustafa.com/Skill/1"
+              "url": "https://sufianmustafa.com/skills/CSS3"
             }
           },
           {
@@ -45,7 +45,7 @@ const page = () => {
             "item": {
                "@type": "WebPage",
               "name": "JavaScript",
-              "url": "https://sufianmustafa.com/Skill/2"
+              "url": "https://sufianmustafa.com/skills/JavaScript"
             }
           },
           {
@@ -54,7 +54,7 @@ const page = () => {
             "item": {
                "@type": "WebPage",
               "name": "ReactJS",
-              "url": "https://sufianmustafa.com/Skill/3"
+              "url": "https://sufianmustafa.com/skills/React.JS"
 
             }
           },
@@ -64,7 +64,7 @@ const page = () => {
             "item": {
                "@type": "WebPage",
               "name": "React MUI",
-              "url": "https://sufianmustafa.com/Skill/4"
+              "url": "https://sufianmustafa.com/skills/React-MUI"
 
             }
           },
@@ -74,7 +74,7 @@ const page = () => {
             "item": {
                "@type": "WebPage",
               "name": "React Bootstrap",
-              "url": "https://sufianmustafa.com/Skill/5"
+              "url": "https://sufianmustafa.com/skills/React-Bootstrap"
             }
           },
           {
@@ -82,8 +82,8 @@ const page = () => {
             "position": 7,
             "item": {
                "@type": "WebPage",
-              "name": "NodeJS, ExpressJS",
-              "url": "https://sufianmustafa.com/Skill/6"
+              "name": "Tailwind CSS",
+              "url": "https://sufianmustafa.com/skills/Tailwind-CSS"
             }
           },
           {
@@ -91,8 +91,8 @@ const page = () => {
             "position": 8,
             "item": {
                "@type": "WebPage",
-              "name": "NextJS",
-              "url": "https://sufianmustafa.com/Skill/7"
+              "name": ""NODEJS ExpressJS",
+              "url": "https://sufianmustafa.com/skills/NODEJS-ExpressJS"
             }
           },
           {
@@ -100,8 +100,8 @@ const page = () => {
             "position": 9,
             "item": {
                "@type": "WebPage",
-              "name": "MongoDB",
-              "url": "https://sufianmustafa.com/Skill/8"
+              "name": "Next.JS",
+              "url": "https://sufianmustafa.com/skills/NextJS"
             }
           },
           {
@@ -109,10 +109,29 @@ const page = () => {
             "position": 10,
             "item": {
                "@type": "WebPage",
-              "name": "php",
-              "url": "https://sufianmustafa.com/Skill/9"
+              "name": "MongoDB",
+              "url": "https://sufianmustafa.com/skills/MongoDB"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+               "@type": "WebPage",
+              "name": "php xamp",
+              "url": "https://sufianmustafa.com/skills/php-xamp"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+               "@type": "WebPage",
+              "name": "SEO (search engine optimization)",
+              "url": "https://sufianmustafa.com/skills/SEO"
             }
           }
+         
 
         ]
 
@@ -133,7 +152,10 @@ const page = () => {
       JavaScript with a particular focus on ReactJS NextJS"
         />
         <meta name="author" content="Sufian Mustafa" />
-        <meta property="og:title" content="My Skills - Sufian Mustafa" />
+        <meta
+          property="og:title"
+          content="My Skills - Sufian Mustafa - Web Developer"
+        />
         <meta
           property="og:description"
           content="Explore the work of Sufian Mustafa, a web developer with a passion for creating stunning web applications."
@@ -145,12 +167,12 @@ const page = () => {
         <meta property="og:url" content="https://sufianmustafa.com/skills" />
         <link rel="canonical" href="https://sufianmustafa.com/skills" />
         <NextSeo
-          title="My Skills - Sufian Mustafa"
-          description="Explore Sufian Mustafa\'s web development skills and expertise. Learn about a wide range of technical proficiencies, including front-end and back-end development, database management, and user interface design."
+          title="Skills - Sufian Mustafa - Web Developer"
+          description="Explore Sufian Mustafa's web development skills and expertise. Learn about a wide range of technical proficiencies, including front-end and back-end development, database management, and user interface design."
           author="Sufian Mustafa"
           canonical="https://sufianmustafa.com/skills"
           openGraph={{
-            title: "My Skills - Sufian Mustafa",
+            title: "Skills - Sufian Mustafa",
             description:
               "Explore Sufian Mustafa's proficiency in various technologies and tools. Discover his expertise in web development, including ReactJS, Node.js, HTML5, CSS3, NextJS, MERN Stack and more.",
             type: "webpage",

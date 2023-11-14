@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 import Aboutcode from "./aboutcode";
 
 export const metadata = {
-  title: "About Me - Sufian Mustafa",
+  title: "About Me - Sufian Mustafa - Web Developer",
   description:
     "Sufian Mustafa is a web developer with a passion for creating user-friendly and visually appealing websites. He is proficient in using front-end technologies such as HTML, CSS, and JavaScript, with a particular focus on ReactJS & NextJS. He is also proficient in using back-end technologies such as Node.js, PHP, and MongoDB",
   author: "Sufian Mustafa",
@@ -14,7 +14,7 @@ export const metadata = {
 const page = () => {
   function sufianmustafawebdeveloperaboutme() {
     return {
-      __html: `    {
+      __html: ` {
         "@context": "http://schema.org",
         "@type": "Person",
         "name": "Sufian Mustafa",
@@ -32,7 +32,10 @@ const page = () => {
         "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672395/sufi5_nrizsx.webp",
         "https://res.cloudinary.com/dtvtphhsc/image/upload/v1692819142/Images/sufi3_dnokbh.jpg",
         "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693673965/AirBrush_20170128130335_t6dhwx.webp",
-        "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672394/sufi6_depmpo.webp"
+        "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672394/sufi6_depmpo.webp",
+        "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693675157/sufi_gt9fke.webp",
+        "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699977827/Sufian-Mustafa-Web-Developer_lqleg1.png"
+        "https://res.cloudinary.com/dtvtphhsc/image/upload/v1692819143/Images/sufiselfie_oz7sbx.jpg"
       ]
       }
   `,

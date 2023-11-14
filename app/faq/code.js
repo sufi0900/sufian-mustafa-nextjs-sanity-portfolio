@@ -1,31 +1,29 @@
 "use client";
 import React from "react";
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
+import Script from "next/script";
+import { NextSeo } from "next-seo";
+import Head from "next/head";
 
 const FAQ = () => {
-  const Item = styled(Paper)(({ theme }) => ({
-    background: "rgba(255, 255, 255, 0.2)",
-    borderRadius: "16px",
-    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-    border: "1px solid rgba(255, 255, 255, 0.3)",
-    padding: theme.spacing(2),
-  }));
-
   const faqData = [
     {
       question: "Who are you and what do you do?",
       answer:
-        "I am a web developer with a passion for creating high-quality, user-friendly, and responsive websites. I am also proficient in backend development, with experience in Node.js",
+        "I am sufian mustafa a web developer with a passion for creating high-quality, user-friendly, and responsive websites. I am also proficient in backend development, with experience in Node.js",
     },
     {
       question: "What is your experience in the industry?",
       answer:
         "I have over 1 year of experience in the web development industry, working on a variety of projects from small businesses to large corporations.",
+    },
+    {
+      question:
+        "What technologies have you worked with throughout your web development journey",
+      answer:
+        "Throughout my web development journey, I have accumulated a diverse skill set encompassing a range of cutting-edge technologies. Here is a comprehensive list of the key technologies I have successfully utilized in various projects: Front-End Development: HTML5 CSS3 (including frameworks like Tailwind CSS, Bootstrap, and custom styling) JavaScript (ES6+) React.js Next.JS Back-End Development: Node.js Express.js php Database Management: MongoDB MySQL Version Control: Git Package Managers: npm Responsive Design: Media Queries Flexbox Grid Layout CSS Frameworks: Tailwind CSS Bootstrap (React-Bootstrap) React MUI Animation Control: AOS Framer Motion AnimateCSS State Management: Redux (React) API Integration: RESTful APIs Build Tools: Webpack Babel CMS: Sanity.IO ",
     },
     {
       question: "What technologies and tools do you specialize in?",
@@ -69,8 +67,42 @@ const FAQ = () => {
       answer:
         "I find that playing Video Games helps me to clear my head and recharge my batteries so that I can come back to my coding work refreshed and ready to focus. ",
     },
+    {
+      question: "My Nick Name is Sufi",
+      answer:
+        "sufian portfolio, sufian web developer, sufian website, sufian mustafa  ",
+    },
+    {
+      question: "Sufian Mustafa",
+    },
+
     // ... Add more questions and answers
   ];
+  function sufianmustafawebdeveloperfaq() {
+    return {
+      __html: `
+        {
+          "@context": "http://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqData.map((item, index) => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": item.answer,
+            },
+          })),
+          "name": "FAQ - Sufian Mustafa",
+          "description": "Frequently Asked Questions about Sufian Mustafa's web development services. Find answers to common queries about web development, technology stack, and more.",
+          "url": "https://sufianmustafa.com/faq",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://sufianmustafa.com/faq",
+          }
+        }
+      `,
+    };
+  }
 
   return (
     <div>
@@ -81,8 +113,57 @@ const FAQ = () => {
           name="description"
           content="Frequently Asked Questions about Sufian Mustafa's web development services. Find answers to common queries about web development, technology stack, and more."
         />
-        <link rel="canonical" href="https://sufianmustafa.com/#faq" />
+        <link rel="canonical" href="https://sufianmustafa.com/faq" />
       </Helmet>
+      <Head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>FAQ - Sufian Mustafa</title>
+        <meta
+          name="description"
+          content="Frequently Asked Questions about Sufian Mustafa's web development services. Find answers to common queries about web development, technology stack, and more."
+        />
+        <meta name="author" content="Sufian Mustafa" />
+        <meta property="og:title" content="FAQ - Sufian Mustafa" />
+        <meta
+          property="og:description"
+          content="Explore the frequently asked questions about Sufian Mustafa's web development services. Find answers to common queries about web development, technology stack, and more."
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dtvtphhsc/image/upload/v1697724760/Screenshot_248_tpjuk3.png"
+        />
+        <meta property="og:url" content="https://sufianmustafa.com/faq" />
+        <link rel="canonical" href="https://sufianmustafa.com/faq" />
+        <NextSeo
+          title="FAQ - Sufian Mustafa"
+          description="Frequently Asked Questions about Sufian Mustafa's web development services. Find answers to common queries about web development, technology stack, and more."
+          author="Sufian Mustafa"
+          canonical="https://sufianmustafa.com/faq"
+          openGraph={{
+            title: "FAQ - Sufian Mustafa",
+            description:
+              "Explore the frequently asked questions about Sufian Mustafa's web development services. Find answers to common queries about web development, technology stack, and more.",
+            type: "webpage",
+            url: "https://sufianmustafa.com/faq",
+            images: [
+              {
+                url: "https://res.cloudinary.com/dtvtphhsc/image/upload/v1697724760/Screenshot_248_tpjuk3.png",
+                width: 800,
+                height: 800,
+                alt: "FAQ - Sufian Mustafa",
+              },
+            ],
+          }}
+        />
+      </Head>
+
+      <Script
+        id="ContactMe-webpage-ld-json"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={sufianmustafawebdeveloperfaq()}
+        key="ContactMe-jsonld"
+      />
       <br />
       <Grid
         container
