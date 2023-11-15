@@ -40,7 +40,7 @@ const page = () => {
             "name": "What technologies have you worked with throughout your web development journey?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Throughout my web development journey, I have accumulated a diverse skill set encompassing a range of cutting-edge technologies. Here is a comprehensive list of the key technologies I have successfully utilized in various projects: Front-End Development: HTML5 CSS3 (including frameworks like Tailwind CSS, Bootstrap, and custom styling) JavaScript (ES6+) React.js Next.JS Back-End Development: Node.js Express.js php Database Management: MongoDB MySQL Version Control: Git Package Managers: npm Responsive Design: Media Queries Flexbox Grid Layout CSS Frameworks: Tailwind CSS Bootstrap (React-Bootstrap) React MUI Animation Control: AOS Framer Motion AnimateCSS State Management: Redux (React) API Integration: RESTful APIs Build Tools: Webpack Babel CMS: Sanity.IO ",
+              "text": "Throughout my web development journey, I have accumulated a diverse skill set encompassing a range of cutting-edge technologies. Here is a comprehensive list of the key technologies I have successfully utilized in various projects: Front-End Development: HTML5 CSS3 (including frameworks like Tailwind CSS, Bootstrap, and custom styling) JavaScript (ES6+) React.js Next.JS Back-End Development: Node.js Express.js php Database Management: MongoDB MySQL Version Control: Git Package Managers: npm Responsive Design: Media Queries Flexbox Grid Layout CSS Frameworks: Tailwind CSS Bootstrap (React-Bootstrap) React MUI Animation Control: AOS Framer Motion AnimateCSS State Management: Redux (React) API Integration: RESTful APIs Build Tools: Webpack Babel CMS: Sanity.IO "
             }
           },
           {
@@ -48,7 +48,7 @@ const page = () => {
             "name": "Do you have formal education in your field?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, I have formal education in my field. I have a Bachelor's degree in Computer Science from the FG College Nowshera Linked to UOP with first division, and I also have a Master's degree in Computer Science from AWKUM university. In my undergraduate and graduate studies, I learned a wide range of computer science topics, including programming, data structures, algorithms, operating systems, and computer networks. I am confident that my formal education has prepared me well for a career in web development.",
+              "text": "Yes, I have formal education in my field. I have a Bachelor's degree in Computer Science from the FG College Nowshera Linked to UOP with first division, and I also have a Master's degree in Computer Science from AWKUM university. In my undergraduate and graduate studies, I learned a wide range of computer science topics, including programming, data structures, algorithms, operating systems, and computer networks. I am confident that my formal education has prepared me well for a career in web development."
             }
           },
           {
@@ -56,7 +56,7 @@ const page = () => {
             "name": "My Nick Name is Sufi",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "To discover my website on Google, enter the following keywords into the search bar:sufian mustafa, sufian web developer, sufian portfolio, sufian web developer, sufian website, sufian mustafa, sufian mustafa website,",
+              "text": "To discover my website on Google, enter the following keywords into the search bar:sufian mustafa, sufian web developer, sufian portfolio, sufian web developer, sufian website, sufian mustafa, sufian mustafa website."
             }
           },
           {
@@ -64,7 +64,7 @@ const page = () => {
             "name": "Sufian Mustafa",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sufian Mustafa",
+              "text": "Sufian Mustafa"
             }
           }
 
