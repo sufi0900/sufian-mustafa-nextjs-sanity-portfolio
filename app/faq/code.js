@@ -3,7 +3,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
-import Script from "next/script";
+
 import { NextSeo } from "next-seo";
 import Head from "next/head";
 
@@ -28,7 +28,7 @@ const FAQ = () => {
     {
       question: "What technologies and tools do you specialize in?",
       answer:
-        "Here are few technologies I’ve been recently working with HTML5, CSS3, JavaScript, ReactJS, NodeJS, ExpressJS MongoDb ReactMUIReact, ReactBootstrap, FramerMotion ETC.",
+        "Here are few technologies I’ve been recently working with HTML5, CSS3, JavaScript, ReactJS, NextJS, Sanity.IO, React MUi, Bootstrap, NodeJS, ExpressJS, MongoDb , ReactBootstrap, FramerMotion ETC.",
     },
     {
       question: "What is your approach to problem-solving?",
@@ -70,45 +70,19 @@ const FAQ = () => {
     {
       question: "My Nick Name is Sufi",
       answer:
-        "sufian portfolio, sufian web developer, sufian website, sufian mustafa  ",
+        "To discover my website on Google, enter the following keywords into the search bar: sufian mustafa, sufian web developer, sufian portfolio, sufian web developer, sufian website, sufian mustafa, sufian mustafa website,",
     },
     {
       question: "Sufian Mustafa",
+      answer: "Sufian Mustafa ",
     },
-
-    // ... Add more questions and answers
   ];
-  function sufianmustafawebdeveloperfaq() {
-    return {
-      __html: `
-        {
-          "@context": "http://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": faqData.map((item, index) => ({
-            "@type": "Question",
-            "name": item.question,
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": item.answer,
-            },
-          })),
-          "name": "FAQ - Sufian Mustafa",
-          "description": "Frequently Asked Questions about Sufian Mustafa's web development services. Find answers to common queries about web development, technology stack, and more.",
-          "url": "https://sufianmustafa.com/faq",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://sufianmustafa.com/faq",
-          }
-        }
-      `,
-    };
-  }
 
   return (
     <div style={{ minHeight: "100vh" }}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>FAQ - Sufian Mustafa</title>
+        <title>FAQ - Sufian Mustafa - Web Developer</title>
         <meta
           name="description"
           content="Frequently Asked Questions about Sufian Mustafa's web development services. Find answers to common queries about web development, technology stack, and more."
@@ -158,12 +132,6 @@ const FAQ = () => {
         />
       </Head>
 
-      <Script
-        id="ContactMe-webpage-ld-json"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={sufianmustafawebdeveloperfaq()}
-        key="ContactMe-jsonld"
-      />
       <br />
       <Grid
         container

@@ -32,7 +32,7 @@ const page = () => {
         JavaScript with a particular focus on ReactJS & NextJS. For Backend i use Sanity.io , NodeJS, php, MongoDB ",
         "url": "https://sufianmustafa.com/sufiwebsite",
         "sameAs": [
-          "https://dev.to/sufian"
+          "https://dev.to/sufian/"
         ],
         "image": [
         "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693673965/AirBrush_20170128130335_t6dhwx.webp",

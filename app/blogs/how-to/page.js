@@ -233,6 +233,9 @@ export default async function AllPosts() {
             </Card>
           </Link>
         ))}
+        <br />
+        <br />
+        <br />
       </Grid>
     </Grid>
   );
