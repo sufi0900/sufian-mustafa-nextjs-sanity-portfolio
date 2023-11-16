@@ -89,7 +89,7 @@ export default function InteractiveList() {
                 "value": "6 Sep, 1997"
               }
             },
-          }
+          ]
         }
       `,
     };

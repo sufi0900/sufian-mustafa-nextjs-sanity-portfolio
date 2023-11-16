@@ -34,7 +34,7 @@ const page = () => {
         "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693673965/AirBrush_20170128130335_t6dhwx.webp",
         "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672394/sufi6_depmpo.webp",
         "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693675157/sufi_gt9fke.webp",
-        "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699977827/Sufian-Mustafa-Web-Developer_lqleg1.png"
+        "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699977827/Sufian-Mustafa-Web-Developer_lqleg1.png",
         "https://res.cloudinary.com/dtvtphhsc/image/upload/v1692819143/Images/sufiselfie_oz7sbx.jpg"
       ]
       }
