@@ -46,13 +46,7 @@ export default function StandardImageList() {
         cols={1}
       >
         {itemData.map((item) => (
-          <ImageListItem
-            data-aos="zoom-in"
-            data-aos-delay="200"
-            data-aos-duration="500"
-            key={item.img}
-            sx={{ margin: "10px" }}
-          >
+          <ImageListItem key={item.img} sx={{ margin: "10px" }}>
             <CustomImageListItem item={item} />
           </ImageListItem>
         ))}
