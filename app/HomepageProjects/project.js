@@ -2,7 +2,7 @@ const projects = [
   {
     _id: "0",
     toptext1:
-      "My First Website (University Website): A Journey in Web Development  This project holds a special place in my heart as it marks the beginning of my web development journey. It may not have the sleek and polished design of my more recent projects, but it represents a significant milestone in my growth as a web developer.",
+      "DevInsight Network, a full-featured Next.js blog site that integrates with Prisma for powerful site management and NextAuth for secure and simple authentication. Enhance your reading experience with our powerful and effective platform",
     toptext2:
       "The Basics:  This website was created entirely with pure HTML, CSS, and JavaScript. I had not yet ventured into the world of frameworks or libraries like Bootstrap. Instead, I relied on my understanding of the core technologies.",
     description:
@@ -12,17 +12,34 @@ const projects = [
     imageFile2:
       "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1694356127/Awkum-Mcs-2022_jyfqkt.png",
     images: [
-      "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1694356127/Awkum-Mcs-2022_jyfqkt.png",
-      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693927810/Screenshot_186_mo1pkv.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1706538945/DevInsight_Network_jpt6en.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1706538945/DevInsight_Network.png2_xmqjr9.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1706538945/DevInsight_Network.png3_dd4buw.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1706538943/DevInsight_Network.png4_c051kc.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1706538944/DevInsight_Network.png6_qunn9l.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1706538943/DevInsight_Network.png5_nt48se.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1706538943/DevInsight_Network.png7_l4lcfr.png",
     ],
-
-    title: "UniverSity Website",
-    link: "https://awkummcs.great-site.net/",
+    technologies: [
+      "React Js",
+      "Next Js",
+      "Prisma",
+      "Next Auth",
+      "Google Sign",
+      "Tailwind CSS",
+      "React MUI",
+    ],
+    startDate: "3 weeks",
+    // endDate: "2022-12-31",
+    title: "DevInsight Network (Full Stack Next js Blog Website)",
+    link: "https://blog-website.sufianmustafa.com/",
+    readmore:
+      "https://sufianmustafa.com/projects/blog-website-devinsight-network",
   },
   {
     _id: "1",
     toptext1:
-      "My website is a fully-fledged MERN stack website. The frontend is built using React, which offers numerous benefits for my web development.  The design and code you see here are a pure reflection of my creative vision and technical expertise.",
+      " This feature-rich platform seamlessly integrates various sections, including a dynamic homepage, detailed about me page, skills showcase, educational background, services offered, an extensive portfolio of projects, a captivating blog, and easy-to-use contact forms. Explore the diverse facets of my skills and experiences all in one place. Dive into the world of technology, innovation, and creativity brought together in this MERN stack masterpiece",
     toptext2:
       "React's component-based architecture promotes reusability, making it easier for me to manage and maintain the codebase. With React's virtual DOM, my website achieves optimal performance as it efficiently updates only the necessary parts of the page, leading to faster rendering and a smoother user experience  advantage of using React libraries",
     description:
@@ -32,17 +49,34 @@ const projects = [
     imageFile2:
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694356124/Sufian-Mustafa-Web-Developer_1_ij7opt.png",
     images: [
-      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694962572/cjhtat7vpnfqvg0zs7fo.png",
-      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694356124/Sufian-Mustafa-Web-Developer_1_ij7opt.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706541874/Mern-Stack-Portfolio_drtuww.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706541858/Mern-Stack-Portfolio_16_jcprl3.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706541856/Mern-Stack-Portfolio_18_dz6gwq.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706541857/Mern-Stack-Portfolio_20_fr9mwn.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706541857/Mern-Stack-Portfolio_17_cfziky.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706541856/Mern-Stack-Portfolio_21_oymhmf.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706541874/Mern-Stack-Portfolio_3_xkldzc.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706541859/Portfolio_1_q7gzll.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706541857/Portfolio_4_v2esgw.png",
     ],
-
-    title: "My Portfolio Website",
-    link: "https://sufianmustafa.com/",
+    technologies: [
+      "React Js",
+      "Vite Js",
+      "Node Js",
+      "Express Js",
+      "MongoDB",
+      "Tailwind CSS",
+      "React MUI",
+    ],
+    startDate: "3 weeks",
+    title: "MERN Stack Portfolio Website",
+    link: "https://mernstackportfoliowebsite.sufianmustafa.com/",
+    readmore: "https://sufianmustafa.com/projects/mern-stack-portfolio",
   },
   {
     _id: "2",
     toptext1:
-      "My website is a fully-fledged MERN stack website. The frontend is built using React, which offers numerous benefits for my web development.  The design and code you see here are a pure reflection of my creative vision and technical expertise.",
+      "With this platform, users can effortlessly create and share insightful posts, while also having the ability to update their user information.",
     toptext2:
       "React's component-based architecture promotes reusability, making it easier for me to manage and maintain the codebase. With React's virtual DOM, my website achieves optimal performance as it efficiently updates only the necessary parts of the page, leading to faster rendering and a smoother user experience  advantage of using React libraries",
     description:
@@ -51,9 +85,30 @@ const projects = [
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699016308/1_QSSkbuPnh7HZArGaOlogbg_hcoyzf.png",
     imageFile2:
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699016345/next-vs-reactjs_jduh7y.jpg",
-
-    title: "Converting my React.js Portfolio to Next.js",
-    link: "https://sufianmustafa.com/",
+    images: [
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706553910/Devto_Clone.png2_qpw5al.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706553909/Devto_Clone.png3_rygvyv.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706553911/Devto_Clone.png5_qrnusr.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706553911/Devto_Clone.png8_m7q4w1.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706553910/Devto_Clone.png4_xxum7t.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706553909/Devto_Clone.png9_iw95u6.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706553910/Devto_Clone_1_jxejz7.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706553909/Devto_Clone.png11_ka7mih.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706554273/Logs-sufi090012-dev-to-clone_xwkj0g.png",
+      "https://res.cloudinary.com/dtvtphhsc/image/upload/v1706554272/Data___Cloud__MongoDB_Cloud_ocf8jy.png",
+    ],
+    technologies: [
+      "React Js",
+      "Node Js",
+      "Express Js",
+      "MongoDB",
+      "Tailwind CSS",
+      "React MUI",
+    ],
+    startDate: "4 weeks",
+    title: "Dev.to Clone (MERN-STACK-Project)",
+    link: "https://dev-clone.sufianmustafa.com/",
+    readmore: "https://sufianmustafa.com/projects/dev-clone",
   },
 ];
 

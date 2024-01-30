@@ -22,7 +22,7 @@ const SvgHomePage = () => {
       <div
         className="svglines"
         style={{
-          marginBottom: "200px",
+          // marginBottom: "200px",
           zIndex: "-1",
         }}
       >
@@ -54,7 +54,7 @@ const SvgHomePage = () => {
           </g>
           <defs>
             <mask id="SvgjsMask1048">
-              <rect width="1440" height="560" fill="#ffffff"></rect>
+              <rect width="1440" height="1060" fill="#ffffff"></rect>
             </mask>
           </defs>
 

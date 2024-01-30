@@ -4,14 +4,15 @@ import React from "react";
 
 import Card from "@mui/material/Card";
 import { urlFor } from "../lib/sanityImageUrl";
+export const revalidate = false;
+export const dynamic = "force-dynamic";
 import CardActions from "@mui/material/CardActions";
 
 import { motion } from "framer-motion";
 
 import Grid from "@mui/material/Grid";
 import Link from "next/link";
-export const revalidate = false;
-export const dynamic = "force-dynamic";
+
 const project = {
   transition: "0.3s",
   borderRadius: "20px",

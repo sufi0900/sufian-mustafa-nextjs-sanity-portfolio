@@ -53,6 +53,7 @@ export default function ProjectAll() {
                 <ProjectCard
                   data-aos="zoom-in"
                   data-aos-delay="100"
+                  images={project.images} // Pass the images array to the Card2 component
                   key={project._id}
                   {...project}
                 />

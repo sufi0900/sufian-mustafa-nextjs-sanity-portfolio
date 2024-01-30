@@ -169,7 +169,7 @@ export default async function AllPosts() {
         <p
           data-aos="zoom-in"
           data-aos-delay="150"
-          style={{ textAlign: "center" }}
+          style={{ textAlign: "justify" }}
         >
           Hi I am Sufian Mustafa a passionate Web developer who is continually
           exploring and mastering new frontend technologies. I share my learning

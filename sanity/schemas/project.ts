@@ -9,6 +9,11 @@ export default {
       title: 'Title',
     },
     {
+      name: 'overview',
+      type: 'string',
+      title: 'overview  ',
+    },
+    {
       name: 'toptext1',
       type: 'string',
       title: 'toptext1',
@@ -18,7 +23,29 @@ export default {
       type: 'string',
       title: 'toptext2',
     },
-
+    {
+      name: 'images',
+      type: 'array',
+      title: 'Images',
+      of: [
+        {
+          type: 'image',
+          fields: [
+            {
+              type: 'text',
+              name: 'alt',
+              title: 'Alternative Text',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'technologies',
+      type: 'array',
+      title: 'Technologies',
+      of: [{type: 'string'}], // Assuming each technology is a string
+    },
     {
       name: 'projectimg1',
       type: 'image',
@@ -42,6 +69,18 @@ export default {
       options: {
         source: 'title',
       },
+    },
+    {
+      name: 'startDate',
+      type: 'datetime',
+      title: 'Start Date',
+      description: 'Specify the start date/time of the project',
+    },
+    {
+      name: 'endDate',
+      type: 'datetime',
+      title: 'End Date',
+      description: 'Specify the end date/time of the project',
     },
     {
       name: 'content',

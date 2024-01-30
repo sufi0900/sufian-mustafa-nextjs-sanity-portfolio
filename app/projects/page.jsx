@@ -6,6 +6,8 @@ import { client } from "../lib/sanity";
 import Head from "next/head";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
+
+import Card2 from "./Card2";
 export const revalidate = false;
 export const dynamic = "force-dynamic";
 export const metadata = {
@@ -115,7 +117,7 @@ export default async function ProjectAll() {
               <br />
             </div>
             {data.map((project) => (
-              <ProjectCard
+              <Card2
                 data-aos="zoom-in"
                 data-aos-delay="100"
                 key={project._id}
@@ -123,8 +125,8 @@ export default async function ProjectAll() {
               />
             ))}
             <br />
-            <p style={{ fontSize: "20px" }}>
-              More proJects coming soon IN SHAA ALLAH...{" "}
+            {/* <p style={{ fontSize: "20px" }}>
+              More proJects coming soon IN SHAA ALLAH...
               <img
                 src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.progressive/v1694015121/Screenshot_190_oaffgj.png"
                 alt="img"
@@ -135,7 +137,7 @@ export default async function ProjectAll() {
                   borderRadius: "10px",
                 }}
               />
-            </p>
+            </p> */}
           </Grid>
           <br />
 

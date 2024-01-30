@@ -105,8 +105,8 @@ export default async function AllBlogs() {
         <br></br>
         <br></br>
         <div className="flex">
-          <div style={{ width: "75%" }}>
-            <Grid container spacing={2} className="flex">
+          <div style={{ width: "80%" }}>
+            <Grid spacing={2} container className="flex">
               {data.map((post) => (
                 <BlogCard
                   data-aos="zoom-in"

@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import Head from "next/head";
-
+import SendIcon from "@mui/icons-material/Send";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
 import { Button, useMediaQuery, useTheme } from "@mui/material";
@@ -228,6 +228,57 @@ const ContactMe = () => {
                     </div>
                     <div>
                       <Button
+                        className="form__btn projectcardbtn"
+                        variant="contained"
+                        type="submit"
+                        data-aos="zoom-in"
+                        data-aos-delay="100"
+                        style={{
+                          padding: "25px 40px",
+                          background: "rgb(253, 6, 204)",
+
+                          transition: "0.4s",
+                          transform: "scale(1)",
+
+                          boxShadow:
+                            "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+                          cursor: "pointer",
+                        }}
+                        startIcon={<SendIcon />}
+                      >
+                        <span class="form__btn--visible">
+                          <motion.p
+                            animate={{
+                              x: [4, -4],
+                            }}
+                            transition={{
+                              ease: "linear",
+                              duration: 1.6,
+                              repeat: Infinity,
+                              repeatType: "reverse",
+                            }}
+                          >
+                            Submit
+                          </motion.p>
+                        </span>
+                        <span class="form__btn--invisible">
+                          <motion.p
+                            animate={{
+                              x: [4, -4],
+                            }}
+                            transition={{
+                              ease: "linear",
+                              duration: 1.6,
+                              repeat: Infinity,
+                              repeatType: "reverse",
+                            }}
+                            style={{ position: "relative", bottom: "15px" }}
+                          >
+                            Msg Sent ✅
+                          </motion.p>
+                        </span>
+                      </Button>
+                      {/* <Button
                         className="form__btn"
                         type="submit"
                         data-aos="zoom-in"
@@ -264,7 +315,7 @@ const ContactMe = () => {
                             Msg Sent ✅
                           </motion.p>
                         </span>
-                      </Button>
+                      </Button> */}
                       {/* <button class="form__btn">
                         <span class="form__btn--visible">
                           <p>Submit</p>

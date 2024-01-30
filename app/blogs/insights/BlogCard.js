@@ -22,12 +22,11 @@ export default function RecipeReviewCard({ postimg, title, slug }) {
     <>
       <Grid
         item
-        xl={3}
+        xl={4}
         lg={4}
         md={6}
         sm={12}
         xs={12}
-        padding={2}
         sx={{
           display: "flex",
           justifyContent: "center",

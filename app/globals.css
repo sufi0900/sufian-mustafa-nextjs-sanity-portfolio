@@ -8,8 +8,17 @@
     rgba(78, 78, 246, 0.647) 0%,
     rgba(247, 90, 216, 0.696) 100%
   );
+  --white-text-color: white;
+  --black-text-color: black;
+  --main-bg-color: rgba(1, 145, 255, 1);
+  --backgroundpink: rgb(253, 6, 204);
 }
-
+.body {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
 body {
   background: var(--bg-color-dark); /* Use the default theme */
 }
@@ -116,12 +125,8 @@ body {
     rgba(247, 90, 216, 0.696) 100%
   );
 }
-
-.Home {
-  width: 97%;
-  padding: 20px;
-  overflow-y: auto;
-  overflow-x: hidden;
+.home33 {
+  width: 100%;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -129,6 +134,34 @@ body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25% 25% 64% 36% / 0% 0% 29% 25%;
+}
+.home34 {
+  width: 97%;
+  /* background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3); */
+  /* border-radius: 43% 49% 64% 36% / 21% 22% 0% 0%; */
+}
+.Home {
+  width: 97%;
+  padding: 20px;
+  padding-bottom: 75px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* overflow: visible; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  text-align: justify;
 }
 
 .Homeresume {
@@ -1266,13 +1299,15 @@ form textarea {
 .form__btn {
   transition: 0.4s;
   scale: 1;
+  border: 1px solid white;
+  border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   cursor: pointer;
 }
 
 .form__btn:hover {
-  background: rgba(251, 71, 215, 0.923);
+  background: blue;
   transition: 0.3s;
   scale: 1.05;
   cursor: url("https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.preserve_transparency.sprite/v1693672396/CursorPointer_phuwb8.webp")
@@ -1938,7 +1973,7 @@ button:hover {
   top: 0;
   border-radius: 10px;
 }
-.Animateiv1 span::after {
+/* .Animateiv1 span::after {
   content: "";
   width: 3px;
   height: 30px;
@@ -1950,17 +1985,17 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 5px;
-}
+} */
 @keyframes cursor-blink {
   0% {
     opacity: 0;
   }
 }
 
-.Animateiv1 span::after {
-  /*code commented for brevity*/
+/* .Animateiv1 span::after {
+  code commented for brevity
   animation: cursor-blink 1.2s steps(2) infinite;
-}
+} */
 
 .projectone {
   display: flex;
@@ -1991,6 +2026,18 @@ button:hover {
   .motionPath {
     display: none;
   }
+  .Home {
+    width: 100%;
+
+    overflow: auto;
+    height: 100vh;
+    padding-bottom: 10px;
+  }
+  .HomeDiv {
+    position: relative;
+    padding: 5px;
+    text-align: start;
+  }
   .blogpagecard {
     display: block;
   }
@@ -2003,6 +2050,7 @@ button:hover {
   .projectone {
     display: inline-block;
   }
+
   .projectone img {
     width: 100%;
     height: auto;
@@ -2034,10 +2082,7 @@ button:hover {
   .HomePage {
     margin-bottom: 20px;
   }
-  .Home {
-    padding-top: 10px;
-    height: 100%;
-  }
+
   .Home_Circle {
     width: 50px;
     height: 50px;
@@ -2046,9 +2091,7 @@ button:hover {
   .HomeDiv7 {
     margin-bottom: 120px;
   }
-  .HomeInnerDiv {
-    display: none;
-  }
+
   .Homeresume {
     display: block;
     margin-top: 30px;
@@ -2365,4 +2408,53 @@ button:hover {
   .blog-card.alt .details {
     padding-left: 25px;
   }
+}
+.rm-btn {
+  background: #3652e1;
+  border-radius: 15px;
+  color: white;
+}
+.rm-btn:hover {
+  color: black;
+}
+.bgch {
+  background: rgb(253, 6, 204);
+
+  color: var(--white-text-color);
+  border-radius: 20px;
+  padding: 2px 10px;
+  border: 2px solid white;
+}
+.bgch:hover {
+  transition: 0.5s;
+  background: var(--white-text-color);
+  color: var(--black-text-color);
+}
+.projectcardbtn {
+  transition: 0.3s;
+}
+.projectcardbtn:hover {
+  transform: scale(1.1);
+}
+.projectcardv1 {
+  box-shadow: 0px 2px 4px 0px rgba(14, 30, 37, 0.12),
+    0px 2px 16px 0px rgba(14, 30, 37, 0.32);
+  border: 1px solid rgb(254, 6, 205);
+  transition: all 0.3s;
+  background: linear-gradient(
+    90deg,
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
+  );
+}
+.projectcardv1:hover {
+  background: rgb(254, 6, 205);
+  transition: 0.3s;
+}
+.bg {
+  background: linear-gradient(
+    90deg,
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
+  );
 }

@@ -1,6 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-
+import { Typography, Paper, Button } from "@mui/material";
+import {
+  CalendarMonth,
+  Email,
+  OpenInBrowser,
+  Person,
+  Title,
+} from "@mui/icons-material";
 import { client } from "../../lib/sanity";
 import { urlFor } from "../../lib/sanityImageUrl";
 import Grid from "@mui/material/Grid";
@@ -45,8 +52,20 @@ export default async function ProjectCardDetail({ params }) {
       ),
     },
   };
+  const formattedStartDate = new Date(data.startDate).toLocaleDateString();
+  const formattedEndDate = new Date(data.endDate).toLocaleDateString();
   const canonicalUrl = `https://sufianmustafa.com/projects/${params.slug}`;
   // Set title, description, and other SEO metadata
+  const startDateObj = new Date(data.startDate);
+  const endDateObj = new Date(data.endDate);
+  const durationInDays = Math.floor(
+    (endDateObj - startDateObj) / (24 * 60 * 60 * 1000)
+  );
+
+  // Format the duration for display
+  const formattedDuration =
+    durationInDays > 1 ? `${durationInDays} days` : `${durationInDays} day`;
+
   const title = `${data.title} - Sufian Mustafa Projects`;
   const description = `${data.toptext1}`;
   return (
@@ -87,10 +106,7 @@ export default async function ProjectCardDetail({ params }) {
           >
             <div
               style={{
-                // alignItems: "center",
-                // textAlign: "center",
                 width: "97%",
-                // padding: "20px",
               }}
               className="item projectone"
             >
@@ -112,6 +128,8 @@ export default async function ProjectCardDetail({ params }) {
                   style={{
                     borderRadius: "20px",
                     overflow: "hidden",
+                    width: "100%",
+                    height: "auto",
                   }}
                 />
               </div>
@@ -122,6 +140,7 @@ export default async function ProjectCardDetail({ params }) {
                   textAlign: "center",
                   alignItems: "center",
                   display: "flex",
+                  width: "60%",
                 }}
                 className="ProjectTextSm"
               >
@@ -136,7 +155,38 @@ export default async function ProjectCardDetail({ params }) {
                     <h1 style={{ fontSize: "27px" }}> {data.title} </h1>
                   </div>
 
-                  {data.toptext1}
+                  <Grid container spacing={2}>
+                    <Grid item xs={12}>
+                      <div style={{ padding: "20px", borderRadius: "15px" }}>
+                        <p paragraph>
+                          This project utilizes the following technologies:
+                        </p>
+                        <div style={{ display: "flex", flexWrap: "wrap" }}>
+                          {data.technologies &&
+                            Array.isArray(data.technologies) && (
+                              <div
+                                style={{ display: "flex", flexWrap: "wrap" }}
+                              >
+                                {data.technologies.map((tech, index) => (
+                                  <Typography
+                                    key={index}
+                                    variant="body2"
+                                    className="bgch custom-input-color"
+                                    style={{
+                                      margin: "5px",
+                                      padding: "5px 15px",
+                                      borderRadius: "24px",
+                                    }}
+                                  >
+                                    {tech}
+                                  </Typography>
+                                ))}
+                              </div>
+                            )}
+                        </div>
+                      </div>
+                    </Grid>
+                  </Grid>
                 </span>
               </div>
             </div>
@@ -178,7 +228,52 @@ export default async function ProjectCardDetail({ params }) {
                   data-aos-delay="400"
                   data-aos-duration="500"
                 >
-                  {data.toptext2}
+                  <Grid
+                    container
+                    spacing={2}
+                    style={{ justifyContent: "center" }}
+                  >
+                    <Grid item xs={12}>
+                      <div
+                        style={{
+                          padding: "20px",
+                          borderRadius: "15px",
+                          // backgroundColor: "#f5f5f5",
+                        }}
+                      >
+                        <Typography
+                          variant="h4"
+                          gutterBottom
+                          style={{ display: "flex", alignItems: "center" }}
+                        >
+                          Project Duration{" "}
+                          <CalendarMonth
+                            style={{ marginLeft: "10px", color: "#4caf50" }}
+                          />
+                        </Typography>
+                        <div style={{ display: "flex", flexWrap: "wrap" }}>
+                          <Typography variant="h5" paragraph>
+                            The project spanned from:
+                            <br />
+                            <Typography variant="h4" paragraph>
+                              {formattedStartDate}
+                            </Typography>
+                            to{" "}
+                            <Typography variant="h4" paragraph>
+                              {formattedEndDate}
+                            </Typography>
+                            Total duration: <br />
+                            <span style={{ color: "#ff9800" }}>
+                              {formattedDuration}
+                            </span>
+                            <br />
+                            <hr />
+                          </Typography>
+                        </div>
+                      </div>
+                    </Grid>
+                  </Grid>
+                  {/* {data.toptext2} */}
                   <div className="About3">
                     {" "}
                     <h1 style={{ fontSize: "27px" }}>
@@ -212,6 +307,8 @@ export default async function ProjectCardDetail({ params }) {
                     borderRadius: "10px",
                     zIndex: "-1",
                     overflow: "hidden",
+                    width: "100%",
+                    height: "auto",
                   }}
                 />
               </div>
