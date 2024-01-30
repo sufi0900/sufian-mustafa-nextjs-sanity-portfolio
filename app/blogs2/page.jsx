@@ -1,16 +1,7 @@
-import { fetchPosts } from "../../lib/data";
-import Post from "./Post";
+import React from "react";
 
-async function page() {
-  const posts = await fetchPosts();
-
-  return (
-    <div>
-      {posts.map((post) => (
-        <Post key={post.id} post={post} />
-      ))}
-    </div>
-  );
-}
+const page = () => {
+  return <div>page</div>;
+};
 
 export default page;
