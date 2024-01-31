@@ -150,7 +150,7 @@ const Card2 = ({
                   <ListItemText
                     primary={
                       <>
-                        <p>
+                        <p className="custom-input-color">
                           {toptext1 &&
                             `${toptext1.split(" ").slice(0, 18).join(" ")}${
                               toptext1.split(" ").length > 18 ? " ..." : ""

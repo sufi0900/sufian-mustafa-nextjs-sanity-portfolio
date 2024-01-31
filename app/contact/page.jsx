@@ -1,6 +1,6 @@
 import React from "react";
 import Code from "./code";
-
+import Comment from "../blogs2/page";
 export const metadata = {
   title: "Contact Me - Sufian Mustafa",
   description:
@@ -11,6 +11,7 @@ const page = () => {
   return (
     <>
       <Code />
+      <Comment />
     </>
   );
 };

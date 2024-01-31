@@ -5,6 +5,8 @@ import { Grid, Container } from "@mui/material";
 import Head from "next/head";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
+import { Tooltip } from "@mui/material";
+
 import {
   AddReaction,
   ArrowUpwardSharp,
@@ -18,7 +20,14 @@ import {
   WhatsApp,
 } from "@mui/icons-material";
 import LogoDevIcon from "@mui/icons-material/LogoDev";
-import { Button } from "react-bootstrap";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+
+// import { useCustomOptimistic } from "./useOptimistic";
+// import ActionIcon from "./ActionIcon";
+
+import Button from "@mui/material/Button";
+
+import Typography from "@mui/material/Typography";
 import Link from "next/link";
 
 const Footer = () => {
@@ -138,42 +147,42 @@ const Footer = () => {
                   <li>
                     Social Links
                     <br />
-                    <a
-                      href="https://www.linkedin.com/in/sufian-mustafa-7a7845226/"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{
-                        color: "blue",
-                        padding: "2px",
-                        paddingTop: "8px",
-                      }}
-                    >
-                      <LinkedIn />
-                    </a>
-                    <a
-                      href="https://github.com/sufi0900"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{ color: "blue" }}
-                    >
-                      <GitHub />
-                    </a>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=03177652064"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{ color: "blue", padding: "2px" }}
-                    >
-                      <WhatsApp />
-                    </a>
-                    <a
-                      href="https://dev.to/sufian"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{ color: "blue", padding: "2px" }}
-                    >
-                      <LogoDevIcon />
-                    </a>
+                    <Tooltip title="LinkedIn" placement="top">
+                      <Button
+                        href="https://www.linkedin.com/in/sufian-mustafa-7a7845226/"
+                        target="_blank"
+                        rel="northerner"
+                        style={{ color: "blue" }}
+                        startIcon={<LinkedIn />}
+                      ></Button>
+                    </Tooltip>
+                    <Tooltip title="GitHub" placement="top">
+                      <Button
+                        href="https://github.com/sufi0900"
+                        target="_blank"
+                        rel="noreferrer"
+                        startIcon={<GitHub />}
+                        style={{ color: "blue" }}
+                      ></Button>
+                    </Tooltip>
+                    <Tooltip title="WhatsApp" placement="top">
+                      <Button
+                        href="https://api.whatsapp.com/send?phone=03177652064"
+                        target="_blank"
+                        rel="noreferrer"
+                        startIcon={<WhatsApp />}
+                        style={{ color: "blue", padding: "2px" }}
+                      ></Button>
+                    </Tooltip>
+                    <Tooltip title="Dev.to" placement="top">
+                      <Button
+                        href="https://dev.to/sufian"
+                        target="_blank"
+                        rel="noreferrer"
+                        startIcon={<LogoDevIcon />}
+                        style={{ color: "blue", padding: "2px" }}
+                      ></Button>
+                    </Tooltip>
                   </li>
                 </ul>
               </Grid>
@@ -292,7 +301,12 @@ const Footer = () => {
                 data-aos-delay="200"
                 data-aos-duration="500"
               >
-                <Grid item xs={12} style={{ paddingBottom: "5px" }}>
+                <Grid
+                  className="flex"
+                  item
+                  xs={12}
+                  style={{ paddingBottom: "5px" }}
+                >
                   <img
                     src="https://res.cloudinary.com/dtvtphhsc/image/upload/v1692819141/Images/logo_mjnbuh.png"
                     alt="logo"
@@ -319,7 +333,11 @@ const Footer = () => {
                   data-aos="zoom-in"
                   data-aos-delay="250"
                   data-aos-duration="500"
-                  style={{ transition: "0.5s" }}
+                  style={{
+                    color: "white",
+                    padding: "10px",
+                    transition: "0.5s",
+                  }}
                 >
                   Go To Top <ArrowUpwardSharp />{" "}
                 </Button>

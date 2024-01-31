@@ -228,13 +228,13 @@ const ContactMe = () => {
                     </div>
                     <div>
                       <Button
-                        className="form__btn projectcardbtn"
+                        className=" "
                         variant="contained"
                         type="submit"
                         data-aos="zoom-in"
                         data-aos-delay="100"
                         style={{
-                          padding: "25px 40px",
+                          padding: "13px 40px",
                           background: "rgb(253, 6, 204)",
 
                           transition: "0.4s",
@@ -246,8 +246,8 @@ const ContactMe = () => {
                         }}
                         startIcon={<SendIcon />}
                       >
-                        <span class="form__btn--visible">
-                          <motion.p
+                        <p>
+                          {/* <motion.p
                             animate={{
                               x: [4, -4],
                             }}
@@ -257,11 +257,11 @@ const ContactMe = () => {
                               repeat: Infinity,
                               repeatType: "reverse",
                             }}
-                          >
-                            Submit
-                          </motion.p>
-                        </span>
-                        <span class="form__btn--invisible">
+                          > */}
+                          Submit
+                          {/* </motion.p> */}
+                        </p>
+                        {/* <span class="form__btn--invisible">
                           <motion.p
                             animate={{
                               x: [4, -4],
@@ -276,7 +276,7 @@ const ContactMe = () => {
                           >
                             Msg Sent ✅
                           </motion.p>
-                        </span>
+                        </span> */}
                       </Button>
                       {/* <Button
                         className="form__btn"
@@ -411,21 +411,22 @@ const ContactMe = () => {
             <br></br>
             <br></br>
             <br></br>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.300470715256!2d71.97675405026192!3d34.06181102457913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38decd2395a97d01%3A0x590c12437b405a30!2sPAF%20Academy%20Asghar%20Khan!5e0!3m2!1sen!2s!4v1666977409467!5m2!1sen!2s"
-              width="94.5%"
-              height="400"
-              style={{
-                border: "1px solid black",
-                borderRadius: "10px",
-              }}
-              allowFullScreen=""
-              loading="lazy"
-              border="3px solid blue"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="img"
-            ></iframe>
-
+            <div className="flex">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.300470715256!2d71.97675405026192!3d34.06181102457913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38decd2395a97d01%3A0x590c12437b405a30!2sPAF%20Academy%20Asghar%20Khan!5e0!3m2!1sen!2s!4v1666977409467!5m2!1sen!2s"
+                width="94.5%"
+                height="400"
+                style={{
+                  border: "1px solid black",
+                  borderRadius: "10px",
+                }}
+                allowFullScreen=""
+                loading="lazy"
+                border="3px solid blue"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="img"
+              ></iframe>
+            </div>
             <br></br>
             <br></br>
             <br></br>
