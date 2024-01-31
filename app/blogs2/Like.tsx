@@ -1,12 +1,14 @@
 "use client";
 
-import { PostWithExtras } from "../../lib/definitions";
+import { LikeWithExtras, PostWithExtras } from "../../lib/definitions";
 import { cn } from "../../lib/utils";
 import { Like } from "@prisma/client";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 
-import { useOptimistic } from "react";
-import ActionIcon from "./ActionIcon";
+import React, { useState } from "react";
+
+// import { useCustomOptimistic } from "./useOptimistic";
+// import ActionIcon from "./ActionIcon";
 import { likePost } from "../../lib/actions";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
@@ -20,15 +22,10 @@ function LikeButton({
 }) {
   const predicate = (like: Like) =>
     like.userId === userId && like.postId === post.id;
-  const [optimisticLikes, addOptimisticLike] = useOptimistic<Like[]>(
-    post.likes,
-    // @ts-ignore
-    (state: Like[], newLike: Like) =>
-      // here we check if the like already exists, if it does, we remove it, if it doesn't, we add it
-      state.some(predicate)
-        ? state.filter((like) => like.userId !== userId)
-        : [...state, newLike]
-  );
+
+  // Initialize state with post.likes
+  const [optimisticLikes, setOptimisticLikes] = useState(post.likes);
+
   const handleLike = async () => {
     if (!userId) {
       // You can replace '/login' with your login route
@@ -37,8 +34,17 @@ function LikeButton({
     }
 
     const postId = post.id;
-    addOptimisticLike({ postId, userId });
 
+    // Immediately update UI
+    setOptimisticLikes((currentLikes) => {
+      if (currentLikes.some(predicate)) {
+        return currentLikes.filter((like) => like.userId !== userId);
+      }
+      // Make sure the new like being added conforms to LikeWithExtras type
+      return [...currentLikes, { postId, userId } as LikeWithExtras];
+    });
+
+    // Then update the server
     await likePost(postId);
   };
   return (
@@ -46,7 +52,6 @@ function LikeButton({
       <form onSubmit={(e) => e.preventDefault()}>
         <input type="hidden" name="postId" value={post.id} />
 
-        {/* <ActionIcon> */}
         <Button
           onClick={handleLike}
           className="button-85"
