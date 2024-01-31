@@ -227,27 +227,27 @@ const ContactMe = () => {
                       />{" "}
                     </div>
                     <div>
-                      <Button
-                        className=" "
+                      <button
+                        className="button-85"
                         variant="contained"
                         type="submit"
                         data-aos="zoom-in"
                         data-aos-delay="100"
-                        style={{
-                          padding: "13px 40px",
-                          background: "rgb(253, 6, 204)",
+                        style={{ padding: "13px 40px" }}
+                        // style={{
+                        //
+                        //   background: "rgb(253, 6, 204)",
 
-                          transition: "0.4s",
-                          transform: "scale(1)",
+                        //   transition: "0.4s",
+                        //   transform: "scale(1)",
 
-                          boxShadow:
-                            "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
-                          cursor: "pointer",
-                        }}
-                        startIcon={<SendIcon />}
+                        //   boxShadow:
+                        //     "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+                        //   cursor: "pointer",
+                        // }}
+                        // startIcon={<SendIcon />}
                       >
-                        <p>
-                          {/* <motion.p
+                        {/* <motion.p
                             animate={{
                               x: [4, -4],
                             }}
@@ -258,9 +258,8 @@ const ContactMe = () => {
                               repeatType: "reverse",
                             }}
                           > */}
-                          Submit
-                          {/* </motion.p> */}
-                        </p>
+                        <SendIcon /> Submit
+                        {/* </motion.p> */}
                         {/* <span class="form__btn--invisible">
                           <motion.p
                             animate={{
@@ -277,7 +276,7 @@ const ContactMe = () => {
                             Msg Sent ✅
                           </motion.p>
                         </span> */}
-                      </Button>
+                      </button>
                       {/* <Button
                         className="form__btn"
                         type="submit"

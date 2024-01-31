@@ -138,53 +138,91 @@ const Footer = () => {
                     responsive websites. Lets connect and create something
                     amazing.
                   </p>
-                </div>
 
-                <ul className="footerc1">
-                  <li>Email: sufianmustafa0900.com</li>
-                  <li>Phone: +92 3177 652064</li>
-                  <li>Address: Pakistan KPK (Mardan)</li>
-                  <li>
-                    Social Links
-                    <br />
-                    <Tooltip title="LinkedIn" placement="top">
-                      <Button
-                        href="https://www.linkedin.com/in/sufian-mustafa-7a7845226/"
-                        target="_blank"
-                        rel="northerner"
-                        style={{ color: "blue" }}
-                        startIcon={<LinkedIn />}
-                      ></Button>
-                    </Tooltip>
-                    <Tooltip title="GitHub" placement="top">
-                      <Button
-                        href="https://github.com/sufi0900"
-                        target="_blank"
-                        rel="noreferrer"
-                        startIcon={<GitHub />}
-                        style={{ color: "blue" }}
-                      ></Button>
-                    </Tooltip>
-                    <Tooltip title="WhatsApp" placement="top">
-                      <Button
-                        href="https://api.whatsapp.com/send?phone=03177652064"
-                        target="_blank"
-                        rel="noreferrer"
-                        startIcon={<WhatsApp />}
-                        style={{ color: "blue", padding: "2px" }}
-                      ></Button>
-                    </Tooltip>
-                    <Tooltip title="Dev.to" placement="top">
-                      <Button
-                        href="https://dev.to/sufian"
-                        target="_blank"
-                        rel="noreferrer"
-                        startIcon={<LogoDevIcon />}
-                        style={{ color: "blue", padding: "2px" }}
-                      ></Button>
-                    </Tooltip>
-                  </li>
-                </ul>
+                  <ul className="footerc1">
+                    <li
+                      style={{
+                        marginBottom: "10px",
+                        fontSize: "18px",
+                        color: "blue",
+                      }}
+                    >
+                      <span style={{ color: "black" }}>Email:</span>{" "}
+                      sufianmustafa0900.com
+                    </li>
+                    <li
+                      style={{
+                        marginBottom: "10px",
+                        fontSize: "18px",
+                        color: "blue",
+                      }}
+                    >
+                      <span style={{ color: "black" }}>Phone:</span> +92 3177
+                      652064
+                    </li>
+                    <li
+                      style={{
+                        marginBottom: "10px",
+                        fontSize: "18px",
+                        color: "blue",
+                      }}
+                    >
+                      <span style={{ color: "black" }}>Address:</span> Pakistan
+                      KPK (Mardan)
+                    </li>
+                    <li
+                      className=""
+                      style={{
+                        marginTop: "10px",
+                        textAlign: "start",
+                        fontSize: "18px",
+                        color: "blue",
+                      }}
+                    >
+                      <span style={{ fontWeight: "bolder", color: "blue" }}>
+                        Social Links:
+                      </span>
+                    </li>
+                    <div className="">
+                      <Tooltip title="LinkedIn" placement="top">
+                        <Button
+                          href="https://www.linkedin.com/in/sufian-mustafa-7a7845226/"
+                          target="_blank"
+                          rel="northerner"
+                          style={{ color: "blue" }}
+                          startIcon={<LinkedIn />}
+                        ></Button>
+                      </Tooltip>
+                      <Tooltip title="GitHub" placement="top">
+                        <Button
+                          href="https://github.com/sufi0900"
+                          target="_blank"
+                          rel="noreferrer"
+                          startIcon={<GitHub />}
+                          style={{ color: "blue" }}
+                        ></Button>
+                      </Tooltip>
+                      <Tooltip title="WhatsApp" placement="top">
+                        <Button
+                          href="https://api.whatsapp.com/send?phone=03177652064"
+                          target="_blank"
+                          rel="noreferrer"
+                          startIcon={<WhatsApp />}
+                          style={{ color: "blue", padding: "2px" }}
+                        ></Button>
+                      </Tooltip>
+                      <Tooltip title="Dev.to" placement="top">
+                        <Button
+                          href="https://dev.to/sufian"
+                          target="_blank"
+                          rel="noreferrer"
+                          startIcon={<LogoDevIcon />}
+                          style={{ color: "blue", padding: "2px" }}
+                        ></Button>
+                      </Tooltip>
+                    </div>
+                  </ul>
+                </div>
               </Grid>
 
               <Grid

@@ -1813,14 +1813,12 @@ footer {
   margin-top: 20px;
 }
 .footerc1 {
-  margin-left: 30px;
+  margin-top: 5px;
 }
 .footerc1 li {
   padding: 1px;
 }
-.site a {
-  /* margin-left: 20px; */
-}
+
 .site li {
   padding-bottom: 10px;
 }
