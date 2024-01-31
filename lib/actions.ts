@@ -24,7 +24,7 @@ export async function createPost(values: z.infer<typeof CreatePost>) {
 
   if (!validatedFields.success) {
     return {
-      errors: validatedFields.error.flatten().fieldErrors,
+      // errors: validatedFields.error.flatten().fieldErrors,
       message: "Missing Fields. Failed to Create Post.",
     };
   }
@@ -89,62 +89,62 @@ export async function likePost(value: FormDataEntryValue | null) {
 
   const validatedFields = LikeSchema.safeParse({ postId: value });
 
-  if (!validatedFields.success) {
-    return {
-      errors: validatedFields.error.flatten().fieldErrors,
-      message: "Missing Fields. Failed to Like Post.",
-    };
-  }
+  if (validatedFields.success) {
+    const { postId } = validatedFields.data;
 
-  const { postId } = validatedFields.data;
-
-  const post = await prisma.post.findUnique({
-    where: {
-      id: postId,
-    },
-  });
-
-  if (!post) {
-    throw new Error("Post not found");
-  }
-
-  const like = await prisma.like.findUnique({
-    where: {
-      postId_userId: {
-        postId,
-        userId,
+    const post = await prisma.post.findUnique({
+      where: {
+        id: postId,
       },
-    },
-  });
+    });
 
-  if (like) {
-    try {
-      await prisma.like.delete({
-        where: {
-          postId_userId: {
-            postId,
-            userId,
+    if (!post) {
+      throw new Error("Post not found");
+    }
+
+    const like = await prisma.like.findUnique({
+      where: {
+        postId_userId: {
+          postId,
+          userId,
+        },
+      },
+    });
+
+    if (like) {
+      try {
+        await prisma.like.delete({
+          where: {
+            postId_userId: {
+              postId,
+              userId,
+            },
           },
+        });
+        revalidatePath("/dashboard");
+        return { message: "Unliked Post." };
+      } catch (error) {
+        return { message: "Database Error: Failed to Unlike Post." };
+      }
+    }
+
+    try {
+      await prisma.like.create({
+        data: {
+          postId,
+          userId,
         },
       });
       revalidatePath("/dashboard");
-      return { message: "Unliked Post." };
+      return { message: "Liked Post." };
     } catch (error) {
-      return { message: "Database Error: Failed to Unlike Post." };
+      return { message: "Database Error: Failed to Like Post." };
     }
-  }
-
-  try {
-    await prisma.like.create({
-      data: {
-        postId,
-        userId,
-      },
-    });
-    revalidatePath("/dashboard");
-    return { message: "Liked Post." };
-  } catch (error) {
-    return { message: "Database Error: Failed to Like Post." };
+  } else {
+    return {
+      // errors: validatedFields.error.flatten().fieldErrors,
+      message: "Missing Fields. Failed to Like Post.",
+    };
   }
 }
 
@@ -155,7 +155,7 @@ export async function bookmarkPost(value: FormDataEntryValue | null) {
 
   if (!validatedFields.success) {
     return {
-      errors: validatedFields.error.flatten().fieldErrors,
+      // errors: validatedFields.error.flatten().fieldErrors,
       message: "Missing Fields. Failed to Bookmark Post.",
     };
   }
@@ -223,7 +223,7 @@ export async function createComment(values: z.infer<typeof CreateComment>) {
 
   if (!validatedFields.success) {
     return {
-      errors: validatedFields.error.flatten().fieldErrors,
+      // errors: validatedFields.error.flatten().fieldErrors,
       message: "Missing Fields. Failed to Create Comment.",
     };
   }
@@ -293,7 +293,7 @@ export async function updatePost(values: z.infer<typeof UpdatePost>) {
 
   if (!validatedFields.success) {
     return {
-      errors: validatedFields.error.flatten().fieldErrors,
+      // errors: validatedFields.error.flatten().fieldErrors,
       message: "Missing Fields. Failed to Update Post.",
     };
   }
@@ -336,7 +336,7 @@ export async function updateProfile(values: z.infer<typeof UpdateUser>) {
 
   if (!validatedFields.success) {
     return {
-      errors: validatedFields.error.flatten().fieldErrors,
+      // errors: validatedFields.error.flatten().fieldErrors,
       message: "Missing Fields. Failed to Update Profile.",
     };
   }
