@@ -15,16 +15,15 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     minHeight: "100vh", // Make the container at least full height of the viewport
-    padding: theme.spacing(2),
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: theme.palette.background.paper,
-    boxShadow: theme.shadows[5],
+    padding: "5px",
+    borderRadius: "5px",
+
     "& h1": {
-      marginBottom: theme.spacing(2),
+      marginBottom: "5px",
     },
   },
   button: {
-    marginTop: theme.spacing(4),
+    marginTop: "5px",
     width: "100%",
   },
 }));
