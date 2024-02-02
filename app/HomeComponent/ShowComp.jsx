@@ -25,7 +25,7 @@ const FirstComp = () => {
 
   const button = {
     fontSize: "58px",
-    color: "rgba(249, 43, 208, 0.696)",
+    color: "white",
     position: "relative",
     top: "16px",
   };
@@ -35,21 +35,13 @@ const FirstComp = () => {
   };
   return (
     <div suppressHydrationWarning>
-      <Grid>
-        <Grid
-          item
-          lg={12}
-          sm={12}
-          sx={{ margin: "0 60px" }}
-          // container
-          // className="flex"
-        >
-          <div style={{ padding: "0 30px" }} className="home33  itemabout ">
-            <div
-              style={{ marginTop: "25px" }}
-              className="animate__animated animate__lightSpeedInRight  Animateiv7"
-            >
-              {showComponent ? (
+      <Grid container className="flex">
+        <Grid item lg={12} sm={12} container className="flex">
+          <div
+            style={{ marginBottom: "50px" }}
+            className=" flex animate__animated animate__lightSpeedInRight  Animateiv7"
+          >
+            {/* {showComponent ? (
                 <b className="glow-text star">Now scroll down</b>
               ) : (
                 <>
@@ -66,17 +58,22 @@ const FirstComp = () => {
                     <span>?</span>
                   </p>
                 </>
-              )}
-              <br />
+              )} */}
+            <div className="showComp">
               <span
-                style={{
-                  display: "inline-block",
-                  marginBottom: "20px",
-                }}
+                className="flex "
+                style={
+                  {
+                    // display: "inline-block",
+                    // marginBottom: "20px",
+                  }
+                }
               >
                 {showComponent ? "Or Click to hide" : "Click to Explore "}
               </span>{" "}
-              <b style={{ fontSize: "27px" }}>👉</b>
+              {/* <b className="flex" style={{ fontSize: "27px" }}>
+                👉
+              </b> */}
               {/* <DoubleArrowIcon /> */}
               <motion.button
                 animate={{
@@ -91,6 +88,7 @@ const FirstComp = () => {
                 style={{
                   cursor: "pointer",
                   background: "none",
+                  // marginBottom: "30px",
                   backgroundColor: "none",
                   borderColor: "transparent",
                 }}
@@ -103,9 +101,8 @@ const FirstComp = () => {
                   style={button}
                 />
               </motion.button>
-              <br />
-              <br />
-              <div
+            </div>
+            {/* <div
                 className="Homeresume animate__animated animate__backInRight"
                 style={{
                   display: showComponent ? "inline-block" : "none",
@@ -179,9 +176,10 @@ const FirstComp = () => {
                     <EmailOutlinedIcon style={button} className="cursorp" />
                   </motion.button>
                 </a>
-              </div>
-            </div>
+              </div> */}
           </div>
+
+          {/* </div> */}
         </Grid>
       </Grid>
       {showComponent && (

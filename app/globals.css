@@ -125,6 +125,16 @@ body {
     rgba(247, 90, 216, 0.696) 100%
   );
 }
+.showComp {
+  border-radius: 100%;
+  padding: 50px;
+  background: rgb(253, 6, 204);
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.showComp:hover {
+  background: #002bff;
+}
 .home33 {
   width: 100%;
   background: rgba(255, 255, 255, 0.2);
@@ -150,8 +160,8 @@ body {
 .Home {
   width: 97%;
   padding: 20px;
-  padding-bottom: 75px;
-  overflow-y: auto;
+  padding-bottom: 90px;
+  overflow-y: scroll;
   overflow-x: hidden;
   /* overflow: visible; */
   background: rgba(255, 255, 255, 0.2);

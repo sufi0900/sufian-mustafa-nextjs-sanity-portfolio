@@ -12,15 +12,16 @@ import ShowComp from "./ShowComp";
 
 const ParentComp = () => {
   return (
-    <>
+    <div style={{ minHeight: "100dvh" }}>
       <Grid
         container
         padding={2}
         flex
+        className="flex"
         sx={{
           margin: "auto",
-          alignItems: "center", // Center vertically
-          minHeight: "100dvh",
+          // alignItems: "center", // Center vertically
+
           // Set minimum height of the container to the viewport height
         }}
       >
@@ -35,11 +36,12 @@ const ParentComp = () => {
           <div className="Home">
             <FirstComp />
           </div>
-
-          <ShowComp />
         </Grid>
       </Grid>
-    </>
+      <div>
+        <ShowComp />
+      </div>
+    </div>
   );
 };
 

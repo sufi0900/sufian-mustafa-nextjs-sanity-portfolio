@@ -74,6 +74,7 @@ function LikeButton({
         <Typography
           variant="h5"
           fontWeight="bold"
+          style={{ display: "inline-block" }}
           className="custom-input-color"
         >
           {optimisticLikes.length}{" "}

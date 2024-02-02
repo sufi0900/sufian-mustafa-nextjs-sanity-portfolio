@@ -194,9 +194,9 @@ const Home = () => {
                   <Rotate />{" "}
                 </p>
               </div>
-              <div className="flex">
-                <UserLikes3 />
-              </div>
+            </div>
+            <div className="flex">
+              <UserLikes3 />
             </div>
           </div>{" "}
         </div>
