@@ -2076,6 +2076,21 @@ button:hover {
   form textarea {
     height: 240px;
   }
+  form input {
+    height: 140px;
+    text-align: start;
+  }
+  .form__label {
+    text-align: start;
+    font-size: 18px;
+  }
+  .ccc {
+    text-align: center;
+  }
+  .ContactMeHeading h1 {
+    font-size: 23px;
+    text-align: center;
+  }
   .searchicon0 {
     display: none;
   }

@@ -172,7 +172,7 @@ const ContactMe = () => {
                   ref={form}
                   onSubmit={sendEmail}
                 >
-                  <div>
+                  <div className="ccc">
                     <h1
                       data-aos="flip-left"
                       data-aos-delay="200"
@@ -226,6 +226,7 @@ const ContactMe = () => {
                         onChange={(event) => setLastName(event.target.value)}
                       />{" "}
                     </div>
+                    <br />
                     <div>
                       <button
                         className="button-85"
@@ -277,6 +278,9 @@ const ContactMe = () => {
                           </motion.p>
                         </span> */}
                       </button>
+                      <br />
+                      <br />
+                      <br />
                       {/* <Button
                         className="form__btn"
                         type="submit"
