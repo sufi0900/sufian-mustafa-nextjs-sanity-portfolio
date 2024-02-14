@@ -44,7 +44,7 @@ const About = () => {
         "description": "I am Sufian Mustafa, a web developer with a passion for creating things that live on the internet.    I am Sufian Mustafa, a web developer with a passion for
         creating things that live on the internet. My interest in web
         development began during my Master's degree in Computer
-        Science at AWKUM University. I have since learned a great deal
+        Science at AWKUM University (2022-2024). I have since learned a great deal
         about computer science, but my true passion lies in web
         development.  I am a web developer who is constantly learning and using
         modern technologies to stay at the forefront of the industry.
