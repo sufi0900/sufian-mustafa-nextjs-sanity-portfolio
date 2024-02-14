@@ -41,7 +41,7 @@ export default function RecipeReviewCard({ postimg, title, slug }) {
         >
           <Card
             className="BlogCard ProjectCard"
-            style={{ margin: "auto", padding: "auto" }}
+            style={{ margin: "auto", padding: "auto", borderRadius: "10px" }}
           >
             <CardHeader
               avatar={

@@ -27,10 +27,10 @@ const page = () => {
       >
         <br />
         <Card
-          className="blogpagecard"
+          className="blogpagecard ts1"
           onClick={() => router.push("/blogs/insights")}
         >
-          <CardContent>
+          <CardContent className="">
             <h1>
               Insights & Discussions <OpenInNew />{" "}
             </h1>
@@ -43,7 +43,7 @@ const page = () => {
         <br />
         <br />
         <Card
-          className="blogpagecard"
+          className="blogpagecard ts1"
           onClick={() => router.push("/blogs/how-to")}
         >
           <CardContent>

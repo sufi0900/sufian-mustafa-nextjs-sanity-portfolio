@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
@@ -6,15 +7,18 @@ import Head from "next/head";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
 import { Tooltip } from "@mui/material";
-
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import {
   AddReaction,
   ArrowUpwardSharp,
   GitHub,
   Info,
   LinkedIn,
+  LocationCity,
   Mail,
+  MailOutline,
   ManageAccounts,
+  Phone,
   QuestionAnswer,
   Timeline,
   WhatsApp,
@@ -125,7 +129,7 @@ const Footer = () => {
                   >
                     <li>
                       {" "}
-                      <h1 style={{ fontSize: "28px" }}>About Me</h1>
+                      <h1 style={{ fontSize: "28px" }}>Connect with me</h1>
                     </li>
                   </ul>
                 </div>
@@ -133,42 +137,49 @@ const Footer = () => {
                   <p>
                     Thank you for visiting my portfolio. Feel free to reach out
                     if you have any questions or collaboration ideas. I am here
-                    to share my expertise with you. I am Sufian Mustafa, a Web
-                    Developer specializing in crafting user-friendly and
-                    responsive websites. Lets connect and create something
-                    amazing.
+                    to share my expertise with you. Let's craft your dream
+                    website! Contact me today for a free consultation.
                   </p>
-
+                  Let's chat! Find me on social media or send me an email.
                   <ul className="footerc1">
                     <li
                       style={{
                         marginBottom: "10px",
-                        fontSize: "18px",
+                        fontSize: "20px",
+                        textShadow: "0.5px 0.5px 0.5px black",
                         color: "blue",
                       }}
                     >
-                      <span style={{ color: "black" }}>Email:</span>{" "}
-                      sufianmustafa0900.com
+                      <span
+                        style={{
+                          color: "white",
+                        }}
+                      >
+                        Email:
+                      </span>{" "}
+                      sufianmustafa0900.com <MailOutline />
                     </li>
                     <li
                       style={{
                         marginBottom: "10px",
                         fontSize: "18px",
                         color: "blue",
+                        textShadow: "0.5px 0.5px 0.5px black",
                       }}
                     >
-                      <span style={{ color: "black" }}>Phone:</span> +92 3177
-                      652064
+                      <span style={{ color: "white" }}>Phone:</span> +92 3177
+                      652064 <Phone />
                     </li>
                     <li
                       style={{
                         marginBottom: "10px",
                         fontSize: "18px",
                         color: "blue",
+                        textShadow: "0.5px 0.5px 0.5px black",
                       }}
                     >
-                      <span style={{ color: "black" }}>Address:</span> Pakistan
-                      KPK (Mardan)
+                      <span style={{ color: "white" }}>Address:</span> Pakistan
+                      KPK (Mardan) <LocationOnIcon />
                     </li>
                     <li
                       className=""
@@ -179,7 +190,13 @@ const Footer = () => {
                         color: "blue",
                       }}
                     >
-                      <span style={{ fontWeight: "bolder", color: "blue" }}>
+                      <span
+                        style={{
+                          fontSize: "23px",
+                          fontWeight: "bolder",
+                          color: "white",
+                        }}
+                      >
                         Social Links:
                       </span>
                     </li>
@@ -189,8 +206,11 @@ const Footer = () => {
                           href="https://www.linkedin.com/in/sufian-mustafa-7a7845226/"
                           target="_blank"
                           rel="northerner"
-                          style={{ color: "blue" }}
-                          startIcon={<LinkedIn />}
+                          style={{
+                            color: "blue",
+                            textShadow: "0.5px 0.5px 0.5px black",
+                          }}
+                          startIcon={<LinkedIn style={{ fontSize: "28px" }} />}
                         ></Button>
                       </Tooltip>
                       <Tooltip title="GitHub" placement="top">
@@ -198,8 +218,12 @@ const Footer = () => {
                           href="https://github.com/sufi0900"
                           target="_blank"
                           rel="noreferrer"
-                          startIcon={<GitHub />}
-                          style={{ color: "blue" }}
+                          startIcon={<GitHub style={{ fontSize: "28px" }} />}
+                          style={{
+                            color: "blue",
+                            textShadow: "0.5px 0.5px 0.5px black",
+                            fontSize: "28px",
+                          }}
                         ></Button>
                       </Tooltip>
                       <Tooltip title="WhatsApp" placement="top">
@@ -207,7 +231,7 @@ const Footer = () => {
                           href="https://api.whatsapp.com/send?phone=03177652064"
                           target="_blank"
                           rel="noreferrer"
-                          startIcon={<WhatsApp />}
+                          startIcon={<WhatsApp style={{ fontSize: "28px" }} />}
                           style={{ color: "blue", padding: "2px" }}
                         ></Button>
                       </Tooltip>
@@ -216,7 +240,9 @@ const Footer = () => {
                           href="https://dev.to/sufian"
                           target="_blank"
                           rel="noreferrer"
-                          startIcon={<LogoDevIcon />}
+                          startIcon={
+                            <LogoDevIcon style={{ fontSize: "28px" }} />
+                          }
                           style={{ color: "blue", padding: "2px" }}
                         ></Button>
                       </Tooltip>

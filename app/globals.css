@@ -503,7 +503,17 @@ body {
   color: rgb(255, 0, 204);
   text-shadow: 1px 1px black;
 }
+.ts1 {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border: 2px solid white;
+}
 .ts h1 {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border: 2px solid white;
+}
+.ts h3 {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border: 2px solid white;
@@ -619,6 +629,11 @@ p {
   );
   text-align: center;
   border-radius: 10px;
+}
+.QuillDescription h2,
+.QuillDescription h3,
+.QuillDescription h4 {
+  color: white;
 }
 .QuillDescription h1 {
   margin-bottom: 20px;
@@ -1242,12 +1257,12 @@ p {
   justify-content: space-between;
   align-items: center;
 
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  /* background: rgba(255, 255, 255, 0.2); */
+  /* border-radius: 16px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); */
 
   height: 100%;
   width: 95%;
@@ -1434,7 +1449,7 @@ form textarea {
   background: linear-gradient(
     90deg,
     rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
+
     rgb(252, 17, 205) 100%
   );
   position: absolute;
@@ -1505,9 +1520,10 @@ form textarea {
   background: linear-gradient(
     90deg,
     rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
+
     rgb(252, 17, 205) 100%
   );
+  border: 1px solid white;
 }
 .mail__letter-square {
   position: absolute;
@@ -2283,12 +2299,12 @@ button:hover {
 }
 .bgwhite {
   background: white;
-  color: white;
+  color: black;
 }
 .bgwhite p,
 .bgwhite h1,
 .bgwhite h2 {
-  color: white;
+  color: black;
 }
 .blogpagecard p,
 .blogpagecard h1 {

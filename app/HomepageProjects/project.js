@@ -108,7 +108,8 @@ const projects = [
     startDate: "4 weeks",
     title: "Dev.to Clone (MERN-STACK-Project)",
     link: "https://dev-clone.sufianmustafa.com/",
-    readmore: "https://sufianmustafa.com/projects/dev-clone",
+    readmore:
+      "https://sufianmustafa.com/projects/dev-to-clone-mern-stack-project",
   },
 ];
 

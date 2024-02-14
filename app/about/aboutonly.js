@@ -580,7 +580,7 @@ const About = () => {
                   {" "}
                   <a
                     target="blank"
-                    href="https://drive.google.com/file/d/1F3btm-Hr-TsAFp_73El6phulcrwhlUUT/view?usp=drive_link" // Use the imported Resume as the href // Replace with the actual path to your PDF file                        download="sufi.pdf" // Specify the desired downloaded file name                    download="sufi.pdf" // Specify the desired downloaded file name
+                    href="https://drive.google.com/file/d/1bLb2Ak9tpS88qSlVdGcRWcGdD6F79jXC/view" // Use the imported Resume as the href // Replace with the actual path to your PDF file                        download="sufi.pdf" // Specify the desired downloaded file name                    download="sufi.pdf" // Specify the desired downloaded file name
                     style={{ textDecoration: "none" }}
                   >
                     <h2 style={{ padding: "10px" }} className="button-85">

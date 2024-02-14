@@ -138,12 +138,9 @@ const ContactMe = () => {
       <Jquerry />
 
       <div className="flex">
-        <div
-          style={{ marginTop: "90px", width: "97%" }}
-          className="glassEffect"
-        >
+        <div style={{ marginTop: "90px", width: "97%" }} className="">
           <div>
-            <div className="ContactMeHeading">
+            <div className="ts ContactMeHeading">
               <h1>
                 <span
                   style={{
@@ -177,6 +174,7 @@ const ContactMe = () => {
                       data-aos="flip-left"
                       data-aos-delay="200"
                       data-aos-duration="500"
+                      style={{ border: "none" }}
                     >
                       {" "}
                       Contact form{" "}
