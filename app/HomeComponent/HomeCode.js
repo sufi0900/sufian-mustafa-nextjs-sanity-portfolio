@@ -223,7 +223,10 @@ const Home = () => {
                       <Rotate />{" "}
                     </p>
                     <div></div>
-                    <UserLikes3 />
+                    <div className="animate__animated animate__backInRight Animateiv6">
+                      {" "}
+                      <UserLikes3 />
+                    </div>
                   </div>
                 </span>{" "}
               </p>
