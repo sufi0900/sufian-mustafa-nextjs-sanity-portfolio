@@ -35,17 +35,14 @@ body.dark-mode .drawerBackground .MuiDrawer-paper {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(194, 232, 249, 0.484) 0px 2px 16px 0px;
 }
-body.dark-mode .Home,
-body.dark-mode .item,
-body.dark-mode .itemcontact,
-body.dark-mode .navbar1,
-body.dark-mode .blog-card,
-body.dark-mode .blogpagecard {
-  background: #0e2a47;
-  border: 2px solid rgba(255, 255, 255, 0.807);
+body.dark-mode .glassEffect {
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(194, 232, 249, 0.484) 0px 2px 16px 0px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 body.dark-mode .QuillDescription p {
   color: white;

@@ -119,8 +119,9 @@ export const theme = createTheme({
       styleOverrides: {
         root: {},
         secondary: {
-          color: "#0062ff",
+          color: "rgb(249, 131, 131))",
           fontSize: "20px",
+          textShadow: "0.5px 0.5px 0.5px black",
           fontFamily: '"Rubik", sans-serif',
         },
         primary: {

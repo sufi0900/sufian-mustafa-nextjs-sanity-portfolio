@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
@@ -200,7 +201,7 @@ const About = () => {
 
       <Grid container spacing={2} padding={2} className="About">
         <Grid item lg={6} sm={12} className="About3">
-          <div className="item itemabout">
+          <div className="glassEffect">
             <div className="AboutLeftDiv para" style={{ overflow: "hidden" }}>
               <h1
                 data-aos="flip-left"
@@ -220,13 +221,31 @@ const About = () => {
                   data-aos-delay="180"
                   data-aos-duration="500"
                 >
-                  <span>Who am i and how i got here</span> I am Sufian Mustafa,
-                  a web developer with a passion for creating things that live
-                  on the internet. My interest in web development began during
-                  my Masters degree in Computer Science at AWKUM University. I
-                  have since learned a great deal about computer science, but my
-                  true passion lies in web development. I enjoy the challenge of
-                  creating user-friendly and visually appealing websites.
+                  <span>Who am i and how i got here</span> My love for web
+                  development started while I was getting my Master's degree in
+                  Computer Science at{" "}
+                  <p
+                    style={{
+                      display: "inline",
+                      color: "rgb(255, 0, 204)",
+                      textShadow: " 0.5px 0.5px black",
+                    }}
+                  >
+                    AWKUM University (2022)
+                  </p>{" "}
+                  . Even though I learned a lot of cool stuff about computers,{" "}
+                  <p
+                    style={{
+                      display: "inline",
+                      color: " rgb(255, 0, 204)",
+                      textShadow: " 0.5px 0.5px black",
+                    }}
+                  >
+                    {" "}
+                    building websites became my main jam
+                  </p>
+                  . I enjoy the challenge of creating user-friendly and visually
+                  appealing websites.
                 </p>
               </AnimatedDiv>
               <div
@@ -234,17 +253,6 @@ const About = () => {
                 data-aos-delay="200"
                 data-aos-duration="500"
               >
-                <p>
-                  <span>What am I currently doing </span> I am a web developer
-                  who is constantly learning and using modern technologies to
-                  stay at the forefront of the industry. I have been
-                  continuously working on web development for the past year, and
-                  I have experience with a variety of projects, including
-                  e-commerce websites, social media platforms, Portfolio
-                  websites ETC. I am confident that I have the skills and
-                  experience to create high-quality websites that meet the needs
-                  of any user .
-                </p>
                 <div
                   data-aos="zoom-in"
                   data-aos-delay="200"
@@ -254,11 +262,18 @@ const About = () => {
                     <span>
                       Front-End Development Expertise: <br />
                     </span>{" "}
-                    <span> With a Focus on ReactJS & NextJS</span> <br />I have
-                    a wide range of experience in web development, with a focus
-                    on front-end technologies such as HTML, CSS, and JavaScript
-                    with a particular focus on ReactJS and NextJS. &nbsp;
-                    {showAdvantages ? (
+                    I'm a front-end magician, building beautiful websites with
+                    the latest tools such as HTML, CSS, and JavaScript with a
+                    particular focus on ReactJS and NextJS.. Think clear
+                    structures, eye-catching styles, and smooth interactions. I
+                    handle it all, from the basics to the fancy stuff, making
+                    sure your website is both stunning , user-friendly and
+                    responsive .
+                    {/* I have a wide
+                    range of experience in web development, with a focus on
+                    front-end technologies   */}
+                    &nbsp;
+                    {/* {showAdvantages ? (
                       <div>
                         <p>
                           <span>ReactJS</span> is a JavaScript framework that is
@@ -293,7 +308,7 @@ const About = () => {
                       onClick={toggleAdvantages}
                     >
                       {showAdvantages ? "Read Less" : "Read More.."}
-                    </button>
+                    </button> */}
                   </p>
                 </div>{" "}
                 <div
@@ -302,12 +317,56 @@ const About = () => {
                   data-aos-duration="500"
                 >
                   <p>
-                    <span>My Expertise in Back-End Development</span>I am also
-                    proficient in using backend technologies such as Node.js,
-                    php and MongoDB. I have a strong understanding of the entire
-                    web development process
+                    <p
+                      style={{
+                        fontWeight: "bold",
+                        letterSpacing: "2px",
+                        fontSize: "28px",
+                      }}
+                    >
+                      Hold on tight!{" "}
+                    </p>{" "}
+                    <span> My Expertise in Back-End Development</span> &nbsp;
+                    When it's time to breathe life into static sites, I work my
+                    magic as the CMS whisperer. Using NodeJS, Sanity, and
+                    Prisma, I sprinkle some dynamic dust on HTML, React, or
+                    NextJS websites, turning them into living web wonders.
+                    Whether you need a sleek static site or a dynamic,
+                    data-driven platform, I've got the tools to make your web
+                    presence stand out.
                   </p>
                 </div>
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="230"
+                  data-aos-duration="500"
+                >
+                  <p>
+                    <span>Full-Stack Developer</span> &nbsp; And if you need
+                    both front-end and back-end expertise, I'm your full-stack
+                    hero! I can build your website from the ground up,
+                    seamlessly blending design and functionality. Whether you
+                    want a simple static site or a complex data-driven platform,
+                    I have the skills and experience to bring your vision to
+                    life. Plus, I keep SEO in mind, ensuring your website gets
+                    found online.
+                  </p>
+                </div>
+                <p
+                  data-aos="zoom-in"
+                  data-aos-delay="240"
+                  data-aos-duration="510"
+                >
+                  <span>What can i do and what I am currently doing </span>For
+                  the past 2 years, I've been immersed in the exciting world of
+                  web development, tackling diverse projects and honing my
+                  skills. Now, I'm ready to put my experience to work for you!
+                  Whether you need a stunning front-end experience with
+                  pixel-perfect design and smooth interactions, a robust
+                  back-end infrastructure powered by NodeJS, Sanity, and Prisma,
+                  or the seamless integration of both in a full-stack project,
+                  I'm your go-to developer
+                </p>
               </div>
               &nbsp;
               <h4>
@@ -368,6 +427,14 @@ const About = () => {
                     >
                       <FileDownloadDoneOutlinedIcon style={Bluetick} />
                       SanityIO
+                    </li>
+                    <li
+                      data-aos="zoom-out-down"
+                      data-aos-delay="230"
+                      data-aos-duration="500"
+                    >
+                      <FileDownloadDoneOutlinedIcon style={Bluetick} />
+                      Prisma
                     </li>
                     <li
                       data-aos="zoom-out-down"
@@ -463,7 +530,7 @@ const About = () => {
         </Grid>
 
         <Grid item lg={6} sm={12} padding={1} style={{ overflow: "hidden" }}>
-          <div className="item itemabout">
+          <div className="glassEffect">
             <div style={{ padding: "10px" }}>
               <div
                 className="image-area animate__animated animate__backInLeft"
@@ -589,19 +656,7 @@ const About = () => {
           </div>
         </Grid>
       </Grid>
-
-      {/* <ComponentA />
-      {isMatch ? (
-        <>
-          <SlideM />{" "}
-        </>
-      ) : (
-        <>
-          <ComponentB />
-
-          <br />
-        </>
-      )} */}
+      <br />
     </div>
   );
 };

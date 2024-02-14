@@ -70,7 +70,7 @@ export default function IndexPage() {
         >
           <br />
 
-          <div style={{ width: "90%" }} className="item itemabout">
+          <div style={{ width: "90%" }} className="glassEffect">
             <div className="about41" style={{ overflow: "hidden" }}>
               <h3
                 data-aos="flip-left"
@@ -143,7 +143,7 @@ export default function IndexPage() {
                       <p> {"  "} </p>
                       <ListItemText
                         primary={skill.title}
-                        style={{ width: "30%" }}
+                        style={{ width: "30%", color: "white" }}
                         className="ListItemTextSkill"
                         data-aos="zoom-in"
                       />

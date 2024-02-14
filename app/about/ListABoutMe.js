@@ -158,7 +158,7 @@ export default function InteractiveList() {
                   style={{ color: "white" }}
                 />
               }
-              label="Click Show Basic info"
+              label="Click to Show Basic info"
               className="custom-input-color"
             />
           </FormGroup>
@@ -184,7 +184,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <AbcIcon className="custom-input-color" />
+                    <AbcIcon className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"
@@ -198,7 +198,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <TodayIcon className="custom-input-color" />
+                    <TodayIcon className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"
@@ -212,7 +212,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <Cake className="custom-input-color" />
+                    <Cake className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"
@@ -230,7 +230,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <MosqueIcon className="custom-input-color" />
+                    <MosqueIcon className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"
@@ -244,7 +244,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <CodeIcon className="custom-input-color" />
+                    <CodeIcon className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"
@@ -258,7 +258,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <InfoIcon className="custom-input-color" />
+                    <InfoIcon className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"
@@ -278,7 +278,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <LocalPhoneIcon className="custom-input-color" />
+                    <LocalPhoneIcon className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"
@@ -292,7 +292,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <Mail className="custom-input-color" />
+                    <Mail className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"
@@ -306,7 +306,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <FlagIcon className="custom-input-color" />
+                    <FlagIcon className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"
@@ -324,7 +324,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <SportsEsportsIcon className="custom-input-color" />
+                    <SportsEsportsIcon className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"
@@ -338,7 +338,7 @@ export default function InteractiveList() {
                   data-aos-duration="500"
                 >
                   <ListItemIcon className="ListItemText">
-                    <LanguageOutlined className="custom-input-color" />
+                    <LanguageOutlined className="custom-input-color-icon" />
                   </ListItemIcon>
                   <ListItemText
                     className="ListItemText"

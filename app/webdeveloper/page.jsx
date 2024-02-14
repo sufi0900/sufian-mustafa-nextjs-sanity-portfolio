@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "../HomeComponent/HomeCode";
+import Home from "../HomeComponent/HomeComp";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
