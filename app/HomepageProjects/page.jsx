@@ -21,7 +21,7 @@ export default function ProjectAll() {
       <div style={{ marginTop: "20px" }}>
         <div className="flex">
           <div
-            className="glassEffect projectdiv"
+            className="item itemabout projectdiv"
             style={{ textAlign: "justify" }}
           >
             <div

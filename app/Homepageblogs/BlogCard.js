@@ -42,7 +42,6 @@ export default function RecipeReviewCard({ imageFile, title, _id }) {
             data-aos-delay="200"
             data-aos-duration="500"
             className="BlogCard ProjectCard "
-            style={{ borderRadius: "16px" }}
           >
             <CardHeader
               avatar={

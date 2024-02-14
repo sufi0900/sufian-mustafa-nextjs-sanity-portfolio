@@ -1,9 +1,9 @@
 import React from "react";
-import Home from "./HomeComponent/HomeComp";
+import Home from "./HomeComponent/Client2";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-
+// import UserLikes from "./blogs2/page";
 export const metadata = {
   title: "Sufian Mustafa - Web Developer",
   description:
@@ -120,7 +120,7 @@ const page = () => {
         dangerouslySetInnerHTML={sufianmustafa()}
         key="root-jsonld"
       />
-
+      {/* <UserLikes /> */}
       <Home />
     </div>
   );

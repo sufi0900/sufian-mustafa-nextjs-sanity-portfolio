@@ -23,7 +23,7 @@ export default function AllBlogs() {
         <div>
           <div className="flex">
             <div
-              className="glassEffect projectdiv"
+              className="item itemabout projectdiv"
               style={{ textAlign: "justify" }}
             >
               <div

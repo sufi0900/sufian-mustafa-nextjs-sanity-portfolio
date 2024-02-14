@@ -144,7 +144,7 @@ const FAQ = () => {
           <Grid item xs={12} md={6} lg={4} key={index}>
             <div
               data-aos="fade-up"
-              className="glassEffect"
+              className="item itemabout"
               style={{ padding: "10px" }}
             >
               <h3 className="custom-input-color">{item.question}</h3>

@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 // "use client";
 import React from "react";
 
@@ -17,7 +16,6 @@ import Image from "next/image";
 import SvgHomePage from "./SvgHomePage";
 import Avatar from "@mui/material/Avatar";
 import sufi from "./sufi.webp";
-import pk from "./pk2.png";
 // const SvgHomePage = dynamic(() => import("./SvgHomePage"));
 import UserLikes3 from "../blogs2/page";
 const Home = () => {
@@ -140,6 +138,7 @@ const Home = () => {
                       <Avatar
                         style={{ display: "inline-block" }}
                         className="Tabmate__backInRight"
+                        // onClick={incrementCount}
                       >
                         <Image
                           src={sufi}
@@ -154,10 +153,7 @@ const Home = () => {
                   </p>{" "}
                 </div>
                 <div className="animate__animated animate__backInLeft Animateiv2">
-                  Full Stack Web Developer{" "}
-                  <span>
-                    <CodeIcon style={{ fontSize: "34px" }} />
-                  </span>
+                  Web Developer <CodeIcon style={{ fontSize: "34px" }} />
                 </div>
               </div>
             </h1>
@@ -169,42 +165,18 @@ const Home = () => {
                   // margin: "0 0 12px",
                 }}
               >
-                Age: <span>27 </span> , residing in the province of{" "}
-                <span>KPK</span> ,{" "}
-                <span>
-                  Pakistan{" "}
-                  <Avatar
-                    style={{ display: "inline-block" }}
-                    className="Tabmate__backInRight"
-                  >
-                    <Image
-                      src={pk}
-                      style={{ width: "100%", height: "auto" }}
-                      alt="sufi"
-                      width={100}
-                      height={100}
-                      loading="lazy"
-                    />
-                  </Avatar>{" "}
-                </span>
-                , with a strong passion for <span>coding,</span>
+                I am <span>27 years old</span> , residing in the province of{" "}
+                <span>KPK</span> , <span>Pakistan</span>, with a strong passion
+                for <span>coding,</span>
                 {/* and currently a <span>student</span> in
                 my last semester of <span> MCS (Computer Science)</span>. */}
               </p>
             </div>
             <p className="animate__animated animate__backInLeft Animateiv4">
-              {/* I am an experienced web developer with a passion for creating{" "}
+              I am an experienced web developer with a passion for creating{" "}
               <span> high-quality</span> , <span>user-friendly</span>, and{" "}
               <span>responsive websites</span>. I have hands-on experience in{" "}
-              <span>backend development</span> as well. */}
-              I craft stunning static websites,{" "}
-              <span> but that's just the beginning 😉</span>
-              My superpower?{" "}
-              <p style={{ fontWeight: "bold" }}>
-                Transforming them into dynamic marvels 😍
-              </p>{" "}
-              with CMS magic <span>(Node.js, Sanity, Prisma )</span>. Think
-              interactive, engaging, and SEO-friendly 🤝
+              <span>backend development</span> as well.
             </p>
             <div className="HomeInnerDiv animate__animated animate__backInLeft Animateiv5">
               <p>
@@ -214,21 +186,18 @@ const Home = () => {
                     textShadow: "1px 1px black",
                   }}
                 >
-                  Some of the web technologies i mostly used are:{" "}
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                    className="animate__animated animate__backInLeft Animateiv6"
-                  >
-                    <p style={{ width: "40%" }}>
-                      <Rotate />{" "}
-                    </p>
-                    <div></div>
-                    <UserLikes3 />
-                  </div>
+                  Some of the web technologies i mostly used are:
                 </span>{" "}
               </p>
+              <div className="animate__animated animate__backInLeft Animateiv6">
+                <p style={{ width: "40%" }}>
+                  <Rotate />{" "}
+                </p>
+              </div>
             </div>
-            <div className="flex"></div>
+            <div className="flex">
+              <UserLikes3 />
+            </div>
           </div>{" "}
         </div>
       </div>

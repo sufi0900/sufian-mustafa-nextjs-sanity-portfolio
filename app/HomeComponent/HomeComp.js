@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./Client2";
+import Home from "./HomeCode";
 
 const HomeComp = () => {
   return <Home />;

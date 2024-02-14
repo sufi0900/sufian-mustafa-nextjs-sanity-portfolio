@@ -37,7 +37,7 @@ const MyPortfolio = () => {
 
         <Grid item xs={11} style={{ overflow: "hidden", marginTop: "90px" }}>
           <br />
-          <div className="moreproject glassEffect">
+          <div className="moreproject itemabout item">
             <br></br>
             <div className="About3" data-aos="zoom-in">
               {" "}

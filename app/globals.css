@@ -3,27 +3,13 @@
 }
 :root {
   --bg-color-default: linear-gradient(90deg, #0e2a47 0%, #0e2a47 100%);
-  /* --bg-color-dark: linear-gradient(
-     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
-  ); */
-  /* --bg-color-dark: linear-gradient(320deg, #f27121, #e94057, #8a2387); */
-  /* --bg-color-dark: linear-gradient(
-    90deg,
-    rgb(4, 4, 177) 0%,
-    rgb(4, 4, 177) 100%
-  ); */
   --bg-color-dark: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
-
   --white-text-color: white;
-  --black-text-color: white;
+  --black-text-color: black;
   --main-bg-color: rgba(1, 145, 255, 1);
   --backgroundpink: rgb(253, 6, 204);
 }
@@ -62,14 +48,13 @@ body {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(
     20deg,
-    rgba(253, 6, 204, 0.907) 0%,
-    black 50%,
-    rgba(10, 10, 250, 0.886) 100%
+    rgba(10, 10, 250, 0.886) 0%,
+    rgba(253, 6, 204, 0.907) 100%
   );
   border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(0, 0, 255);
+  background: rgb(253, 6, 204);
 }
 ::-webkit-scrollbar-button {
   display: none;
@@ -136,14 +121,13 @@ body {
   justify-content: center;
   background: linear-gradient(
     90deg,
-    rgba(253, 6, 204, 0.907) 0%,
-    black 50%,
-    rgba(10, 10, 250, 0.886) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
 }
 .showComp {
   border-radius: 100%;
-  padding: 20px 0px;
+  padding: 50px;
   background: rgb(253, 6, 204);
   transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -164,9 +148,22 @@ body {
 }
 .home34 {
   width: 97%;
+  /* background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3); */
+  /* border-radius: 43% 49% 64% 36% / 21% 22% 0% 0%; */
 }
-
-.glassEffect {
+.Home {
+  width: 97%;
+  padding: 20px;
+  padding-bottom: 90px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* overflow: visible; */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -174,29 +171,17 @@ body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.Home {
-  width: 97%;
-  padding: 20px;
-  padding-bottom: 90px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-
   text-align: justify;
 }
 
 .Homeresume {
-  /* display: inline-block; */
+  display: inline-block;
 }
 .itemhome2 {
   border: 3px solid rgba(255, 255, 255, 0.3);
-
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 98%;
 }
 .itemhome3 {
@@ -377,12 +362,10 @@ body {
   width: 90%;
   left: 5%;
   position: relative;
-
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   font-size: 27px;
   font-family: "Urbanist", sans-serif;
@@ -401,14 +384,14 @@ body {
     rgba(56, 56, 249, 0.895) 0%,
     rgba(254, 61, 215, 0.858) 100%
   );
-  color: white;
+  color: black;
 }
 .blogcardh1 {
-  color: white;
+  color: black;
 }
 .ProjectCardInner h1 {
   width: 100%;
-  color: white;
+  color: black;
   position: relative;
   text-align: center;
   border-radius: 10px;
@@ -500,13 +483,8 @@ body {
 
 .HomeDiv h1 span,
 .HomeDiv span {
-  color: rgb(255, 0, 204);
+  color: rgba(247, 90, 216, 0.696);
   text-shadow: 1px 1px black;
-}
-.ts h1 {
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  border: 2px solid white;
 }
 .HomeDiv p,
 .HomeDiv7 p,
@@ -520,7 +498,7 @@ body {
   text-shadow: 1px 1px black;
 }
 .HomeDiv p span {
-  color: rgb(255, 0, 204);
+  color: rgba(247, 90, 216, 0.696);
   text-shadow: 0.5px 0.5px black;
 }
 .Tab0 {
@@ -613,9 +591,8 @@ p {
   margin: 0 -0.2rem;
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   text-align: center;
   border-radius: 10px;
@@ -644,9 +621,8 @@ p {
   letter-spacing: 1.2px;
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   text-align: center;
   border-radius: 30px;
@@ -661,9 +637,8 @@ p {
   color: white;
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   font-size: 22px;
   font-weight: bold;
@@ -690,7 +665,7 @@ p {
 .AboutLeftDiv p,
 .BlogP p,
 .About3 p {
-  color: white;
+  color: black;
   width: 90%;
   font-family: "Rubik", sans-serif;
   font-size: 20px;
@@ -706,9 +681,8 @@ p {
 .login {
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
 }
 .logintextfield {
@@ -716,14 +690,14 @@ p {
 }
 
 .progress-label-color {
-  color: white;
+  color: black;
 }
 
 .custom-quill-content {
-  color: white;
+  color: black;
 }
 .drawerBackground .MuiDrawer-paper {
-  background-color: white;
+  background-color: black;
 }
 
 .icon-transition {
@@ -737,23 +711,18 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 97%;
 }
-.custom-input-color-icon {
-  color: #002bff;
-  text-shadow: 0.5px 0.5px 0.5px black;
-}
 .About3 ul li,
 .About3 ul li a,
 .footerpara p {
-  color: white;
+  color: black;
   line-height: 30px;
   font-family: "Rubik", sans-serif;
   font-size: 20px;
-
   text-align: justify;
 }
 
 .QuillDescription p {
-  color: white;
+  color: black;
   width: 98%;
   font-family: "Rubik", sans-serif;
   font-size: 20px;
@@ -770,15 +739,12 @@ p {
 .AboutLeftDiv_List ul li {
   display: inline-block;
   padding: 3px;
-  transition: all 0.3s;
   padding-right: 10px;
-  color: white;
-  text-shadow: 0.5px 0.5px black;
+  color: black;
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   font-size: 20px;
   margin: 2px 5px 30px;
@@ -786,14 +752,13 @@ p {
 }
 
 .AboutLeftDiv_List ul li:hover {
-  color: white;
-  background: blue;
+  color: black;
+  background-color: blue;
   cursor: url("https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.lossy.preserve_transparency.sprite/v1693672396/CursorPointer_phuwb8.webp")
       4 4,
     auto;
-  transition: all 0.3s;
+  transition: 0.3s;
   border-radius: 14px;
-  scale: 1.05;
 }
 
 .AboutLeftDiv_List li {
@@ -864,9 +829,8 @@ p {
 .img-wrapper h2 {
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
 
   color: #fff;
@@ -939,9 +903,8 @@ p {
   padding: 10px;
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
 }
 .about4 h3:hover {
@@ -1092,7 +1055,7 @@ p {
 
 .ProjectTopTextDiv {
   background: #0e2a47;
-  color: white;
+  color: black;
   border-radius: 20px;
   overflow: hidden;
   font-size: 22px;
@@ -1134,9 +1097,8 @@ p {
 .ProjectCard {
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   box-shadow: 0px 2px 4px 0px rgba(14, 30, 37, 0.12),
     0px 2px 16px 0px rgba(14, 30, 37, 0.32);
@@ -1170,9 +1132,8 @@ p {
 
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
@@ -1241,14 +1202,10 @@ p {
   grid-template-rows: repeat(5, min-content);
   justify-content: space-between;
   align-items: center;
-
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   height: 100%;
   width: 95%;
   overflow: hidden;
@@ -1288,7 +1245,7 @@ p {
   font-size: 18px;
   padding: 1rem 0;
   border: none;
-  color: white;
+  color: black;
   text-shadow: 0.5px 0.5px black;
   font-family: "Rubik", sans-serif;
   background: transparent;
@@ -1325,9 +1282,8 @@ form textarea {
   grid-row: 0.8333333333;
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   color: #fff;
   border: none;
@@ -1433,9 +1389,8 @@ form textarea {
 .mail__top {
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   position: absolute;
   top: -5.7rem;
@@ -1504,9 +1459,8 @@ form textarea {
 .mail__letter * {
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
 }
 .mail__letter-square {
@@ -1537,9 +1491,8 @@ form textarea {
   height: 0.3rem;
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
 }
 .mail__letter-lines::before {
@@ -1661,7 +1614,7 @@ form textarea {
 .ListItemText,
 .custom-input-color p,
 .custom-input-color {
-  color: white;
+  color: black;
 }
 
 .themecard p {
@@ -1673,7 +1626,7 @@ form textarea {
   color: rgb(7, 7, 250);
 }
 footer {
-  color: white;
+  color: black;
   padding: 50px 0 30px;
   font-size: 18px;
   line-height: 20px;
@@ -1703,7 +1656,7 @@ footer {
 }
 
 .link {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -1815,7 +1768,6 @@ footer {
 }
 .item,
 .itemcontact {
-  /* background: rgba(255, 255, 255, 0.2); */
   border-radius: 16px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -1846,7 +1798,10 @@ footer {
   font-size: 27px;
   font-family: "Rubik", sans-serif;
 }
-
+/* .Animateiv7 p {
+    color: #002bff;
+    text-shadow: 0.5px 0.5px 0.5px black;
+  } */
 @keyframes glow {
   0% {
     text-shadow: 0 0 10px #fff;
@@ -1878,7 +1833,7 @@ footer {
   padding-bottom: 10px;
 }
 .site a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 .site a:hover {
@@ -1907,9 +1862,8 @@ footer {
 .commentbox {
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   border-radius: 16px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -1939,9 +1893,8 @@ button {
   border: 1px solid white;
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   cursor: url("https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672396/cursor2_1_cytn65.webp")
       4 4,
@@ -2066,9 +2019,8 @@ button:hover {
 .ProjectTopTextDiv {
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   border-radius: 16px;
   box-shadow: 0px 2px 4px 0px rgba(14, 30, 37, 0.12),
@@ -2164,8 +2116,8 @@ button:hover {
   }
 
   .Homeresume {
-    /* display: block; */
-    /* margin-top: 30px; */
+    display: block;
+    margin-top: 30px;
   }
   .ProjectTextSm2 {
     left: 0%;
@@ -2248,7 +2200,7 @@ button:hover {
   }
 
   .Homeresume {
-    /* display: block; */
+    display: block;
   }
   .grial1 {
     width: 100%;
@@ -2263,9 +2215,8 @@ button:hover {
 .navbar1 {
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
   color: white;
   border-radius: 16px;
@@ -2283,16 +2234,16 @@ button:hover {
 }
 .bgwhite {
   background: white;
-  color: white;
+  color: black;
 }
 .bgwhite p,
 .bgwhite h1,
 .bgwhite h2 {
-  color: white;
+  color: black;
 }
 .blogpagecard p,
 .blogpagecard h1 {
-  color: white;
+  color: black;
 }
 .blog-card {
   display: flex;
@@ -2304,7 +2255,7 @@ button:hover {
   margin-bottom: 1.6%;
   line-height: 1.4;
   overflow: hidden;
-  background-color: white;
+  background-color: black;
   z-index: 0;
 }
 .blogsufi {
@@ -2487,7 +2438,7 @@ button:hover {
   color: white;
 }
 .rm-btn:hover {
-  color: white;
+  color: black;
 }
 .bgch {
   background: rgb(253, 6, 204);
@@ -2515,9 +2466,8 @@ button:hover {
   transition: all 0.3s;
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
 }
 .projectcardv1:hover {
@@ -2527,8 +2477,7 @@ button:hover {
 .bg {
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
+    rgba(78, 78, 246, 0.647) 0%,
+    rgba(247, 90, 216, 0.696) 100%
   );
 }

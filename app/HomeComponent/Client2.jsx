@@ -1,9 +1,14 @@
 import React from "react";
 import FirstComp from "./HomeCode";
+// import SecComp from "./HomeCOdeText";
 
 import Grid from "@mui/material/Grid";
-
+// import UserLikes3 from "../blogs2/page";
 import ShowComp from "./ShowComp";
+// import SvgHomePage from "./SvgHomePage";
+// import ShowComp2 from "./ShowComp2";
+// import Header from "../../components/UserAvatar";
+// import Header2 from "../../components/SideNav";
 
 const ParentComp = () => {
   return (
@@ -15,6 +20,9 @@ const ParentComp = () => {
         className="flex"
         sx={{
           margin: "auto",
+          // alignItems: "center", // Center vertically
+
+          // Set minimum height of the container to the viewport height
         }}
       >
         <Grid
@@ -25,7 +33,7 @@ const ParentComp = () => {
           container
           className="flex"
         >
-          <div className="Home glassEffect">
+          <div className="Home">
             <FirstComp />
           </div>
         </Grid>
