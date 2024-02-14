@@ -27,9 +27,8 @@ import { CalendarMonth } from "@mui/icons-material";
 const Card2 = ({
   title,
   images = [],
-  startDate,
-  technologies = [],
-  endDate,
+  date,
+  technologies,
   toptext1,
   slug,
   link,
@@ -60,8 +59,8 @@ const Card2 = ({
       marqueeRef.current.start();
     }
   };
-  const formattedStartDate = new Date(startDate).toLocaleDateString();
-  const formattedEndDate = new Date(endDate).toLocaleDateString();
+  // const formattedStartDate = new Date(startDate).toLocaleDateString();
+  // const formattedEndDate = new Date(endDate).toLocaleDateString();
   return (
     <Grid
       item
@@ -149,7 +148,7 @@ const Card2 = ({
                   <ListItemText
                     primary={
                       <>
-                        <p>
+                        <p className="custom-input-color">
                           {toptext1 &&
                             `${toptext1.split(" ").slice(0, 20).join(" ")}${
                               toptext1.split(" ").length > 20 ? " ..." : ""
@@ -162,8 +161,7 @@ const Card2 = ({
                           style={{ background: "blue", color: "white" }}
                           startIcon={<CalendarMonth />}
                         >
-                          Project Duration: {formattedStartDate} -{" "}
-                          {formattedEndDate}
+                          Project Duration: {date}
                         </Button>
                       </>
                     }

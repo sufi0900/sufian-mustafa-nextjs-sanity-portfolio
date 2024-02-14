@@ -52,19 +52,19 @@ export default async function ProjectCardDetail({ params }) {
       ),
     },
   };
-  const formattedStartDate = new Date(data.startDate).toLocaleDateString();
-  const formattedEndDate = new Date(data.endDate).toLocaleDateString();
+  // const formattedStartDate = new Date(data.startDate).toLocaleDateString();
+  // const formattedEndDate = new Date(data.endDate).toLocaleDateString();
   const canonicalUrl = `https://sufianmustafa.com/projects/${params.slug}`;
   // Set title, description, and other SEO metadata
-  const startDateObj = new Date(data.startDate);
-  const endDateObj = new Date(data.endDate);
-  const durationInDays = Math.floor(
-    (endDateObj - startDateObj) / (24 * 60 * 60 * 1000)
-  );
+  // const startDateObj = new Date(data.startDate);
+  // const endDateObj = new Date(data.endDate);
+  // const durationInDays = Math.floor(
+  //   (endDateObj - startDateObj) / (24 * 60 * 60 * 1000)
+  // );
 
   // Format the duration for display
-  const formattedDuration =
-    durationInDays > 1 ? `${durationInDays} days` : `${durationInDays} day`;
+  // const formattedDuration =
+  //   durationInDays > 1 ? `${durationInDays} days` : `${durationInDays} day`;
 
   const title = `${data.title} - Sufian Mustafa Projects`;
   const description = `${data.toptext1}`;
@@ -253,19 +253,19 @@ export default async function ProjectCardDetail({ params }) {
                         </Typography>
                         <div style={{ display: "flex", flexWrap: "wrap" }}>
                           <Typography variant="h5" paragraph>
-                            The project spanned from:
+                            The project duration:
                             <br />
                             <Typography variant="h4" paragraph>
-                              {formattedStartDate}
+                              {data.date}
                             </Typography>
-                            to{" "}
+                            {/* to{" "}
                             <Typography variant="h4" paragraph>
                               {formattedEndDate}
                             </Typography>
                             Total duration: <br />
                             <span style={{ color: "#ff9800" }}>
                               {formattedDuration}
-                            </span>
+                            </span> */}
                             <br />
                             <hr />
                           </Typography>

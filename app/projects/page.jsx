@@ -98,7 +98,7 @@ export default async function ProjectAll() {
       />
       <br />
       <br />
-      <div className="about41" style={{ marginTop: "60px" }}>
+      <div className="about41 ts" style={{ marginTop: "60px" }}>
         <h3>My projects</h3>
       </div>
 

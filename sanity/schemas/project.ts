@@ -71,17 +71,12 @@ export default {
       },
     },
     {
-      name: 'startDate',
-      type: 'datetime',
-      title: 'Start Date',
-      description: 'Specify the start date/time of the project',
+      name: 'date',
+      type: 'string',
+      title: 'Project Duration',
+      description: 'Specify the  Duration of the project',
     },
-    {
-      name: 'endDate',
-      type: 'datetime',
-      title: 'End Date',
-      description: 'Specify the end date/time of the project',
-    },
+
     {
       name: 'content',
       type: 'array',
