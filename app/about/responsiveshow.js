@@ -7,7 +7,7 @@ import Images from "./Images";
 function CarouselFadeExample() {
   return (
     <>
-      <div className="About3" data-aos="zoom-in">
+      <div className="About3 ts" data-aos="zoom-in">
         {" "}
         <h1> Website Responsiveness</h1>
       </div>

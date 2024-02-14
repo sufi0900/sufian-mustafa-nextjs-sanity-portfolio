@@ -106,7 +106,7 @@ const Footer = () => {
         dangerouslySetInnerHTML={sufianmustafawebdeveloperfooter()}
         key="Footer-jsonld"
       />
-      <footer className="new_footer_area bg_color item">
+      <footer className="new_footer_area bg_color glassEffect">
         <div className="new_footer_top">
           <Container>
             <Grid container spacing={3} justifyContent="center">

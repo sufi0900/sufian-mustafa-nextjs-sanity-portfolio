@@ -90,7 +90,7 @@ const skills = [
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699974365/screenshot_361_cs3mfh.jpg",
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1699450367/TailwindCSS_zz2xtz.png",
     ],
-    percentage: 60,
+    percentage: 70,
     title: "Tailwind CSS",
   },
   {
@@ -104,7 +104,7 @@ const skills = [
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694281113/Screenshot_221_bslq95.png",
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694281131/MERN-Stack-considered-the-Best-for-Developing-Web-Apps_wpmcag.png",
     ],
-    percentage: 50,
+    percentage: 70,
     title: "NODEJS, ExpressJS",
   },
   {
@@ -120,6 +120,27 @@ const skills = [
     title: "NextJS",
   },
   {
+    _id: "Sanity.IO",
+    description:
+      "Sanity.io & Next.js: My Secret Weapon for Dynamic Websites When it comes to crafting dynamic websites that pop, I rely on a powerful duo: Sanity.io and Next.js. Here's why this combo is my go-to choice: Sanity.io: Content Management Nirvana Think of Sanity.io as the magic content hub for your website. It's where your words, images, and other data live in a flexible and structured way. Here's what makes it stand out: Flexibility on steroids: Sanity's schema-less approach lets you define your content structure how you see fit, no limitations here! Need to add a new field for a video tutorial? Done! It's like having a content model that bends to your will. Easy peasy content editing: Even non-technical folks can intuitively create and edit content with Sanity's user-friendly interface. Think drag-and-drop, previewing changes live, and collaborating with your team like a breeze. API power: Need that content in your Next.js app? No problem! Sanity's robust API delivers it seamlessly, making development a joy. Next.js: The Performance Powerhouse Next.js takes your front-end development to the next level (pun intended!) with its focus on performance and SEO. Here's how it shines: Static site generation: Next.js can pre-render your website at build time, leading to lightning-fast loading speeds and better SEO (search engines love static pages!). Dynamic when needed: But don't be fooled, Next.js can handle dynamic content too, so your website stays engaging and interactive. Developer-friendly: Developers love Next.js for its clear structure, intuitive API routes, and community support. The Perfect Match: Sanity.io & Next.js Now, imagine combining the content flexibility of Sanity.io with the performance advantages of Next.js. It's like content and design superpowers joining forces! Here's what you get: Effortless dynamic websites: Build sites that seamlessly blend pre-rendered pages for speed with dynamic content for engagement. Content independence: Update your content in Sanity, and your Next.js website reflects the changes instantly, no manual rebuilds needed. Developer happiness: Enjoy a smooth development experience with well-documented APIs and helpful communities for both Sanity and Next.js. So, whether you're building a blog, portfolio, or complex e-commerce platform, Sanity.io and Next.js are the tools to watch. With their combined power, you can create websites that are not only beautiful and functional, but also dynamic, content-rich, and performant. Let's build something amazing together!",
+    imageFile:
+      "https://repository-images.githubusercontent.com/252413723/e6f28180-8882-11ea-9e76-78d72dfa2af0",
+    images: [
+      "https://repository-images.githubusercontent.com/252413723/e6f28180-8882-11ea-9e76-78d72dfa2af0",
+    ],
+    percentage: 80,
+    title: "Sanity.IO",
+  },
+  {
+    _id: "Prisma",
+    description:
+      "## Prisma: The Magic Glue Connecting Your Next.js Website to Serenity.io In the grand web development playground, Sanity.io reigns as the content haven, but it needs a bridge to connect its riches to your dazzling Next.js website. That's where **Prisma** enters the scene, acting as the **powerful and elegant glue** that seamlessly brings them together. **Prisma: More Than Just an ORM** Think of Prisma as more than just an Object-Relational Mapper (ORM). It's a full-fledged **database toolkit** that simplifies everything related to interacting with your Sanity data: * **Database flexibility:** Prisma supports most popular databases like **PostgreSQL, MySQL, and MongoDB**, giving you the freedom to choose the perfect fit for your project. * **Type safety magic:** Get the peace of mind that comes with **automatic type definitions and validation**, ensuring data integrity and catching errors early on. * **Easy querying:** Whether you prefer the familiar **GraphQL querying language** or the **powerful raw SQL**, Prisma makes retrieving and manipulating your Sanity data a breeze. * **Migrations made easy:** Don't fear schema changes! Prisma handles **migrations painlessly**, automatically generating scripts to keep your database in sync with your evolving needs. **Prisma & Next.js: A Dream Team** Combining Prisma with Next.js empowers you to build **dynamic and data-driven websites** with exceptional ease: * **Smooth data access:** Prisma provides a **clean and type-safe way** for your Next.js app to access and utilize data from Sanity.io, eliminating the need for complex boilerplate code. * **Faster development:** Focus on building amazing features instead of struggling with database interactions. Prisma's **intuitive API and helpful documentation** streamline the process. * **Scalability built-in:** As your website grows, Prisma scales effortlessly, thanks to its **support for distributed databases and advanced features**. **More Than Just Tools, It's an Ecosystem** Both Prisma and Next.js boast **thriving communities and extensive documentation**, ensuring you have the support you need every step of the way. Additionally, numerous libraries and tools integrate seamlessly with each, forming a robust ecosystem to power your web development journey. So, next time you're crafting a dynamic website with Sanity.io and Next.js, don't forget the magic touch of Prisma. It's the glue that binds your content haven and dazzling front-end together, creating **a seamless and empowering development experience** that fuels your creativity and delivers exceptional results. Let's build something remarkable, together!",
+    imageFile: "https://avatars.githubusercontent.com/u/43818384?s=200&v=4",
+    images: ["https://avatars.githubusercontent.com/u/43818384?s=200&v=4"],
+    percentage: 80,
+    title: "Prisma",
+  },
+  {
     _id: "MongoDB",
     description:
       "As part of my journey to become a proficient MERN stack developer, MongoDB has emerged as one of my core skills. MongoDB, a NoSQL database, plays a pivotal role in the MERN stack architecture, seamlessly integrating with Express.js, Node.js, and React to enable full-stack application development. My journey into MongoDB was driven by the need to create robust and scalable applications. I recognized that a flexible database solution was essential to complement the MERN stack's frontend and backend capabilities. MongoDB's document-oriented structure and schema-less design allowed me to work with complex data models efficiently. In my pursuit of knowledge and practical application, I've leveraged MongoDB to store, retrieve, and manipulate data for a range of web projects. Whether it's managing user profiles, handling content, or implementing real-time features, MongoDB has consistently proven its value as a versatile and powerful database solution. My proficiency in MongoDB extends beyond basic operations; I've also explored advanced topics like data modeling, indexing, and optimizing database performance. This expertise has enabled me to design and maintain efficient database systems that enhance the overall performance and responsiveness of my web applications. In summary, MongoDB is a fundamental component of my MERN stack skill set. It empowers me to create data-driven web applications with ease, ensuring that both the frontend and backend seamlessly interact to deliver exceptional user experiences.",
@@ -129,7 +150,7 @@ const skills = [
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694281112/Screenshot_222_mxdu1b.png",
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694281131/MERN-Stack-considered-the-Best-for-Developing-Web-Apps_wpmcag.png",
     ],
-    percentage: 60,
+    percentage: 80,
     title: "MongoDB",
   },
   {
@@ -144,7 +165,7 @@ const skills = [
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694282191/Screenshot_226_ddyrxf.png",
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1694282191/Screenshot_226_ddyrxf.png",
     ],
-    percentage: 60,
+    percentage: 40,
     title: "php, xamp",
   },
   {
@@ -168,7 +189,7 @@ const skills = [
     images: [
       "https://res.cloudinary.com/dtvtphhsc/image/upload/v1693672398/9dab3de132fa26f0bd62ffca6539f8de_iql0p1.webp",
     ],
-    percentage: 90,
+    percentage: 95,
     title: "Problem Solving",
   },
 ];

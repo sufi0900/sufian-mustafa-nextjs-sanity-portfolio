@@ -41,40 +41,7 @@ const FirstComp = () => {
             style={{ marginBottom: "50px" }}
             className=" flex animate__animated animate__lightSpeedInRight  Animateiv7"
           >
-            {/* {showComponent ? (
-                <b className="glow-text star">Now scroll down</b>
-              ) : (
-                <>
-                  <p
-                    style={{
-                      display: "inline-block",
-                      position: "relative",
-                      fontSize: "28px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Looking to discover my background, work and technical
-                    abilities
-                    <span>?</span>
-                  </p>
-                </>
-              )} */}
             <div className="showComp">
-              <span
-                className="flex "
-                style={
-                  {
-                    // display: "inline-block",
-                    // marginBottom: "20px",
-                  }
-                }
-              >
-                {showComponent ? "Or Click to hide" : "Click to Explore "}
-              </span>{" "}
-              {/* <b className="flex" style={{ fontSize: "27px" }}>
-                👉
-              </b> */}
-              {/* <DoubleArrowIcon /> */}
               <motion.button
                 animate={{
                   y: [-10, 10],
@@ -102,85 +69,11 @@ const FirstComp = () => {
                 />
               </motion.button>
             </div>
-            {/* <div
-                className="Homeresume animate__animated animate__backInRight"
-                style={{
-                  display: showComponent ? "inline-block" : "none",
-                  marginBottom: "20px",
-                  // marginRight: "50px",
-                }}
-              >
-                <span>Or download My </span> <PictureAsPdfIcon />
-                <span>Resume</span>
-                <Link
-                  target="blank"
-                  href="https://drive.google.com/file/d/1F3btm-Hr-TsAFp_73El6phulcrwhlUUT/view?usp=drive_link" // Use the imported Resume as the href // Replace with the actual path to your PDF file                        download="sufi.pdf" // Specify the desired downloaded file name
-                  download="sufi.pdf" // Specify the desired downloaded file name
-                >
-                  <motion.button
-                    animate={{
-                      y: [-9, 9],
-                    }}
-                    transition={{
-                      ease: "linear",
-                      duration: 2,
-                      repeat: Infinity,
-                      repeatType: "reverse",
-                    }}
-                    style={{
-                      cursor: "pointer",
-                      background: "none",
-                      backgroundColor: "none",
-                      borderColor: "transparent",
-                    }}
-                    className="cursorp"
-                  >
-                    <FileDownloadOutlinedIcon
-                      style={button}
-                      className="cursorp"
-                    />
-                  </motion.button>
-                </Link>
-              </div>
-              <div
-                className="Homeresume animate__animated animate__backInRight"
-                style={{
-                  display: showComponent ? "inline-block" : "none",
-                }}
-              >
-                <span>Or Email ME </span>
-                &nbsp;
-                <a
-                  href="mailto:sufianmustafa0900@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <motion.button
-                    animate={{
-                      y: [-9, 9],
-                    }}
-                    transition={{
-                      ease: "linear",
-                      duration: 2,
-                      repeat: Infinity,
-                      repeatType: "reverse",
-                    }}
-                    style={{
-                      cursor: "pointer",
-                      background: "none",
-                      backgroundColor: "none",
-                      borderColor: "transparent",
-                    }}
-                    className="cursorp"
-                  >
-                    <EmailOutlinedIcon style={button} className="cursorp" />
-                  </motion.button>
-                </a>
-              </div> */}
           </div>
-
-          {/* </div> */}
         </Grid>
+        <span className="flex" style={{ color: "white" }}>
+          {showComponent ? "Click to hide" : "Click to Explore "}
+        </span>{" "}
       </Grid>
       {showComponent && (
         <>

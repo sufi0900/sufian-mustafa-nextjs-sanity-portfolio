@@ -140,7 +140,7 @@ const ContactMe = () => {
       <div className="flex">
         <div
           style={{ marginTop: "90px", width: "97%" }}
-          className="itemcontact"
+          className="glassEffect"
         >
           <div>
             <div className="ContactMeHeading">
@@ -168,7 +168,7 @@ const ContactMe = () => {
               <div className="contactform">
                 <ToastContainer />
                 <form
-                  className="contactform_container item"
+                  className="contactform_container glassEffect"
                   ref={form}
                   onSubmit={sendEmail}
                 >
