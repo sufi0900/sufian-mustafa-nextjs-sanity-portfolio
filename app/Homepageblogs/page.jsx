@@ -22,15 +22,12 @@ export default function AllBlogs() {
         <br></br>
         <div>
           <div className="flex">
-            <div
-              className="glassEffect projectdiv"
-              style={{ textAlign: "justify" }}
-            >
+            <div className="projectdiv" style={{ textAlign: "justify" }}>
               <div
                 data-aos="zoom-in"
                 data-aos-delay="100"
                 data-aos-duration="450"
-                className="about41"
+                className="about41 ts"
                 style={{ marginTop: "5px" }}
               >
                 <h3>

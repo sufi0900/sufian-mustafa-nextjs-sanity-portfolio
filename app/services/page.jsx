@@ -102,18 +102,18 @@ const ServiceSection = () => {
       <Grid container spacing={3}>
         {services.map((service, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <div className="services">
+            <div style={{ padding: "10px" }} className="services">
               {/* <Paper > */}
               {service.icon}
               <Typography
                 color="white"
-                variant="h6"
+                variant="h4"
                 align="center"
                 gutterBottom
               >
                 {service.title}
               </Typography>
-              <Typography color="white" align="center">
+              <Typography variant="h6" color="white" align="center">
                 {service.description}
               </Typography>
               {/* </Paper> */}

@@ -20,15 +20,12 @@ export default function ProjectAll() {
 
       <div style={{ marginTop: "20px" }}>
         <div className="flex">
-          <div
-            className="glassEffect projectdiv"
-            style={{ textAlign: "justify" }}
-          >
+          <div className="projectdiv" style={{ textAlign: "justify" }}>
             <div
               data-aos="zoom-in"
               data-aos-delay="109"
               data-aos-duration="450"
-              className="about41"
+              className="ts about41"
               style={{ marginTop: "5px" }}
             >
               <h3>My projects</h3>
@@ -39,7 +36,7 @@ export default function ProjectAll() {
                   data-aos="zoom-in"
                   data-aos-delay="110"
                   data-aos-duration="450"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px", marginTop: "15px" }}
                 >
                   I am actively working on several projects in development on my
                   local computer, which are currently in the final stages of

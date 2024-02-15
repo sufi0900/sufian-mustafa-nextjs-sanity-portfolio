@@ -4,7 +4,7 @@ import Head from "next/head";
 import SendIcon from "@mui/icons-material/Send";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
-import { Button, useMediaQuery, useTheme } from "@mui/material";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 import emailjs from "@emailjs/browser";
 import Footer from "../footer/code";

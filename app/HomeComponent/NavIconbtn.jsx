@@ -60,19 +60,11 @@ function ResponsiveAppBar({ children }) {
 
   const router = useRouter();
   // Function to open the avatar menu
-  const [clickCount, setClickCount] = useState(0);
 
   // Function to increase clickCount
-  const incrementCount = () => {
-    setClickCount(clickCount + 1);
-  };
 
   // useEffect to monitor clickCount changes
-  useEffect(() => {
-    if (clickCount === 3) {
-      window.open("https://sanity-blogs-app.sanity.studio/desk", "_blank");
-    }
-  }, [clickCount, router]);
+
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };

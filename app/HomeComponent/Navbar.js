@@ -39,7 +39,7 @@ async function ResponsiveAppBar({ props }) {
                         {user ? (
                           <Image
                             src={user?.image || sufi}
-                            // style={{ width: "100%", height: "auto" }}
+                            style={{ width: "100%", height: "auto" }}
                             alt="sufi"
                             width={100}
                             height={100}
@@ -47,6 +47,7 @@ async function ResponsiveAppBar({ props }) {
                           />
                         ) : (
                           <Image
+                            style={{ width: "100%", height: "auto" }}
                             src={sufi}
                             alt="sufi"
                             width={100}

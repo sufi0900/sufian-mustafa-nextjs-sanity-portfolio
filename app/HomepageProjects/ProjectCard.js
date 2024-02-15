@@ -60,8 +60,6 @@ const Card2 = ({
       marqueeRef.current.start();
     }
   };
-  const formattedStartDate = new Date(startDate).toLocaleDateString();
-  const formattedEndDate = new Date(endDate).toLocaleDateString();
   return (
     <Grid
       item
@@ -82,11 +80,12 @@ const Card2 = ({
           display: "flex",
           flexDirection: "column",
           height: "100%",
+          borderRadius: "20px",
         }}
         data-aos="zoom-in"
         data-aos-delay="100"
         data-aos-duration="500"
-        className="projectcardv1 item"
+        className="services"
       >
         <Grid container className="flex">
           <Grid item xs={12} sm={12} lg={4} sx={{ alignItems: "stretch" }}>

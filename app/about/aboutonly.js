@@ -704,7 +704,8 @@ const About = () => {
                   Bachelor's Degree
                 </Typography>
                 <Typography color="white">
-                  From ▶️ FG College Nowshera (UOP) <br /> Marks ▶️ 380/500{" "}
+                  From ▶️ FG College Nowshera ( Linked to UOP) <br /> Marks ▶️
+                  372/550 (67%){" "}
                 </Typography>
               </TimelineContent>
             </TimelineItem>
@@ -728,7 +729,8 @@ const About = () => {
                   Master's Degree
                 </Typography>
                 <Typography color="white">
-                  From ▶️ AWKUM <br /> GPA ▶️ 3.3
+                  From ▶️ Abdul Wali Khan University Mardan (AWKUM) <br /> GPA
+                  ▶️ 3.2
                 </Typography>
               </TimelineContent>
             </TimelineItem>

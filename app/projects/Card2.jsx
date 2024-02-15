@@ -85,7 +85,7 @@ const Card2 = ({
         data-aos="zoom-in"
         data-aos-delay="100"
         data-aos-duration="500"
-        className="projectcardv1 item"
+        className="services"
       >
         <Grid container className="flex">
           <Grid item xs={12} sm={12} lg={4} sx={{ alignItems: "stretch" }}>

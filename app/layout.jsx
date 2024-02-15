@@ -9,7 +9,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
 import { Analytics } from "@vercel/analytics/react";
-import "tailwindcss/tailwind.css";
+
 import Head from "next/head";
 
 export default function RootLayout({ children }) {

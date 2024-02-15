@@ -3,9 +3,7 @@ import { useMediaQuery, useTheme } from "@mui/material";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
-import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+
 import "animate.css";
 import Grid from "@mui/material/Grid";
 import MouseOutlinedIcon from "@mui/icons-material/MouseOutlined";
@@ -15,9 +13,9 @@ import ComponentS from "../skills/skillcode";
 import ComponentB from "../Homepageblogs/page";
 import ComponentP from "../HomepageProjects/page";
 import ComponentC from "../contact/code";
+import ComponentT from "../Testimonial/Page";
 const Slideshowlg = dynamic(() => import("../about/slideshowlg"));
 const ResponsiveShow = dynamic(() => import("../about/responsiveshow"));
-import Link from "next/link";
 
 const FirstComp = () => {
   const theme = useTheme();
@@ -81,7 +79,9 @@ const FirstComp = () => {
           <ComponentS />
           <ComponentP />
           <ComponentB />
+          {/* <ComponentT /> */}
           <ResponsiveShow />
+
           {isMatch ? (
             <>
               <SlideM />
