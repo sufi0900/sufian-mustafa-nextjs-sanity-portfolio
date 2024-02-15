@@ -70,7 +70,7 @@ export default function AllBlogs() {
                     marginBottom: "20px",
                   }}
                 >
-                  <Link href="/projects" style={{ textDecoration: "none" }}>
+                  <Link href="/blogs" style={{ textDecoration: "none" }}>
                     <h2 style={{ padding: "10px" }} className="button-85">
                       Explore More Blogs
                       <ReadMoreIcon
