@@ -33,12 +33,12 @@ export default function LoginForm() {
   const { control } = useForm();
 
   return (
-    <Container className={classes.container}>
+    <>
       <Typography variant="h2" className="custom-input-color">
         Please log in to continue.
       </Typography>
       <LoginButton control={control} />
-    </Container>
+    </>
   );
 }
 

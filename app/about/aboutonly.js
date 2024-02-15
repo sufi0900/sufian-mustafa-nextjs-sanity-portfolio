@@ -5,7 +5,7 @@ import React from "react";
 import Services from "../services/page";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import ComputerIcon from "@mui/icons-material/Computer";
-import { Download, Grade, School, Star, Work } from "@mui/icons-material";
+import { School } from "@mui/icons-material";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -13,18 +13,13 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import ApiIcon from "@mui/icons-material/Api";
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
+
 import Typography from "@mui/material/Typography";
 // import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import SchoolIcon from "@mui/icons-material/School";
-import WebIcon from "@mui/icons-material/Web";
+
 import StorageIcon from "@mui/icons-material/Storage";
 import CodeIcon from "@mui/icons-material/Code";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "@mui/material";
 // import "./EducationTimeline.css"; // Import your custom CSS file
 import ListA from "./ListABoutMe";
 
@@ -52,8 +47,6 @@ import Script from "next/script";
 import { NextSeo } from "next-seo";
 
 const About = () => {
-  const [showAdvantages, setShowAdvantages] = useState(false);
-
   function sufianmustafawebdeveloper() {
     return {
       __html: `    {
