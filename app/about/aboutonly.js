@@ -2,9 +2,32 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
-
+import Services from "../services/page";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import ComputerIcon from "@mui/icons-material/Computer";
+import { Download, Grade, School, Star, Work } from "@mui/icons-material";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import FastfoodIcon from "@mui/icons-material/Fastfood";
+import LaptopMacIcon from "@mui/icons-material/LaptopMac";
+import ApiIcon from "@mui/icons-material/Api";
+import HotelIcon from "@mui/icons-material/Hotel";
+import RepeatIcon from "@mui/icons-material/Repeat";
+import Typography from "@mui/material/Typography";
+// import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import SchoolIcon from "@mui/icons-material/School";
+import WebIcon from "@mui/icons-material/Web";
+import StorageIcon from "@mui/icons-material/Storage";
+import CodeIcon from "@mui/icons-material/Code";
+import { Container, Row, Col } from "react-bootstrap";
+// import "./EducationTimeline.css"; // Import your custom CSS file
 import ListA from "./ListABoutMe";
-import { useTheme } from "@mui/material";
+
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,7 +40,7 @@ import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 
 import Images from "./Images";
-import Container from "@mui/material/Container";
+
 import InfoIcon from "@mui/icons-material/Info";
 import QuizIcon from "@mui/icons-material/Quiz";
 import Grid from "@mui/material/Grid";
@@ -31,9 +54,6 @@ import { NextSeo } from "next-seo";
 const About = () => {
   const [showAdvantages, setShowAdvantages] = useState(false);
 
-  const toggleAdvantages = () => {
-    setShowAdvantages(!showAdvantages);
-  };
   function sufianmustafawebdeveloper() {
     return {
       __html: `    {
@@ -96,6 +116,7 @@ const About = () => {
     borderRadius: "40px",
     color: "red",
   };
+
   return (
     <div>
       <Head>
@@ -655,6 +676,143 @@ const About = () => {
             </Container>
           </div>
         </Grid>
+        <Container>
+          <br />
+          <div className="About3 ts" data-aos="zoom-in">
+            {" "}
+            <h1> Education & Experience</h1>
+          </div>
+          <Timeline position="alternate">
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+                color="white"
+              >
+                2020-2022
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot>
+                  <School />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography color="white" variant="h6" component="span">
+                  Bachelor's Degree
+                </Typography>
+                <Typography color="white">
+                  From ▶️ FG College Nowshera (UOP) <br /> Marks ▶️ 380/500{" "}
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                variant="body2"
+                color="white"
+              >
+                2022-2024
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot color="primary">
+                  <ComputerIcon />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" color="white" component="span">
+                  Master's Degree
+                </Typography>
+                <Typography color="white">
+                  From ▶️ AWKUM <br /> GPA ▶️ 3.3
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                variant="body2"
+                color="white"
+              >
+                2022-2024
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot color="secondary">
+                  <VisibilityIcon />
+                </TimelineDot>
+                <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" color="white" component="span">
+                  Front-End Developer
+                </Typography>
+                <Typography color="white">
+                  Designed and developed responsive user interfaces for various
+                  web applications, ensuring a seamless and user-friendly
+                  experience. <br /> HTML5 | CSS3 | Tailwind CSS | React JS |
+                  Next JS
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                variant="body2"
+                color="white"
+              >
+                2022-2024
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+                <TimelineDot color="primary">
+                  <StorageIcon />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" color="white" component="span">
+                  Back-End Developer
+                </Typography>
+                <Typography color="white">
+                  Built RESTful APIs for various clients, ensuring data security
+                  and scalability. <br />
+                  Node JS | Express JS | Sanity.io | Prisma | MongoDB
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                variant="body2"
+                color="white"
+              >
+                2022-2024
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+                <TimelineDot color="secondary">
+                  <CodeIcon />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" color="white" component="span">
+                  Full-Stack Developer
+                </Typography>
+                <Typography color="white">
+                  Leveraging full-stack expertise to build personal portfolio
+                  website and other independent projects.
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+          </Timeline>
+          <Services />
+        </Container>
       </Grid>
       <br />
     </div>

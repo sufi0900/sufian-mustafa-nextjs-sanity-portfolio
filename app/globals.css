@@ -1147,15 +1147,14 @@ p {
 }
 
 .ProjectCard {
-  background: linear-gradient(
-    90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
-  );
-  box-shadow: 0px 2px 4px 0px rgba(14, 30, 37, 0.12),
-    0px 2px 16px 0px rgba(14, 30, 37, 0.32);
-  border: 1px solid rgb(254, 6, 205);
+  text-shadow: 1px 1px 1px black;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s;
   width: 285px;
 }
@@ -1183,17 +1182,13 @@ p {
 .BlogCard {
   display: inline-block;
 
-  background: linear-gradient(
-    90deg,
-    rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
-    rgb(252, 17, 205) 100%
-  );
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-
-  border: 1px solid rgba(243, 40, 202, 0.809);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   position: relative;
   transition: 0.3s;
   /* width: 300px; */
@@ -2547,4 +2542,25 @@ button:hover {
     black 50%,
     rgb(252, 17, 205) 100%
   );
+}
+.services {
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  color: rgb(255, 0, 204);
+  text-shadow: 1px 1px 1px black;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.services:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
 }
