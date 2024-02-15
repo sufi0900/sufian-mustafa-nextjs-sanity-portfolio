@@ -7,6 +7,7 @@ import AuthProvider from "./HomeComponent/SessionProvider";
 import theme from "./HomeComponent/theme";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Analytics } from "@vercel/analytics/react";
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
               <Navbar />
               <main className="custom-cursor">{children}</main>
               <Analytics />
+              <SpeedInsights />
             </ThemeProvider>
           </div>
         </body>
