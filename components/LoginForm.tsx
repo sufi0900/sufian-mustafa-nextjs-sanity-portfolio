@@ -29,22 +29,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function LoginForm() {
-  const classes = useStyles();
   const { control } = useForm();
 
   return (
     <>
-      <Typography variant="h2" className="custom-input-color">
-        Please log in to continue.
-      </Typography>
       <LoginButton control={control} />
     </>
   );
 }
 
 function LoginButton({ control }) {
-  const classes = useStyles();
-
   return (
     <div
       style={{
@@ -57,8 +51,8 @@ function LoginButton({ control }) {
       }}
     >
       <Button
-        // className={classes.button}
-        style={{ color: "white" }}
+        className="services"
+        style={{ borderRadius: "35px", color: "white" }}
         onClick={() => signIn("google", { callbackUrl: "/" })}
         sx={{
           "&:hover": {
@@ -89,13 +83,5 @@ function LoginButton({ control }) {
         </Typography>
       </Button>
     </div>
-    // <Button
-    //   className={classes.button}
-    //   variant="contained"
-    //   color="secondary"
-    //   onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
-    // >
-    //   Log in with Google
-    // </Button>
   );
 }
