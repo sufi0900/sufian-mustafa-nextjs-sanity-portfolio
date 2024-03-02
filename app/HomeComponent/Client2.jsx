@@ -7,7 +7,7 @@ import ShowComp from "./ShowComp";
 
 const ParentComp = () => {
   return (
-    <div style={{ minHeight: "100dvh" }}>
+    <div style={{ minHeight: "100vh" }}>
       <Grid
         container
         padding={2}

@@ -18,7 +18,7 @@
   --bg-color-dark: linear-gradient(
     90deg,
     rgba(10, 10, 250, 0.886) 0%,
-    black 50%,
+    rgb(31, 30, 30) 50%,
     rgb(252, 17, 205) 100%
   );
 
@@ -62,9 +62,9 @@ body {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(
     20deg,
-    rgba(253, 6, 204, 0.907) 0%,
-    black 50%,
-    rgba(10, 10, 250, 0.886) 100%
+    rgba(10, 10, 250, 0.886) 0%,
+    rgb(0, 0, 0) 50%,
+    rgb(252, 17, 205) 100%
   );
   border-radius: 15px;
 }
@@ -136,20 +136,22 @@ body {
   justify-content: center;
   background: linear-gradient(
     90deg,
-    rgba(253, 6, 204, 0.907) 0%,
-    black 50%,
-    rgba(10, 10, 250, 0.886) 100%
+    rgba(10, 10, 250, 0.886) 0%,
+    rgb(36, 34, 34) 50%,
+    rgb(252, 17, 205) 100%
   );
 }
 .showComp {
   border-radius: 100%;
   padding: 20px 0px;
-  background: rgb(253, 6, 204);
+  /* background: rgb(253, 6, 204); */
   transition: 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(248, 178, 178, 0.16) 0px 3pxrgba(255, 206, 206, 0.23) 0.23) 0px 3px 6px;
 }
+
 .showComp:hover {
-  background: #002bff;
+  background: #8094f9;
+  color: pink;
 }
 .home33 {
   width: 100%;
@@ -2094,6 +2096,19 @@ button:hover {
   .motionPath {
     display: none;
   }
+  .Likebtn {
+    display: inline-block;
+    justify-content: none;
+  }
+  .Likebtn2 {
+    text-align: start;
+  }
+  .likebtnmiddle {
+    display: none;
+  }
+  .svghome {
+    display: none;
+  }
   .Home {
     width: 100%;
 
@@ -2568,4 +2583,8 @@ button:hover {
       4 4,
     auto;
   transform: scale(1.05);
+}
+.Likebtn {
+  display: flex;
+  justify-content: space-between;
 }

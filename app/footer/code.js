@@ -153,11 +153,12 @@ const Footer = () => {
                       <span
                         style={{
                           color: "white",
+                          fontSize: "small",
                         }}
                       >
-                        Email:
+                        <MailOutline />
                       </span>{" "}
-                      sufianmustafa0900.com <MailOutline />
+                      sufianmustafa0900.com{" "}
                     </li>
                     <li
                       style={{
@@ -167,8 +168,10 @@ const Footer = () => {
                         textShadow: "0.5px 0.5px 0.5px black",
                       }}
                     >
-                      <span style={{ color: "white" }}>Phone:</span> +92 3177
-                      652064 <Phone />
+                      <span style={{ color: "white" }}>
+                        <Phone />
+                      </span>{" "}
+                      +92 3177 652064
                     </li>
                     <li
                       style={{
@@ -178,8 +181,10 @@ const Footer = () => {
                         textShadow: "0.5px 0.5px 0.5px black",
                       }}
                     >
-                      <span style={{ color: "white" }}>Address:</span> Pakistan
-                      KPK (Mardan) <LocationOnIcon />
+                      <span style={{ color: "white" }}>
+                        <LocationOnIcon />
+                      </span>{" "}
+                      Pakistan KPK (Mardan)
                     </li>
                     <li
                       className=""

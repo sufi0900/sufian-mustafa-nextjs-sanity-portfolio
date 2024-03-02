@@ -216,14 +216,16 @@ const Home = () => {
                 >
                   Some of the web technologies i mostly used are:{" "}
                   <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                    className="animate__animated animate__backInLeft Animateiv6"
+                    // style={{ display: "flex", justifyContent: "space-between" }}
+                    className="Likebtn animate__animated animate__backInLeft Animateiv6"
                   >
                     <p style={{ width: "40%" }}>
                       <Rotate />{" "}
                     </p>
-                    <div></div>
-                    <div className="animate__animated animate__backInRight Animateiv6">
+                    <br />
+                    <div className="likebtnmiddle"></div>
+
+                    <div className="Likebtn2 animate__animated animate__backInRight Animateiv6">
                       {" "}
                       <UserLikes3 />
                     </div>
@@ -235,7 +237,9 @@ const Home = () => {
           </div>{" "}
         </div>
       </div>
-      <SvgHomePage />
+      <div className="svghome">
+        <SvgHomePage />
+      </div>
     </div>
   );
 };

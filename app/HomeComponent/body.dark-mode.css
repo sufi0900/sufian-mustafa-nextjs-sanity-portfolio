@@ -54,9 +54,9 @@ body.dark-mode footer {
 /* [data-theme='dark']  {
   background: var(--background-dark);
 } */
-body.dark-mode .itemabout,
-body.dark-mode .contactform_container,
-body.dark-mode .new_footer_area {
+body.dark-mode .itemabout
+/* body.dark-mode .contactform_container, */
+/* body.dark-mode .new_footer_area  */ {
   background: #0e2a47;
   border: 2px solid rgba(255, 255, 255, 0.807);
   border-radius: 16px;
